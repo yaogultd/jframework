@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.JhttpProxy"  table="j_http_proxy">
+		<id name="uuid" type="java.lang.String" column="UUID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="uuid" type="java.lang.String" column="UUID" not-null="true" gzip="false" length="64"/>
+
+		<property name="poolId" type="java.lang.String" column="POOL_ID" not-null="false" gzip="false" length="128"/>
+
+		<property name="proxyIp" type="java.lang.String" column="PROXY_IP" not-null="false" gzip="false" length="16"/>
+
+		<property name="proxyIpv6" type="java.lang.String" column="PROXY_IPV6" not-null="false" gzip="false" length="128"/>
+
+		<property name="proxyPort" type="java.lang.Integer" column="PROXY_PORT" not-null="false" gzip="false" length="10"/>
+
+		<property name="proxyUsername" type="java.lang.String" column="PROXY_USERNAME" not-null="false" gzip="false" length="128"/>
+
+		<property name="proxyPassword" type="java.lang.String" column="PROXY_PASSWORD" not-null="false" gzip="false" length="128"/>
+
+		<property name="httpsSupported" type="java.lang.String" column="HTTPS_SUPPORTED" not-null="false" gzip="false" length="1"/>
+
+		<property name="continentId" type="java.lang.String" column="CONTINENT_ID" not-null="false" gzip="false" length="16"/>
+
+		<property name="countryId" type="java.lang.String" column="COUNTRY_ID" not-null="false" gzip="false" length="16"/>
+
+		<property name="provinceId" type="java.lang.String" column="PROVINCE_ID" not-null="false" gzip="false" length="16"/>
+
+		<property name="proxyDesc" type="java.lang.String" column="PROXY_DESC" not-null="false" gzip="false" length="300"/>
+
+		<property name="lifeStart" type="java.lang.Long" column="LIFE_START" not-null="false" gzip="false" length="19"/>
+
+		<property name="lifeEnd" type="java.lang.Long" column="LIFE_END" not-null="false" gzip="false" length="19"/>
+
+		<property name="rowDeleted" type="java.lang.String" column="ROW_DELETED" not-null="false" gzip="false" length="1"/>
+
+	</class>
+</root>

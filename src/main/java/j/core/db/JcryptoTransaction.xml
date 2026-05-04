@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.JcryptoTransaction"  table="j_crypto_transaction">
+		<id name="tranId" type="java.lang.String" column="TRAN_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="tranId" type="java.lang.String" column="TRAN_ID" not-null="true" gzip="false" length="128"/>
+
+		<property name="walletId" type="java.lang.String" column="WALLET_ID" not-null="false" gzip="false" length="128"/>
+
+		<property name="entityId" type="java.lang.String" column="ENTITY_ID" not-null="false" gzip="false" length="128"/>
+
+		<property name="theOwner" type="java.lang.String" column="THE_OWNER" not-null="false" gzip="false" length="128"/>
+
+		<property name="tranWith" type="java.lang.String" column="TRAN_WITH" not-null="false" gzip="false" length="16383"/>
+
+		<property name="tranData" type="java.lang.String" column="TRAN_DATA" not-null="false" gzip="false" length="16383"/>
+
+		<property name="tranAmount" type="java.lang.Long" column="TRAN_AMOUNT" not-null="false" gzip="false" length="19"/>
+
+		<property name="balanceBefore" type="java.lang.Long" column="BALANCE_BEFORE" not-null="false" gzip="false" length="19"/>
+
+		<property name="balanceAfter" type="java.lang.Long" column="BALANCE_AFTER" not-null="false" gzip="false" length="19"/>
+
+		<property name="createTime" type="java.lang.Long" column="CREATE_TIME" not-null="false" gzip="false" length="19"/>
+
+		<property name="destroyedTime" type="java.lang.Long" column="DESTROYED_TIME" not-null="false" gzip="false" length="19"/>
+
+		<property name="tranStatus" type="java.lang.String" column="TRAN_STATUS" not-null="false" gzip="false" length="3"/>
+
+		<property name="rowDeleted" type="java.lang.String" column="ROW_DELETED" not-null="false" gzip="false" length="1"/>
+
+	</class>
+</root>

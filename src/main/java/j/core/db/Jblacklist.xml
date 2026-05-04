@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.Jblacklist"  table="j_blacklist">
+		<id name="blackId" type="java.lang.String" column="BLACK_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="blackId" type="java.lang.String" column="BLACK_ID" not-null="true" gzip="false" length="64"/>
+
+		<property name="uip" type="java.lang.String" column="U_IP" not-null="false" gzip="false" length="256"/>
+
+		<property name="uaddr" type="java.lang.String" column="U_ADDR" not-null="false" gzip="false" length="300"/>
+
+		<property name="blackType" type="java.lang.String" column="BLACK_TYPE" not-null="false" gzip="false" length="2"/>
+
+		<property name="startTime" type="java.lang.Long" column="START_TIME" not-null="false" gzip="false" length="19"/>
+
+		<property name="endTime" type="java.lang.Long" column="END_TIME" not-null="false" gzip="false" length="19"/>
+
+		<property name="blackRemark" type="java.lang.String" column="BLACK_REMARK" not-null="false" gzip="false" length="300"/>
+
+	</class>
+</root>

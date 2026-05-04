@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.JaiBeing"  table="j_ai_being">
+		<id name="beingId" type="java.lang.String" column="BEING_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="beingId" type="java.lang.String" column="BEING_ID" not-null="true" gzip="false" length="64"/>
+
+		<property name="beingCreator" type="java.lang.String" column="BEING_CREATOR" not-null="false" gzip="false" length="64"/>
+
+		<property name="beingName" type="java.lang.String" column="BEING_NAME" not-null="false" gzip="false" length="150"/>
+
+		<property name="beingDesc" type="java.lang.String" column="BEING_DESC" not-null="false" gzip="false" length="300"/>
+
+		<property name="beingAvatar" type="java.lang.String" column="BEING_AVATAR" not-null="false" gzip="false" length="128"/>
+
+		<property name="beingTraits" type="java.lang.String" column="BEING_TRAITS" not-null="false" gzip="false" length="300"/>
+
+		<property name="beingExpertIn" type="java.lang.String" column="BEING_EXPERT_IN" not-null="false" gzip="false" length="300"/>
+
+		<property name="maxIdle" type="java.lang.Long" column="MAX_IDLE" not-null="false" gzip="false" length="19"/>
+
+		<property name="latestActive" type="java.lang.Long" column="LATEST_ACTIVE" not-null="false" gzip="false" length="19"/>
+
+		<property name="lifeType" type="java.lang.Integer" column="LIFE_TYPE" not-null="false" gzip="false" length="10"/>
+
+		<property name="lifeStart" type="java.lang.Long" column="LIFE_START" not-null="false" gzip="false" length="19"/>
+
+		<property name="lifeEnd" type="java.lang.Long" column="LIFE_END" not-null="false" gzip="false" length="19"/>
+
+		<property name="lifeStatus" type="java.lang.String" column="LIFE_STATUS" not-null="false" gzip="false" length="3"/>
+
+		<property name="rowDeleted" type="java.lang.String" column="ROW_DELETED" not-null="false" gzip="false" length="1"/>
+
+	</class>
+</root>

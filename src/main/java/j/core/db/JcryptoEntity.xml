@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.JcryptoEntity"  table="j_crypto_entity">
+		<id name="entityId" type="java.lang.String" column="ENTITY_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="entityId" type="java.lang.String" column="ENTITY_ID" not-null="true" gzip="false" length="128"/>
+
+		<property name="parentEntityId" type="java.lang.String" column="PARENT_ENTITY_ID" not-null="false" gzip="false" length="128"/>
+
+		<property name="walletId" type="java.lang.String" column="WALLET_ID" not-null="false" gzip="false" length="128"/>
+
+		<property name="chainCode" type="java.lang.String" column="CHAIN_CODE" not-null="false" gzip="false" length="64"/>
+
+		<property name="tokenId" type="java.lang.String" column="TOKEN_ID" not-null="false" gzip="false" length="64"/>
+
+		<property name="theOwner" type="java.lang.String" column="THE_OWNER" not-null="false" gzip="false" length="128"/>
+
+		<property name="entityAddr" type="java.lang.String" column="ENTITY_ADDR" not-null="false" gzip="false" length="128"/>
+
+		<property name="entityPrikey" type="java.lang.String" column="ENTITY_PRIKEY" not-null="false" gzip="false" length="128"/>
+
+		<property name="entityPubkey" type="java.lang.String" column="ENTITY_PUBKEY" not-null="false" gzip="false" length="128"/>
+
+		<property name="entityMemo" type="java.lang.String" column="ENTITY_MEMO" not-null="false" gzip="false" length="128"/>
+
+		<property name="typeOnChain" type="java.lang.String" column="TYPE_ON_CHAIN" not-null="false" gzip="false" length="32"/>
+
+		<property name="isExecutable" type="java.lang.String" column="IS_EXECUTABLE" not-null="false" gzip="false" length="1"/>
+
+		<property name="isReadable" type="java.lang.String" column="IS_READABLE" not-null="false" gzip="false" length="1"/>
+
+		<property name="isWritable" type="java.lang.String" column="IS_WRITABLE" not-null="false" gzip="false" length="1"/>
+
+		<property name="assetName" type="java.lang.String" column="ASSET_NAME" not-null="false" gzip="false" length="256"/>
+
+		<property name="assetDesc" type="java.lang.String" column="ASSET_DESC" not-null="false" gzip="false" length="300"/>
+
+		<property name="assetAvatar" type="java.lang.String" column="ASSET_AVATAR" not-null="false" gzip="false" length="128"/>
+
+		<property name="metaData" type="java.lang.String" column="META_DATA" not-null="false" gzip="false" length="16383"/>
+
+		<property name="derivedFrom" type="java.lang.String" column="DERIVED_FROM" not-null="false" gzip="false" length="16383"/>
+
+		<property name="executableCode" type="java.lang.String" column="EXECUTABLE_CODE" not-null="false" gzip="false" length="16383"/>
+
+		<property name="createTime" type="java.lang.Long" column="CREATE_TIME" not-null="false" gzip="false" length="19"/>
+
+		<property name="destroyedTime" type="java.lang.Long" column="DESTROYED_TIME" not-null="false" gzip="false" length="19"/>
+
+		<property name="entityBalance" type="java.lang.Long" column="ENTITY_BALANCE" not-null="false" gzip="false" length="19"/>
+
+		<property name="entityStatus" type="java.lang.String" column="ENTITY_STATUS" not-null="false" gzip="false" length="3"/>
+
+		<property name="rowDeleted" type="java.lang.String" column="ROW_DELETED" not-null="false" gzip="false" length="1"/>
+
+	</class>
+</root>

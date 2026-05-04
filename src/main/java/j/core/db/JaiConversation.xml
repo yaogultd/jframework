@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.JaiConversation"  table="j_ai_conversation">
+		<id name="convId" type="java.lang.String" column="CONV_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="convId" type="java.lang.String" column="CONV_ID" not-null="true" gzip="false" length="64"/>
+
+		<property name="beingId" type="java.lang.String" column="BEING_ID" not-null="false" gzip="false" length="64"/>
+
+		<property name="convName" type="java.lang.String" column="CONV_NAME" not-null="false" gzip="false" length="150"/>
+
+		<property name="convDesc" type="java.lang.String" column="CONV_DESC" not-null="false" gzip="false" length="300"/>
+
+		<property name="convConf" type="java.lang.String" column="CONV_CONF" not-null="false" gzip="false" length="16383"/>
+
+		<property name="maxIdle" type="java.lang.Long" column="MAX_IDLE" not-null="false" gzip="false" length="19"/>
+
+		<property name="latestActive" type="java.lang.Long" column="LATEST_ACTIVE" not-null="false" gzip="false" length="19"/>
+
+		<property name="latestProviderId" type="java.lang.String" column="LATEST_PROVIDER_ID" not-null="false" gzip="false" length="64"/>
+
+		<property name="latestModelId" type="java.lang.String" column="LATEST_MODEL_ID" not-null="false" gzip="false" length="64"/>
+
+		<property name="latestPluginId" type="java.lang.String" column="LATEST_PLUGIN_ID" not-null="false" gzip="false" length="64"/>
+
+		<property name="lifeType" type="java.lang.Integer" column="LIFE_TYPE" not-null="false" gzip="false" length="10"/>
+
+		<property name="lifeStart" type="java.lang.Long" column="LIFE_START" not-null="false" gzip="false" length="19"/>
+
+		<property name="lifeEnd" type="java.lang.Long" column="LIFE_END" not-null="false" gzip="false" length="19"/>
+
+		<property name="lifeStatus" type="java.lang.String" column="LIFE_STATUS" not-null="false" gzip="false" length="3"/>
+
+		<property name="rowDeleted" type="java.lang.String" column="ROW_DELETED" not-null="false" gzip="false" length="1"/>
+
+	</class>
+</root>

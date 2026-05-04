@@ -1,0 +1,70 @@
+:root {
+    --DS_header_summary_width: 200px;
+    --DS_row_column_name_width: 100px;
+    --DS_row_column_content_width: 200px;
+}
+
+.DataSheet {
+    width:100%;
+}
+.DS_row {
+    width: 100%;
+}
+.DS_header{
+    width:100%;
+    height:30px;
+    line-height:30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #eee;
+    border-bottom: #fff 1px solid;
+    text-align: left;
+    overflow: hidden;
+}
+.DS_header_summary {
+    float: left;
+    width: var(--DS_header_summary_width);
+    overflow: hidden;
+}
+.DS_header_btns {
+    float: right;
+    max-width: 60px;
+    overflow: hidden;
+}
+.DS_header_btns div{
+    width: 30px;
+    text-align: center;
+}
+.DS_row_unfolder {
+    float: right;
+    width:20px;
+    text-align: right;
+}
+.DS_row_detail {
+    width:100%;
+    background-color: #F5F5F5;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: #fff 1px solid;
+}
+.DS_row_column{
+    width:100%;
+    display: inline-table;
+}
+.DS_row_column_name{
+    float: left;
+    width: var(--DS_row_column_name_width);
+    text-align: left;
+    color: #333;
+    line-height: 30px;
+    overflow: hidden;
+}
+.DS_row_column_content{
+    float: right;
+    width: var(--DS_row_column_content_width);
+    text-align: left;
+    color: #666;
+    text-align: left;
+    line-height: 30px;
+    overflow: hidden;
+}

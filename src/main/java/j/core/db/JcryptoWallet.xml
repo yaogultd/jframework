@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.JcryptoWallet"  table="j_crypto_wallet">
+		<id name="walletId" type="java.lang.String" column="WALLET_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="walletId" type="java.lang.String" column="WALLET_ID" not-null="true" gzip="false" length="128"/>
+
+		<property name="theOwner" type="java.lang.String" column="THE_OWNER" not-null="false" gzip="false" length="128"/>
+
+		<property name="walletName" type="java.lang.String" column="WALLET_NAME" not-null="false" gzip="false" length="150"/>
+
+		<property name="walletDesc" type="java.lang.String" column="WALLET_DESC" not-null="false" gzip="false" length="300"/>
+
+		<property name="walletAvatar" type="java.lang.String" column="WALLET_AVATAR" not-null="false" gzip="false" length="128"/>
+
+		<property name="metaData" type="java.lang.String" column="META_DATA" not-null="false" gzip="false" length="16383"/>
+
+		<property name="createTime" type="java.lang.Long" column="CREATE_TIME" not-null="false" gzip="false" length="19"/>
+
+		<property name="destroyedTime" type="java.lang.Long" column="DESTROYED_TIME" not-null="false" gzip="false" length="19"/>
+
+		<property name="walletStatus" type="java.lang.String" column="WALLET_STATUS" not-null="false" gzip="false" length="3"/>
+
+		<property name="rowDeleted" type="java.lang.String" column="ROW_DELETED" not-null="false" gzip="false" length="1"/>
+
+	</class>
+</root>

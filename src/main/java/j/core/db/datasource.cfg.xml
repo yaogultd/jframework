@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+	<session-factory>
+		<!-- <property name="plugin">j.core.dao.DAOPlugin4PrintSQL</property> -->
+		<property name="dialect">j.core.dao.dialect.MysqlDialect</property>
+		<property name="connection.provider_class">j.core.dao.connection.DruidConnectionProvider</property>
+		<property name="connection.pool_size">300</property>
+		<property name="connection.initial_pool_size">15</property>
+		<property name="connection.min_idle">15</property>
+		<property name="connection.max_wait">3000</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost/jframework?useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Hongkong&amp;useUnicode=true&amp;characterEncoding=utf-8</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">20081016</property>
+		<property name="show_sql">false</property>
+		<mapping resource="j/core/db/JactionLog.xml" />
+		<mapping resource="j/core/db/JaiBeing.xml" />
+		<mapping resource="j/core/db/JaiConversation.xml" />
+		<mapping resource="j/core/db/JaiMessage.xml" />
+		<mapping resource="j/core/db/Jblacklist.xml" />
+		<mapping resource="j/core/db/JcacheTask.xml" />
+		<mapping resource="j/core/db/Jcity.xml" />
+		<mapping resource="j/core/db/Jcontinent.xml" />
+		<mapping resource="j/core/db/Jcountry.xml" />
+		<mapping resource="j/core/db/Jcounty.xml" />
+		<mapping resource="j/core/db/JcryptoChain.xml" />
+		<mapping resource="j/core/db/JcryptoEntity.xml" />
+		<mapping resource="j/core/db/JcryptoToken.xml" />
+		<mapping resource="j/core/db/JcryptoTransaction.xml" />
+		<mapping resource="j/core/db/JcryptoWallet.xml" />
+		<mapping resource="j/core/db/JfsTask.xml" />
+		<mapping resource="j/core/db/JhttpProxy.xml" />
+		<mapping resource="j/core/db/Jip.xml" />
+		<mapping resource="j/core/db/Jlog.xml" />
+		<mapping resource="j/core/db/Jparam.xml" />
+		<mapping resource="j/core/db/Jprovince.xml" />
+		<mapping resource="j/core/db/Jtest.xml" />
+		<mapping resource="j/core/db/JuserLogin.xml" />
+		<mapping resource="j/core/db/Jzone.xml" />
+	</session-factory>
+</root>

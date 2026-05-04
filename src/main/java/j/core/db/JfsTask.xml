@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.JfsTask"  table="j_fs_task">
+		<id name="uuid" type="java.lang.String" column="UUID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="uuid" type="java.lang.String" column="UUID" not-null="true" gzip="false" length="64"/>
+
+		<property name="taskTime" type="java.lang.Long" column="TASK_TIME" not-null="false" gzip="false" length="19"/>
+
+		<property name="fromUuid" type="java.lang.String" column="FROM_UUID" not-null="false" gzip="false" length="128"/>
+
+		<property name="toUuid" type="java.lang.String" column="TO_UUID" not-null="false" gzip="false" length="128"/>
+
+		<property name="filePath" type="java.lang.String" column="FILE_PATH" not-null="false" gzip="false" length="256"/>
+
+		<property name="sourcePath" type="java.lang.String" column="SOURCE_PATH" not-null="false" gzip="false" length="256"/>
+
+		<property name="taskOperation" type="java.lang.String" column="TASK_OPERATION" not-null="false" gzip="false" length="16"/>
+
+		<property name="synTimes" type="java.lang.Integer" column="SYN_TIMES" not-null="false" gzip="false" length="10"/>
+
+		<property name="synTime" type="java.lang.Long" column="SYN_TIME" not-null="false" gzip="false" length="19"/>
+
+	</class>
+</root>

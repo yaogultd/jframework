@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.Jparam"  table="j_param">
+		<id name="uuid" type="java.lang.String" column="UUID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="uuid" type="java.lang.String" column="UUID" not-null="true" gzip="false" length="64"/>
+
+		<property name="instanceId" type="java.lang.String" column="INSTANCE_ID" not-null="false" gzip="false" length="128"/>
+
+		<property name="paramGroup" type="java.lang.String" column="PARAM_GROUP" not-null="false" gzip="false" length="128"/>
+
+		<property name="paramName" type="java.lang.String" column="PARAM_NAME" not-null="false" gzip="false" length="128"/>
+
+		<property name="paramValue" type="java.lang.String" column="PARAM_VALUE" not-null="false" gzip="false" length="16383"/>
+
+		<property name="paramEditable" type="java.lang.String" column="PARAM_EDITABLE" not-null="false" gzip="false" length="1"/>
+
+		<property name="paramDesc" type="java.lang.String" column="PARAM_DESC" not-null="false" gzip="false" length="300"/>
+
+		<property name="paramSequence" type="java.lang.Integer" column="PARAM_SEQUENCE" not-null="false" gzip="false" length="10"/>
+
+	</class>
+</root>

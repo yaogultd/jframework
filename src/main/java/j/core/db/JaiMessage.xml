@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.JaiMessage"  table="j_ai_message">
+		<id name="messageId" type="java.lang.String" column="MESSAGE_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="messageId" type="java.lang.String" column="MESSAGE_ID" not-null="true" gzip="false" length="64"/>
+
+		<property name="beingId" type="java.lang.String" column="BEING_ID" not-null="false" gzip="false" length="64"/>
+
+		<property name="convId" type="java.lang.String" column="CONV_ID" not-null="false" gzip="false" length="64"/>
+
+		<property name="convType" type="java.lang.Integer" column="CONV_TYPE" not-null="false" gzip="false" length="10"/>
+
+		<property name="providerId" type="java.lang.String" column="PROVIDER_ID" not-null="false" gzip="false" length="64"/>
+
+		<property name="modelId" type="java.lang.String" column="MODEL_ID" not-null="false" gzip="false" length="64"/>
+
+		<property name="pluginId" type="java.lang.String" column="PLUGIN_ID" not-null="false" gzip="false" length="64"/>
+
+		<property name="interactionId" type="java.lang.String" column="INTERACTION_ID" not-null="false" gzip="false" length="128"/>
+
+		<property name="messageWho" type="java.lang.String" column="MESSAGE_WHO" not-null="false" gzip="false" length="64"/>
+
+		<property name="messageTime" type="java.lang.Long" column="MESSAGE_TIME" not-null="false" gzip="false" length="19"/>
+
+		<property name="messageType" type="java.lang.Integer" column="MESSAGE_TYPE" not-null="false" gzip="false" length="10"/>
+
+		<property name="messageContent" type="java.lang.String" column="MESSAGE_CONTENT" not-null="false" gzip="false" length="4194303"/>
+
+		<property name="storeType" type="java.lang.String" column="STORE_TYPE" not-null="false" gzip="false" length="3"/>
+
+		<property name="extraDatas" type="java.lang.String" column="EXTRA_DATAS" not-null="false" gzip="false" length="4194303"/>
+
+		<property name="extraTexts" type="java.lang.String" column="EXTRA_TEXTS" not-null="false" gzip="false" length="4194303"/>
+
+		<property name="isChatStart" type="java.lang.String" column="IS_CHAT_START" not-null="false" gzip="false" length="1"/>
+
+		<property name="isChatEnd" type="java.lang.String" column="IS_CHAT_END" not-null="false" gzip="false" length="1"/>
+
+		<property name="messageIp" type="java.lang.String" column="MESSAGE_IP" not-null="false" gzip="false" length="64"/>
+
+		<property name="messageTokens" type="java.lang.Integer" column="MESSAGE_TOKENS" not-null="false" gzip="false" length="10"/>
+
+		<property name="rowDeleted" type="java.lang.String" column="ROW_DELETED" not-null="false" gzip="false" length="1"/>
+
+	</class>
+</root>

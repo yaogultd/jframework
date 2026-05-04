@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.Jip"  table="j_ip">
+		<id name="ipId" type="java.lang.Long" column="IP_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="ipId" type="java.lang.Long" column="IP_ID" not-null="true" gzip="false" length="19"/>
+
+		<property name="ipStart" type="java.lang.Long" column="IP_START" not-null="true" gzip="false" length="19"/>
+
+		<property name="ipEnd" type="java.lang.Long" column="IP_END" not-null="true" gzip="false" length="19"/>
+
+		<property name="ipAddr" type="java.lang.String" column="IP_ADDR" not-null="true" gzip="false" length="300"/>
+
+	</class>
+</root>

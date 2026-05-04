@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.JcryptoToken"  table="j_crypto_token">
+		<id name="tokenId" type="java.lang.String" column="TOKEN_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="tokenId" type="java.lang.String" column="TOKEN_ID" not-null="true" gzip="false" length="64"/>
+
+		<property name="chainCode" type="java.lang.String" column="CHAIN_CODE" not-null="false" gzip="false" length="64"/>
+
+		<property name="tokenAddr" type="java.lang.String" column="TOKEN_ADDR" not-null="false" gzip="false" length="128"/>
+
+		<property name="tokenName" type="java.lang.String" column="TOKEN_NAME" not-null="false" gzip="false" length="150"/>
+
+		<property name="tokenDesc" type="java.lang.String" column="TOKEN_DESC" not-null="false" gzip="false" length="16383"/>
+
+		<property name="isOfficial" type="java.lang.String" column="IS_OFFICIAL" not-null="false" gzip="false" length="1"/>
+
+		<property name="metaData" type="java.lang.String" column="META_DATA" not-null="false" gzip="false" length="16383"/>
+
+		<property name="valueFractions" type="java.lang.Short" column="VALUE_FRACTIONS" not-null="false" gzip="false" length="3"/>
+
+		<property name="currentPrice" type="java.lang.Long" column="CURRENT_PRICE" not-null="false" gzip="false" length="19"/>
+
+		<property name="isEnabled" type="java.lang.String" column="IS_ENABLED" not-null="false" gzip="false" length="1"/>
+
+		<property name="showOrder" type="java.lang.Integer" column="SHOW_ORDER" not-null="false" gzip="false" length="10"/>
+
+		<property name="rowDeleted" type="java.lang.String" column="ROW_DELETED" not-null="false" gzip="false" length="1"/>
+
+	</class>
+</root>

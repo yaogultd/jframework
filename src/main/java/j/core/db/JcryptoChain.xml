@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root>
+	<class name="j.core.db.JcryptoChain"  table="j_crypto_chain">
+		<id name="chainCode" type="java.lang.String" column="CHAIN_CODE">
+			<generator class="assigned" />
+		</id>
+
+		<property name="chainCode" type="java.lang.String" column="CHAIN_CODE" not-null="true" gzip="false" length="64"/>
+
+		<property name="chainName" type="java.lang.String" column="CHAIN_NAME" not-null="false" gzip="false" length="150"/>
+
+		<property name="chainDesc" type="java.lang.String" column="CHAIN_DESC" not-null="false" gzip="false" length="16383"/>
+
+		<property name="metaData" type="java.lang.String" column="META_DATA" not-null="false" gzip="false" length="16383"/>
+
+		<property name="isEnabled" type="java.lang.String" column="IS_ENABLED" not-null="false" gzip="false" length="1"/>
+
+		<property name="showOrder" type="java.lang.Integer" column="SHOW_ORDER" not-null="false" gzip="false" length="10"/>
+
+		<property name="rowDeleted" type="java.lang.String" column="ROW_DELETED" not-null="false" gzip="false" length="1"/>
+
+	</class>
+</root>

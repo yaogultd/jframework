@@ -1,0 +1,5 @@
+let LiveCenter={
+    open:function (){
+
+    }
+}

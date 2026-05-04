@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- 日志存放路径 -->
+    <property name="log.path" value="logs" />
+
+    <!-- 日志输出格式 -->
+    <property name="log.pattern" value="[%p] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t][%c]%C:%L - %m %n" />
+    <property name="maxHistory" value="7" />
+
+    <!-- 控制台输出 -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 系统日志输出 -->
+    <appender name="info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.path}/info.log</file>
+
+        <!-- 循环政策：基于时间创建日志文件 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 
+                文件名模式：
+                - %d{yyyy-MM-dd}: 按日期滚动
+                - %i: 当日志文件超过大小限制时的索引（从0开始）
+            -->
+            <fileNamePattern>${log.path}/info.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            
+            <!-- 单个日志文件的最大大小 -->
+            <maxFileSize>20MB</maxFileSize>
+            
+            <!-- 保留的历史日志文件最大天数 -->
+            <maxHistory>${maxHistory}</maxHistory>
+            
+            <!-- 所有历史日志文件总大小的上限（可选） -->
+            <!-- <totalSizeCap>10GB</totalSizeCap>-->
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 过滤的级别 -->
+            <level>INFO</level>
+
+            <!-- 匹配时的操作：接收（记录） -->
+            <onMatch>ACCEPT</onMatch>
+
+            <!-- 不匹配时的操作：拒绝（不记录） -->
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.path}/error.log</file>
+        <!-- 循环政策：基于时间创建日志文件 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 
+                文件名模式：
+                - %d{yyyy-MM-dd}: 按日期滚动
+                - %i: 当日志文件超过大小限制时的索引（从0开始）
+            -->
+            <fileNamePattern>${log.path}/error.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            
+            <!-- 单个日志文件的最大大小 -->
+            <maxFileSize>20MB</maxFileSize>
+            
+            <!-- 保留的历史日志文件最大天数 -->
+            <maxHistory>${maxHistory}</maxHistory>
+            
+            <!-- 所有历史日志文件总大小的上限（可选） -->
+            <!-- <totalSizeCap>10GB</totalSizeCap>-->
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 过滤的级别 -->
+            <level>ERROR</level>
+
+            <!-- 匹配时的操作：接收（记录） -->
+            <onMatch>ACCEPT</onMatch>
+
+            <!-- 不匹配时的操作：拒绝（不记录） -->
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- 用户访问日志输出  -->
+    <appender name="access" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.path}/access.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- 
+                文件名模式：
+                - %d{yyyy-MM-dd}: 按日期滚动
+                - %i: 当日志文件超过大小限制时的索引（从0开始）
+            -->
+            <fileNamePattern>${log.path}/access.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            
+            <!-- 单个日志文件的最大大小 -->
+            <maxFileSize>20MB</maxFileSize>
+            
+            <!-- 保留的历史日志文件最大天数 -->
+            <maxHistory>${maxHistory}</maxHistory>
+            
+            <!-- 所有历史日志文件总大小的上限（可选） -->
+            <!-- <totalSizeCap>10GB</totalSizeCap>-->
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="console" />
+        <appender-ref ref="info" />
+        <appender-ref ref="error" />
+        <!-- <appender-ref ref="access" />-->
+    </root>
+
+    <logger name="org.apache.http" level="error" />
+    
+    <!-- 特定包的独立 Logger -->
+    <!-- 通过设置additivity为false，不传递给 Root Logger -->
+    <!-- 
+    <logger name="com.example.noisy" level="WARN" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger> -->
+</configuration>
