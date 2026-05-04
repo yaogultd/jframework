@@ -476,30 +476,6 @@
                     <exclude>env.properties</exclude>
                 </excludes>
             </resource>
-
-            <!--作为应用打包时
-            <resource>
-                <directory>${basedir}/src/main/resources</directory>
-                <includes>
-                    <include>**/*.so</include>
-                    <include>**/*.dll</include>
-                    <include>**/*.dat</include>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
-                    <include>**/*.jks</include>
-                    <include>*.so</include>
-                    <include>*.dll</include>
-                    <include>*.dat</include>
-                    <include>*.properties</include>
-                    <include>**/*.xml</include>
-                    <include>**/*.jks</include>
-                </includes>
-                <excludes>
-                    <exclude>tessdata/</exclude>
-                    <exclude>static/</exclude>
-                    <exclude>templates/</exclude>
-                </excludes>
-            </resource>-->
         </resources>
 
         <plugins>
@@ -590,54 +566,6 @@
                     <!-- Central Portal 的认证 ID 必须与下面 server id 一致 -->
                 </configuration>
             </plugin>
-
-            <!--以下两个plugin只有在打包成可运行应用时才启用-->
-            <!--<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.2.0</version>
-                <executions>
-                    <execution>
-                        <id>copy-dependencies</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                            <overWriteReleases>false</overWriteReleases>
-                            <overWriteSnapshots>false</overWriteSnapshots>
-                            <overWriteIfNewer>true</overWriteIfNewer>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.2.0</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>j.core.Startup</mainClass>
-                        </manifest>
-                    </archive>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>make-assembly</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>-->
         </plugins>
         <pluginManagement>
             <plugins>
