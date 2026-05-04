@@ -11,10 +11,11 @@
     <packaging>jar</packaging>
 
     <!-- 2. 项目信息（中央仓库要求提供） -->
-    <name>A </name>
-    <description>A brief description of what your library does.</description>
-    <url>https://github.com/你的GitHub用户名/你的仓库</url>
+    <name>JFramework</name>
+    <description>Framework For Yaogu Ltd.</description>
+    <url>https://github.com/yaogultd/jframework.git</url>
 
+    <!-- 3. 许可证信息（必须） -->
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -22,6 +23,24 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <!-- 4. 开发者信息（必须） -->
+    <developers>
+        <developer>
+            <id>yaogultd</id>
+            <name>YaoGu</name>
+            <email>tech@gugumall.cn</email>
+            <url>https://github.com/yaogultd</url>
+        </developer>
+    </developers>
+
+    <!-- 5. SCM 信息（必须，指向你的 Git 仓库） -->
+    <scm>
+        <connection>scm:git:git://github.com/yaogultd/jframework.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/yaogultd/jframework.git</developerConnection>
+        <url>https://github.com/yaogultd/jframework.git</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <properties>
         <lombok.version>1.18.20</lombok.version>
@@ -36,14 +55,6 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
-
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>maven-releases</name>
-            <url>http://nexus.gugumall.cn:8081/repository/maven-releases/</url>
-        </repository>
-    </distributionManagement>
 
     <dependencies>
         <!-- 框架模块 -->
@@ -421,16 +432,9 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
-        <!--Gemini-->
-<!--        <dependency>-->
-<!--            <groupId>com.google.genai</groupId>-->
-<!--            <artifactId>google-genai</artifactId>-->
-<!--            <version>1.51.0</version>-->
-<!--        </dependency>-->
     </dependencies>
     <build>
-        <finalName>j</finalName>
+        <finalName>jframework</finalName>
         <resources>
             <resource>
                 <directory>${basedir}/src/main/java</directory>
@@ -498,30 +502,93 @@
                 </excludes>
             </resource>-->
         </resources>
+
         <plugins>
-            <!-- 要将源码放上去，需要加入这个插件 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.2.1</version>
-                <configuration>
-                    <attach>true</attach>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>compile</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>17</source>
                     <target>17</target>
+                </configuration>
+            </plugin>
+
+            <!-- 生成源码 JAR -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- 生成 Javadoc JAR -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.4.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <quiet>true</quiet>
+                    <doclint>none</doclint>  <!-- 避免 Javadoc 检查过严导致失败 -->
+                </configuration>
+            </plugin>
+
+            <!-- GPG 签名插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.2.8</version>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>org.bouncycastle</groupId>
+                        <artifactId>bcpg-jdk18on</artifactId>
+                        <version>1.82</version>
+                    </dependency>
+                </dependencies>
+
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- 可执行 gpg 程序的路径（通常默认即可） -->
+                    <executable>D:\Programs\GnuPG\bin\gpg.exe</executable>
+
+                    <!-- 启用 gpg-agent 来处理密码，可以避免弹窗问题 -->
+                    <passphraseServerId>gpg.passphrase</passphraseServerId>
+                    <useAgent>true</useAgent>
+                </configuration>
+            </plugin>
+
+            <!-- Sonatype Central Portal 发布插件（核心！） -->
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.4.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <!-- 认证信息在 settings.xml 中以 server 标签配置 -->
+                    <!-- Central Portal 的认证 ID 必须与下面 server id 一致 -->
                 </configuration>
             </plugin>
 
