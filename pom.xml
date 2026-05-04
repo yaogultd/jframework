@@ -59,7 +59,7 @@
     <dependencies>
         <!-- 框架模块 -->
         <dependency>
-            <groupId>com.jframework</groupId>
+            <groupId>io.github.yaogultd</groupId>
             <artifactId>jframework-utils</artifactId>
             <version>${jframework-utils.version}</version>
         </dependency>
