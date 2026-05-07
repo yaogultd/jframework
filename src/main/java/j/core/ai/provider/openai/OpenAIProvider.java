@@ -414,7 +414,8 @@ public class OpenAIProvider extends Provider {
         StringBuffer params=new StringBuffer();
         params.append("{\"model\":\""+model.getId()+"\"");
         params.append(",\"messages\":[");
-        params.append("{\"role\": \"" + message.getWho() + "\", \"content\": \"" + JUtilJSON.convertChars(message.getContent()) + "\"}");
+        params.append("{\"role\": \"system\", \"content\": \"将翻译结果以如下格式的JSON输出：{\"translation\":\"The translation result.\"}");
+        params.append(",{\"role\": \"" + message.getWho() + "\", \"content\": \"" + JUtilJSON.convertChars(message.getContent()) + "\"}");
         params.append("]");
 
         params.append("}");
@@ -432,10 +433,23 @@ public class OpenAIProvider extends Provider {
         JSONObject respMessage=JUtilJSON.object(choice, "message");
         if(respMessage==null) return null;
 
+        //content
+        /**
+         * {
+         *   "candidates": [
+         *     "SpaceX's R&D iteration speed is extremely fast."
+         *   ]
+         * }
+         */
+        String content = JUtilJSON.string(respMessage, "content");
+        JSONObject contentJson = JUtilJSON.parse(content);
+        String translation = JUtilJSON.string(contentJson, "translation");
+        if(!JUtilString.isBlank(translation)) content = translation;
+
         Message response=new Message(null, conversation);
         response.setId(JUtilUUID.genUUID());
         response.setWho(Message.WHO_AI);
-        response.setContent(JUtilJSON.string(respMessage, "content"));
+        response.setContent(content);
         response.setTime(SysUtil.getNow());
 
         response.setInteractionId(JUtilJSON.string(responseJson, "id"));

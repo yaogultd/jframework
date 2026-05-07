@@ -559,8 +559,8 @@ public class GeminiProvider extends Provider {
 
         Map<String, Object> structuredOutputSettings = conf.getStructuredOutputSettings();
         if(structuredOutputSettings.containsKey("responseMimeType") && structuredOutputSettings.containsKey("responseJsonSchema")){
-            params.append(", \"responseMimeType\": \""+structuredOutputSettings.get("responseMimeType")+"\"");
-            params.append(", \"responseJsonSchema\": "+structuredOutputSettings.get("responseJsonSchema"));
+            params.append(", \"responseMimeType\": \"application/json\"");
+            params.append(", \"responseJsonSchema\": {\"type\":\"object\",\"properties\":{\"translation\":{\"type\":\"string\",\"description\":\"The translation result.\"}},\"required\":[\"translation\"]}");
         }
 
         params.append("}");
@@ -583,8 +583,18 @@ public class GeminiProvider extends Provider {
         JSONArray parts=JUtilJSON.array(content, "parts");
         if(parts==null || parts.length()==0) return null;
 
+        //text
+        /**
+         * {
+         *   "translation": "SpaceX's R&D iteration speed is extremely fast."
+         * }
+         */
         String text = JUtilJSON.string(parts.getJSONObject(0), "text");
         if(JUtilString.isBlank(text)) return null;
+
+        JSONObject contentJson = JUtilJSON.parse(text);
+        String translation = JUtilJSON.string(contentJson, "translation");
+        if(!JUtilString.isBlank(translation)) text = translation;
 
         Message response=new Message(null, conversation);
         response.setId(JUtilUUID.genUUID());
