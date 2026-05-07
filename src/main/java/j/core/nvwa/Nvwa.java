@@ -85,7 +85,7 @@ public class Nvwa implements Runnable, Consumer {
 				if (path.endsWith("!")) path = path.substring(0, path.length() - 1);
 
 				//初始化仅扫描框架资源
-				jarEntries.add("j/");
+				jarEntries.add("j/core");
 				jarEntries.add("com/pt");
 				jarEntries.add("config/");
 				jarEntries.add("I18N/");
@@ -580,7 +580,7 @@ public class Nvwa implements Runnable, Consumer {
 			objects.put(obj.getCode(), obj);
 			return true;
 		}catch (Exception e){
-			log.log("Nvwa load class "+_resource.getClazz()+" failed!", Logger.LEVEL_FATAL);
+			System.out.println("Nvwa load class "+_resource.getClazz()+" failed!");
 			log.log(e, Logger.LEVEL_FATAL);
 			return true;
 		}

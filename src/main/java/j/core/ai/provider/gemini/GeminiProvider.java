@@ -298,6 +298,10 @@ public class GeminiProvider extends Provider {
                 return deepResearch(conversation, conf, model, messageList, url);
             }
 
+            if(conversationType==Conversation.TYPE_TRANSLATE){
+                return translate(conversation, conf, model, messageList.get(0), url);
+            }
+
             return generateText(conversation, conf, model, messageList, url);
             //根据会话类型调用不同API end
         }catch (Exception e){
@@ -527,6 +531,83 @@ public class GeminiProvider extends Provider {
 
         response.setSuccess(true);
         conversation.saveMessage(response);
+        return response;
+    }
+
+    /**
+     *
+     * @param conversation
+     * @param conf
+     * @param model
+     * @param message
+     * @param url
+     * @return
+     * @throws Exception
+     */
+    private Message translate(Conversation conversation, ConversationConf conf, Model model, Message message, String url) throws Exception{
+        message.setContent(JUtilString.replaceAll(Conversation.getWords(conversation.getConf().chatLanguage(), "translateTo"),
+                "{translateTo}",
+                conversation.getConf().translateTo()) + message.getContent());
+
+        StringBuffer params=new StringBuffer();
+        params.append("{\"contents\": [");
+        params.append(message.toRequestBody4Gemini());
+        params.append("]");
+
+        params.append(", \"generationConfig\": {");
+        params.append("\"thinkingConfig\": {\"thinkingLevel\": \"low\"}");
+
+        Map<String, Object> structuredOutputSettings = conf.getStructuredOutputSettings();
+        if(structuredOutputSettings.containsKey("responseMimeType") && structuredOutputSettings.containsKey("responseJsonSchema")){
+            params.append(", \"responseMimeType\": \""+structuredOutputSettings.get("responseMimeType")+"\"");
+            params.append(", \"responseJsonSchema\": "+structuredOutputSettings.get("responseJsonSchema"));
+        }
+
+        params.append("}");
+
+        params.append("}");
+
+        log.log("params -> \r\n"+params, -1);
+        String responseText = postRequest(url, params.toString());
+
+        log.log("response -> \r\n"+responseText, -1);
+        JSONObject responseJson = JUtilJSON.parse(responseText);
+
+        JSONArray choices=JUtilJSON.array(responseJson, "candidates");
+        if(choices==null || choices.length()==0) return null;
+
+        JSONObject choice=JUtilJSON.get(choices, 0);
+        JSONObject content=JUtilJSON.object(choice, "content");
+        if(content==null) return null;
+
+        JSONArray parts=JUtilJSON.array(content, "parts");
+        if(parts==null || parts.length()==0) return null;
+
+        String text = JUtilJSON.string(parts.getJSONObject(0), "text");
+        if(JUtilString.isBlank(text)) return null;
+
+        Message response=new Message(null, conversation);
+        response.setId(JUtilUUID.genUUID());
+        response.setWho(Message.WHO_AI);
+        response.setContent(text);
+        response.setTime(SysUtil.getNow());
+
+        response.setInteractionId(JUtilJSON.string(responseJson, "id"));
+        response.setConvType(message.getConvType());
+        response.setProviderId(this.getProviderId());
+        response.setModelId(model.getId());
+
+        JSONObject usage=JUtilJSON.object(responseJson, "usageMetadata");
+        if(usage!=null){
+            Integer totalTokenCount=JUtilJSON.getInteger(usage, "totalTokenCount");
+            response.setTokens(totalTokenCount==null ? 0 : totalTokenCount);
+        }
+
+        //将对话回合的两条信息设置为成功（才会入库）
+        message.setSuccess(true);
+        response.setSuccess(true);
+        conversation.saveMessage(response);
+
         return response;
     }
 }

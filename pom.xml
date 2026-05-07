@@ -7,7 +7,7 @@
     <!-- 1. 项目坐标（必须与你在 Central Portal 中验证的 groupId 一致） -->
     <groupId>io.github.yaogultd</groupId>
     <artifactId>jframework</artifactId>
-    <version>2026.01</version>
+    <version>2026.04</version>
     <packaging>jar</packaging>
 
     <!-- 2. 项目信息（中央仓库要求提供） -->
@@ -60,7 +60,7 @@
         <dependency>
             <groupId>io.github.yaogultd</groupId>
             <artifactId>jframework-utils</artifactId>
-            <version>2026.01</version>
+            <version>2026.03</version>
         </dependency>
 
         <!-- undertow容器-->

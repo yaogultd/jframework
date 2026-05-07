@@ -312,8 +312,9 @@ public class BeanGenerator {
 				classContent+="\t\treturn new j.core.type.Result(true, \"1\", \"\");\r\n";
 				classContent+="\t}\r\n\r\n";
 
-				classContent+="\tpublic void fromJson(org.json.JSONObject json) throws Exception{\r\n";
+				classContent+="\tpublic "+clsName+" fromJson(org.json.JSONObject json) throws Exception{\r\n";
 				classContent+="\t\tj.util.JUtilBean.json2Bean(this, json);\r\n";
+				classContent+="\t\treturn this;\r\n";
 				classContent+="\t}\r\n\r\n";
 
 				classContent+="\tpublic String toString(){\r\n";

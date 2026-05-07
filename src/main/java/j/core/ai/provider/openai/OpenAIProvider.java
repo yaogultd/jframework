@@ -8,8 +8,6 @@ import j.core.common.JArray;
 import j.core.hp.asynchronous.Waitings;
 import j.core.sys.SysUtil;
 import j.core.web.handler.JResponse;
-import j.http.JHttp;
-import j.http.JHttpContext;
 import j.log.Logger;
 import j.util.ConcurrentMap;
 import j.util.JUtilJSON;
@@ -21,7 +19,6 @@ import okhttp3.Response;
 import okhttp3.sse.EventSource;
 import okhttp3.sse.EventSourceListener;
 import okhttp3.sse.EventSources;
-import org.apache.http.client.HttpClient;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -288,10 +285,10 @@ public class OpenAIProvider extends Provider {
             String url = "";
             if(conversationType==Conversation.TYPE_TRANSLATE){
                 url=JUtilString.appendUrl(this.getParameter("provider"), "v1/chat/completions");
-                if(model==null || !model.canBeUsedFor(conversationType)) modelId=this.getParameter("model-chat");
+                if(model==null || !model.canBeUsedFor(conversationType)) modelId=this.getParameter("model-translate");
             }else if(conversationType==Conversation.TYPE_CHAT){
                 url=JUtilString.appendUrl(this.getParameter("provider"), "v1/chat/completions");
-                if(model==null || !model.canBeUsedFor(conversationType)) modelId=this.getParameter("model-translate");
+                if(model==null || !model.canBeUsedFor(conversationType)) modelId=this.getParameter("model-chat");
             }else{
                 url=JUtilString.appendUrl(this.getParameter("provider"), "v1/chat/completions");
                 if(model==null || !model.canBeUsedFor(conversationType)) modelId=this.getParameter("model-gen-text");
@@ -322,6 +319,10 @@ public class OpenAIProvider extends Provider {
 
             //打印调试日志
             log.log("request "+url+", model -> "+modelId, -1);
+
+            if(conversationType==Conversation.TYPE_TRANSLATE){
+                return translate(conversation, conf, model, messageList.get(0), url);
+            }
 
             //根据会话类型调用不同API
             return generateText(conversation, conf, model, messageList, url);
@@ -392,6 +393,67 @@ public class OpenAIProvider extends Provider {
 
         response.setSuccess(true);
         conversation.saveMessage(response);
+        return response;
+    }
+
+    /**
+     *
+     * @param conversation
+     * @param conf
+     * @param model
+     * @param message
+     * @param url
+     * @return
+     * @throws Exception
+     */
+    private Message translate(Conversation conversation, ConversationConf conf, Model model, Message message, String url) throws Exception{
+        message.setContent(JUtilString.replaceAll(Conversation.getWords(conversation.getConf().chatLanguage(), "translateTo"),
+                "{translateTo}",
+                conversation.getConf().translateTo()) + message.getContent());
+
+        StringBuffer params=new StringBuffer();
+        params.append("{\"model\":\""+model.getId()+"\"");
+        params.append(",\"messages\":[");
+        params.append("{\"role\": \"" + message.getWho() + "\", \"content\": \"" + JUtilJSON.convertChars(message.getContent()) + "\"}");
+        params.append("]");
+
+        params.append("}");
+
+        log.log("params -> \r\n"+params, -1);
+        String responseText = postRequest(url, params.toString());
+
+        log.log("translate response -> \r\n"+responseText, -1);
+        JSONObject responseJson = JUtilJSON.parse(responseText);
+
+        JSONArray choices=JUtilJSON.array(responseJson, "choices");
+        if(choices==null || choices.length()==0) return null;
+
+        JSONObject choice=JUtilJSON.get(choices, 0);
+        JSONObject respMessage=JUtilJSON.object(choice, "message");
+        if(respMessage==null) return null;
+
+        Message response=new Message(null, conversation);
+        response.setId(JUtilUUID.genUUID());
+        response.setWho(Message.WHO_AI);
+        response.setContent(JUtilJSON.string(respMessage, "content"));
+        response.setTime(SysUtil.getNow());
+
+        response.setInteractionId(JUtilJSON.string(responseJson, "id"));
+        response.setConvType(message.getConvType());
+        response.setProviderId(this.getProviderId());
+        response.setModelId(model.getId());
+
+        JSONObject usage=JUtilJSON.object(responseJson, "usage");
+        if(usage!=null){
+            Integer completion_tokens=JUtilJSON.getInteger(usage, "completion_tokens");
+            response.setTokens(completion_tokens==null ? 0 : completion_tokens);
+        }
+
+        //将对话回合的两条信息设置为成功（才会入库）
+        message.setSuccess(true);
+        response.setSuccess(true);
+        conversation.saveMessage(response);
+
         return response;
     }
 }

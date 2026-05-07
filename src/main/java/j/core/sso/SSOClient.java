@@ -771,6 +771,7 @@ public class SSOClient extends JHandler implements Runnable{
 			}
 
 
+			log.log("logout server resp => " +resp, -1);
 			JSONObject _resp=JUtilJSON.parse(resp);
 			String success=JUtilJSON.string(_resp, "success");
 
