@@ -3,8 +3,6 @@ package j.core.ai;
 import io.modelcontextprotocol.server.McpSyncServerExchange;
 import j.core.ai.plugin.Plugin;
 import j.core.ai.plugin.Plugins;
-import j.core.ai.provider.openai.OpenAIProvider;
-import j.core.hp.asynchronous.Waitings;
 import j.core.nvwa.NvwaAncestor;
 import j.core.sys.SysUtil;
 import j.core.web.handler.JResponse;
@@ -12,9 +10,6 @@ import j.log.Logger;
 import j.util.JUtilString;
 import j.util.JUtilUUID;
 import okhttp3.*;
-import okhttp3.sse.EventSource;
-import okhttp3.sse.EventSourceListener;
-import okhttp3.sse.EventSources;
 
 import java.util.ArrayList;
 import java.util.List;

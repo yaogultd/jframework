@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.net.Proxy;
-import java.net.URI;
 
 @Getter
 @Setter

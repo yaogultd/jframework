@@ -86,7 +86,7 @@ public class GeminiProvider extends Provider{
     @Override
     protected JResponse readStream(Request request, ConversationConf conf, McpSyncServerExchange exchange){
         String uuid = JUtilUUID.genUUID();
-        List<String> segments = new ArrayList<>();
+        //List<String> segments = new ArrayList<>();
         EventSource.Factory factory = EventSources.createFactory(client);
 
         factory.newEventSource(request, new EventSourceListener() {
@@ -108,24 +108,65 @@ public class GeminiProvider extends Provider{
                  *   "event_type": "interaction.start"
                  * }
                  */
+
+                /**
+                 *
+                 /**
+                 * {
+                 *   "index": 0,
+                 *   "delta": {
+                 *     "content": {
+                 *       "text": "***Generating research plan***\n\nTo best answer your request, I'm starting by constructing a comprehensive research plan. This will outline the key areas I need to investigate and the strategy I'll use to connect them.",
+                 *       "type": "text"
+                 *     },
+                 *     "type": "thought_summary"
+                 *   },
+                 *   "event_id": "v1_MF90aG91Z2h0XzE1",
+                 *   "event_type": "content.delta"
+                 * }
+                 */
                 log.log("Event type: " + type, -1);
                 log.log("Data: " + data, -1);
-                segments.add(data);
+                //segments.add(data);
 
-                if("interaction.start".equals(type)){
+                JSONObject event = JUtilJSON.parse(data);
+                String eventType = JUtilJSON.string(event, "interaction.start");
+
+                StringBuffer formattedEvent = new StringBuffer();
+                formattedEvent.append("{");
+
+                if("interaction.start".equals(eventType)){
                     JSONObject jsonObject = JUtilJSON.parse(data);
                     JSONObject interaction = JUtilJSON.object(jsonObject, "interaction");
                     String interactionId = JUtilJSON.string(interaction, "id");
                     log.log("interactionId: " + interactionId, -1);
                     conf.set("interactionId", interactionId);
+
+                    formattedEvent.append("\"event_type\": \"thought.start\"");
+                    formattedEvent.append(",\"event_data\" :{\"text\": \"开始思考\"}");
+                }else if("content.delta".equals(eventType)){
+                    JSONObject delta = JUtilJSON.object(event, "delta");
+                    if(delta != null){
+                        eventType = JUtilJSON.string(delta, "type");
+                        if("thought_summary".equals(eventType)){
+                            String text = JUtilJSON.string(JUtilJSON.object(delta, "content"), "text");
+                            formattedEvent.append("\"event_type\": \"thought\"");
+                            formattedEvent.append(",\"event_data\" :{\"text\": \""+JUtilJSON.convertChars(text)+"\"}");
+                        }
+                    }
+                }else if ("interaction.complete".equals(eventType)){
+                    formattedEvent.append("\"event_type\": \"thought.complete\"");
+                    formattedEvent.append(",\"event_data\" :{\"text\": \"思考完成\"}");
                 }
 
+                formattedEvent.append("}");
+
                 // 使用 loggingNotification 模拟实时发送数据片段
-                if(exchange != null){
+                if(exchange != null && formattedEvent.length() > 2){
                     exchange.loggingNotification(new io.modelcontextprotocol.spec.McpSchema.LoggingMessageNotification(
                             io.modelcontextprotocol.spec.McpSchema.LoggingLevel.INFO,
                             "stream",
-                            data
+                            formattedEvent.toString()
                     ));
                 }
             }
@@ -134,7 +175,7 @@ public class GeminiProvider extends Provider{
             public void onClosed(EventSource eventSource) {
                 log.log("SSE connection closed", -1);
                 JResponse response = new JResponse(false, "1", "");
-                response.putData("segments", segments);
+                //response.putData("segments", segments);
                 Waitings.setResult(uuid, response);
             }
 

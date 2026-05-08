@@ -88,7 +88,7 @@ public class SSOClient extends JHandler implements Runnable{
 	}
 
 	/**
-	 *
+	 * @deprecated
 	 * @param session
 	 * @return
 	 */
@@ -107,14 +107,17 @@ public class SSOClient extends JHandler implements Runnable{
 	public static User getCurrentUser(HttpServletRequest request){
 		String accessToken=Onlines.getAccessToken(request);
 		if(JUtilString.isBlank(accessToken)) return null;
-		User user=users.get(accessToken);
-		if(user==null){
-			String uaId = Onlines.getUaId(request);
-			if(JUtilString.isBlank(uaId)) return null;
+		return users.get(accessToken);
+	}
 
-
-		}
-		return user;
+	/**
+	 *
+	 * @param accessToken
+	 * @return
+	 */
+	public static User getCurrentUser(String accessToken){
+		if(JUtilString.isBlank(accessToken)) return null;
+		return users.get(accessToken);
 	}
 
 	/**
