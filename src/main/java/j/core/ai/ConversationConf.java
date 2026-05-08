@@ -2,6 +2,7 @@ package j.core.ai;
 
 import io.modelcontextprotocol.server.McpSyncServerExchange;
 import j.util.JUtilBean;
+import j.util.JUtilJSON;
 import j.util.JUtilString;
 import lombok.Getter;
 import lombok.Setter;
@@ -47,9 +48,6 @@ public class ConversationConf {
     //输出token限制
     private int outTokenLimit=0;
 
-    //上下文一直包含的第一条消息
-    private Message firstMessageAlwaysIncluded;
-
     //输出格式化设置
     private Map<String, Object> structuredOutputSettings = new HashMap<>();
 
@@ -61,7 +59,16 @@ public class ConversationConf {
     }
 
     public ConversationConf(JSONObject conf){
-        this.conf.putAll(JUtilBean.jsonPlain2Map(conf));
+        Integer _inputTokenLimit = JUtilJSON.getInteger(conf, "inputTokenLimit");
+        if(_inputTokenLimit != null) this.inputTokenLimit = _inputTokenLimit;
+
+        Integer _outTokenLimit = JUtilJSON.getInteger(conf, "outTokenLimit");
+        if(_outTokenLimit != null) this.outTokenLimit = _outTokenLimit;
+
+        JSONObject _conf = JUtilJSON.object(conf, "conf");
+        if(_conf != null){
+            this.conf.putAll(JUtilBean.jsonPlain2Map(_conf));
+        }
     }
 
     public ConversationConf(Model model){
@@ -75,7 +82,6 @@ public class ConversationConf {
         s.append("{\"inputTokenLimit\": " + inputTokenLimit);
         s.append(",\"inputMessagesLimit\": " + inputMessagesLimit);
         s.append(",\"outTokenLimit\": " + outTokenLimit);
-        s.append(",\"firstMessageAlwaysIncluded\": ").append(JUtilBean.bean2Json(firstMessageAlwaysIncluded));
         s.append(",\"conf\": ").append(JUtilBean.map2Json(conf));
         s.append("}");
         return s.toString();
@@ -118,7 +124,7 @@ public class ConversationConf {
      * @return
      */
     public String translateTo(){
-        String value = this.get(CONF_CHAT_LANGUAGE);
+        String value = this.get(CONF_TRANSLATE_TO);
         return JUtilString.isBlank(value) ? Conversation.LANGUAGE_EN : value;
     }
 

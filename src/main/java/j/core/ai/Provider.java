@@ -385,6 +385,7 @@ public abstract class Provider extends NvwaAncestor {
         for(Message message : messageList){
             if(!JUtilString.isBlank(message.getPluginId())){
                 plugin = Plugins.getPlugin(message.getPluginId());
+                //log.log("message pluginId => "+message.getPluginId()+" => "+plugin, -1);
                 if(plugin != null){
                     List<Message> handled = plugin.inputHandle(conversation, conf, provider, message);
                     if(handled != null && !handled.isEmpty()) inputs.addAll(handled);

@@ -1,6 +1,5 @@
 package j.core.ai;
 
-import j.core.ai.provider.openai.OpenAIProvider;
 import j.core.annotation.description.ClassDescription;
 import j.core.sys.SysUtil;
 import j.util.JUtilBean;
@@ -12,6 +11,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @ClassDescription(author = "盖聂大叔（肖炯）",
@@ -19,7 +19,7 @@ import java.util.Map;
         description = "AI会话消息")
 @Getter
 @Setter
-public class Message implements Serializable {
+public class Message implements Serializable, Cloneable {
     public static final String WHO_SYSTEM="system";
     public static final String WHO_USER="user";
     public static final String WHO_AI="assistant";
@@ -133,6 +133,21 @@ public class Message implements Serializable {
         this.contentType = contentType;
     }
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        try {
+            return super.clone();
+        }catch(Exception e) {}
+        return null;
+    }
+
+    public Message cloneMe() {
+        try {
+            return (Message)this.clone();
+        }catch(Exception e) {}
+        return null;
+    }
+
     /**
      *
      * @param key
@@ -199,6 +214,24 @@ public class Message implements Serializable {
         s.append("{\"role\": \""+(Message.WHO_AI.equals(this.who) ? Message.WHO_MODEL : this.who)+"\"");
         s.append(",\"parts\": [");
         s.append("{\"text\": \""+JUtilJSON.convertChars(this.content)+"\"}");
+        s.append("]");
+        s.append("}");
+        return s.toString();
+    }
+
+    /**
+     *
+     * @param messageList 消息列表（每条消息的role都是一样的）
+     * @return
+     */
+    public String toRequestBody4Gemini(List<Message> messageList){
+        StringBuffer s=new StringBuffer();
+        s.append("{\"role\": \""+(Message.WHO_AI.equals(this.who) ? Message.WHO_MODEL : this.who)+"\"");
+        s.append(",\"parts\": [");
+        for(int i=0; i<messageList.size(); i++){
+            if(i>0) s.append(",");
+            s.append("{\"text\": \""+JUtilJSON.convertChars(this.content)+"\"}");
+        }
         s.append("]");
         s.append("}");
         return s.toString();

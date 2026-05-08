@@ -2,6 +2,7 @@ package j.core.ai.provider.gemini;
 
 import io.modelcontextprotocol.server.McpSyncServerExchange;
 import j.core.ai.*;
+import j.core.ai.scenario.translate.TransationResults;
 import j.core.annotation.configuration.Properties;
 import j.core.annotation.nvwa.Nvwa;
 import j.core.hp.asynchronous.Waitings;
@@ -27,7 +28,7 @@ import java.util.Map;
 
 @Nvwa
 @Properties(path = "gemini.properties")
-public class GeminiProvider extends Provider {
+public class GeminiProvider extends Provider{
     private static Logger log=Logger.create(GeminiProvider.class);//日志输出
 
     @Override
@@ -291,7 +292,7 @@ public class GeminiProvider extends Provider {
             }
 
             //打印调试日志
-            log.log("request "+url+", model -> "+modelId, -1);
+            log.log("request "+url+", model -> "+modelId+", conversationType -> "+conversationType, -1);
 
             //根据会话类型调用不同API
             if(conversationType==Conversation.TYPE_DEEP_RESEARCH){
@@ -299,7 +300,7 @@ public class GeminiProvider extends Provider {
             }
 
             if(conversationType==Conversation.TYPE_TRANSLATE){
-                return translate(conversation, conf, model, messageList.get(0), url);
+                return translate(conversation, conf, model, messageList, url);
             }
 
             return generateText(conversation, conf, model, messageList, url);
@@ -539,38 +540,38 @@ public class GeminiProvider extends Provider {
      * @param conversation
      * @param conf
      * @param model
-     * @param message
+     * @param messageList
      * @param url
      * @return
      * @throws Exception
      */
-    private Message translate(Conversation conversation, ConversationConf conf, Model model, Message message, String url) throws Exception{
-        message.setContent(JUtilString.replaceAll(Conversation.getWords(conversation.getConf().chatLanguage(), "translateTo"),
+    private Message translate(Conversation conversation, ConversationConf conf, Model model, List<Message> messageList, String url) throws Exception{
+        String command = JUtilString.replaceAll(Conversation.getWords(Conversation.LANGUAGE_EN, "translateTo"),
                 "{translateTo}",
-                conversation.getConf().translateTo()) + message.getContent());
+                conf.translateTo());
 
         StringBuffer params=new StringBuffer();
         params.append("{\"contents\": [");
-        params.append(message.toRequestBody4Gemini());
+        params.append(messageList.get(0).toRequestBody4Gemini(messageList));
         params.append("]");
 
         params.append(", \"generationConfig\": {");
         params.append("\"thinkingConfig\": {\"thinkingLevel\": \"low\"}");
 
-        Map<String, Object> structuredOutputSettings = conf.getStructuredOutputSettings();
-        if(structuredOutputSettings.containsKey("responseMimeType") && structuredOutputSettings.containsKey("responseJsonSchema")){
+        //Map<String, Object> structuredOutputSettings = conf.getStructuredOutputSettings();
+        //if(structuredOutputSettings.containsKey("responseMimeType") && structuredOutputSettings.containsKey("responseJsonSchema")){
             params.append(", \"responseMimeType\": \"application/json\"");
-            params.append(", \"responseJsonSchema\": {\"type\":\"object\",\"properties\":{\"translation\":{\"type\":\"string\",\"description\":\"The translation result.\"}},\"required\":[\"translation\"]}");
-        }
+            params.append(", \"responseJsonSchema\": {\"type\":\"object\",\"properties\":{\"translations\":{\"type\":\"array\",\"description\":\"Translation results that correspond with each input text.\",\"items\":{\"type\":\"string\",\"description\":\"Translation result of one of the input texts.\"}}},\"required\":[\"translations\"]}");
+        //}
 
         params.append("}");
 
         params.append("}");
 
-        log.log("params -> \r\n"+params, -1);
+        log.log("translate params -> \r\n"+params, -1);
         String responseText = postRequest(url, params.toString());
 
-        log.log("response -> \r\n"+responseText, -1);
+        log.log("translate response -> \r\n"+responseText, -1);
         JSONObject responseJson = JUtilJSON.parse(responseText);
 
         JSONArray choices=JUtilJSON.array(responseJson, "candidates");
@@ -586,24 +587,33 @@ public class GeminiProvider extends Provider {
         //text
         /**
          * {
-         *   "translation": "SpaceX's R&D iteration speed is extremely fast."
+         *   "translations": [
+         *     "SpaceX's R&D iteration speed is extremely fast.",
+         *     "I am very good at butterfly stroke.",
+         *     "This is a beautiful small mountain village."
+         *   ]
          * }
          */
         String text = JUtilJSON.string(parts.getJSONObject(0), "text");
         if(JUtilString.isBlank(text)) return null;
 
         JSONObject contentJson = JUtilJSON.parse(text);
-        String translation = JUtilJSON.string(contentJson, "translation");
-        if(!JUtilString.isBlank(translation)) text = translation;
+        JSONArray translations = JUtilJSON.array(contentJson, "translations");
+        if(translations==null || translations.length() != messageList.size()){
+            log.log("翻译失败（没有结果或结果数与需翻译文本数不一样 -> \r\n"+choices, -1);
+            return null;
+        }
+
+        TransationResults results = new TransationResults(translations);
 
         Message response=new Message(null, conversation);
         response.setId(JUtilUUID.genUUID());
         response.setWho(Message.WHO_AI);
-        response.setContent(text);
+        response.setContent(results.toString());
         response.setTime(SysUtil.getNow());
 
         response.setInteractionId(JUtilJSON.string(responseJson, "id"));
-        response.setConvType(message.getConvType());
+        response.setConvType(messageList.get(0).getConvType());
         response.setProviderId(this.getProviderId());
         response.setModelId(model.getId());
 
@@ -614,7 +624,9 @@ public class GeminiProvider extends Provider {
         }
 
         //将对话回合的两条信息设置为成功（才会入库）
-        message.setSuccess(true);
+        for(Message message : messageList) {
+            message.setSuccess(true);
+        }
         response.setSuccess(true);
         conversation.saveMessage(response);
 

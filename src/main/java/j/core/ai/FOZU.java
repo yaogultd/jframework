@@ -262,6 +262,8 @@ public class FOZU implements Runnable{
 
                 dao.beginTransaction();
 
+                //log.log("保存会话 => " + (c.getConf()==null?"{}":c.getConf().toString()), -1);
+
                 JaiConversation conv=new JaiConversation();
                 conv.setConvId(c.getId());
                 conv.setBeingId(c.getBeingId());

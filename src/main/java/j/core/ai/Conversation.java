@@ -74,63 +74,63 @@ public class Conversation extends NvwaAncestor {
         words.put(LANGUAGE_EN+".expertIn", ", and expert in {expertIn}");
         words.put(LANGUAGE_EN+".speak", ", please speak English");
         words.put(LANGUAGE_EN+".subject", ", let's talk about the subject: {subject}");
-        words.put(LANGUAGE_EN+".translateTo", "Translate the following text to {translateTo}: ");
+        words.put(LANGUAGE_EN+".translateTo", "Translate all the following messages into {translateTo}");
 
         words.put(LANGUAGE_CH, "你是一个名字叫“{name}”的AI助理");
         words.put(LANGUAGE_CH+".traits", "，你的性格特点是“{traits}”");
         words.put(LANGUAGE_CH+".expertIn", "，你的专长是“{expertIn}”");
         words.put(LANGUAGE_CH+".speak", "，请用中文和我交谈。");
         words.put(LANGUAGE_CH+".subject", "，让我们讨论一下如下话题：{subject}");
-        words.put(LANGUAGE_CH+".translateTo", "将以下文本翻译成{translateTo}：");
+        words.put(LANGUAGE_CH+".translateTo", "将以下所有消息翻译成{translateTo}");
 
         words.put(LANGUAGE_FR, "Vous êtes un assistant ai avec le nom {name}");
         words.put(LANGUAGE_FR+".traits", ", vous êtes {traits}");
         words.put(LANGUAGE_FR+".expertIn", ", vous êtes un expert du {expertIn}");
         words.put(LANGUAGE_FR+".speak", ", Veuillez parler français");
         words.put(LANGUAGE_FR+".subject", ", parlons du sujet: {subject}");
-        words.put(LANGUAGE_FR+".translateTo", "Traduire le texte suivant en {translateTo}: ");
+        words.put(LANGUAGE_FR+".translateTo", "Traduisez tous les messages suivants en {translateTo}");
 
         words.put(LANGUAGE_IT, "Sei un assistente utile con nome {nome}");
         words.put(LANGUAGE_IT+".traits", ", sei {traits}");
         words.put(LANGUAGE_IT+".expertIn", ", ed esperto di {expertIn}");
         words.put(LANGUAGE_IT+".speak", ", Si prega di parlare italiano");
         words.put(LANGUAGE_IT+".subject", ", Parliamo dell'argomento: {subject}");
-        words.put(LANGUAGE_IT+".translateTo", "Traduci il seguente testo in {translateTo}: ");
+        words.put(LANGUAGE_IT+".translateTo", "Traduci tutti i seguenti messaggi in {translateTo}");
 
         words.put(LANGUAGE_RU, "Ты правая рука по имени {name}");
         words.put(LANGUAGE_RU+".traits", ", Ты {traits}");
         words.put(LANGUAGE_RU+".expertIn", ", Ты хорошо {expertIn}");
         words.put(LANGUAGE_RU+".speak", ", Говорите по - русски.");
         words.put(LANGUAGE_RU+".subject", ", Давайте поговорим об этом: {subject}");
-        words.put(LANGUAGE_RU+".translateTo", "Перевод следующих текстов на {translateTo}: ");
+        words.put(LANGUAGE_RU+".translateTo", "Переведите все следующие сообщения на {translateTo}");
 
         words.put(LANGUAGE_GE, "Du bist ein hilfreicher Assistent mit Namen {name}");
         words.put(LANGUAGE_GE+".traits", ", du bist {traits}");
         words.put(LANGUAGE_GE+".expertIn", ", und Experten im {expertIn}");
         words.put(LANGUAGE_GE+".speak", ", bitte sprechen Sie Deutsch");
         words.put(LANGUAGE_GE+".subject", ", lass uns über das Thema sprechen: {subject}");
-        words.put(LANGUAGE_GE+".translateTo", "Übersetze folgenden Text ins {translateTo}: ");
+        words.put(LANGUAGE_GE+".translateTo", "Übersetzen Sie alle folgenden Nachrichten ins {translateTo}");
 
         words.put(LANGUAGE_SP, "Eres una mano derecha llamada name}");
         words.put(LANGUAGE_SP+".traits", ", eres {traits}");
         words.put(LANGUAGE_SP+".expertIn", ", experto en {expertIn}");
         words.put(LANGUAGE_SP+".speak", ", Habla español, por favor.");
         words.put(LANGUAGE_SP+".subject", ", Hablemos de este tema: {subject}");
-        words.put(LANGUAGE_SP+".translateTo", "Traducir el siguiente texto al {translateTo}: ");
+        words.put(LANGUAGE_SP+".translateTo", "Traduce todos los siguientes mensajes al {translateTo}");
 
         words.put(LANGUAGE_JP, "あなたは{name}という名前の役に立つアシスタントです");
         words.put(LANGUAGE_JP+".traits", ", あなたは{traits}だ");
         words.put(LANGUAGE_JP+".expertIn", ", {expertIn}の専門家");
         words.put(LANGUAGE_JP+".speak", ", 日本語で話してください");
         words.put(LANGUAGE_JP+".subject", ", 主題について話しましょう: {subject}");
-        words.put(LANGUAGE_JP+".translateTo", "次のテキストを {translateTo} に翻訳します:");
+        words.put(LANGUAGE_JP+".translateTo", "以下のすべてのメッセージを{translateTo}に翻訳してください");
 
         words.put(LANGUAGE_KR, "당신은 {name}이라는 이름의 도움이 되는 조수입니다.");
         words.put(LANGUAGE_KR+".traits", ", 너는 {traits}");
         words.put(LANGUAGE_KR+".expertIn", ", 그리고 {expertIn}의 전문가");
         words.put(LANGUAGE_KR+".speak", ", 한국어로 말해주세요");
         words.put(LANGUAGE_KR+".subject", ", {subject}라는 주제에 대해 이야기해 봅시다.");
-        words.put(LANGUAGE_KR+".translateTo", "다음 텍스트를 {translateTo}로 번역하세요:");
+        words.put(LANGUAGE_KR+".translateTo", "아래 모든 메시지를 {translateTo}로 번역하세요");
     }
 
     /**
@@ -140,7 +140,9 @@ public class Conversation extends NvwaAncestor {
      * @return
      */
     public static String getWords(String language, String usedFor){
-        return JUtilString.isBlank(usedFor) ? words.get(language) : words.get(language+"."+usedFor);
+        String text = JUtilString.isBlank(usedFor) ? words.get(language) : words.get(language+"."+usedFor);
+        if(JUtilString.isBlank(text)) text = JUtilString.isBlank(usedFor) ? words.get(Conversation.LANGUAGE_EN) : words.get(Conversation.LANGUAGE_EN+"."+usedFor);
+        return text;
     }
 
     //所属Being

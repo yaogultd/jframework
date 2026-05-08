@@ -34,6 +34,7 @@ public class Plugins {
      * @param plugin
      */
     public static void registerPlugin(Plugin plugin){
+        log.log("ai register plugin => " + plugin.getPluginId(), -1);
         plugins.put(plugin.getPluginId(), plugin);
     }
 

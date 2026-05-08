@@ -2,6 +2,7 @@ package j.core.ai.provider.deepseek;
 
 import io.modelcontextprotocol.server.McpSyncServerExchange;
 import j.core.ai.*;
+import j.core.ai.scenario.translate.TransationResults;
 import j.core.annotation.configuration.Properties;
 import j.core.annotation.nvwa.Nvwa;
 import j.core.common.JArray;
@@ -220,7 +221,7 @@ public class DeepSeekProvider extends Provider {
             log.log("request "+url+", model -> "+modelId, -1);
 
             if(conversationType==Conversation.TYPE_TRANSLATE){
-                return translate(conversation, conf, model, messageList.get(0), url);
+                return translate(conversation, conf, model, messageList, url);
             }
 
             //根据会话类型调用不同API
@@ -290,9 +291,9 @@ public class DeepSeekProvider extends Provider {
         for(Message message : messageList) {
             message.setSuccess(true);
         }
-
         response.setSuccess(true);
         conversation.saveMessage(response);
+
         return response;
     }
 
@@ -301,21 +302,27 @@ public class DeepSeekProvider extends Provider {
      * @param conversation
      * @param conf
      * @param model
-     * @param message
+     * @param messageList
      * @param url
      * @return
      * @throws Exception
      */
-    private Message translate(Conversation conversation, ConversationConf conf, Model model, Message message, String url) throws Exception{
-        message.setContent(JUtilString.replaceAll(Conversation.getWords(conversation.getConf().chatLanguage(), "translateTo"),
+    private Message translate(Conversation conversation, ConversationConf conf, Model model, List<Message> messageList, String url) throws Exception{
+        String command = JUtilString.replaceAll(Conversation.getWords(Conversation.LANGUAGE_EN, "translateTo"),
                 "{translateTo}",
-                conversation.getConf().translateTo()) + message.getContent());
+                conf.translateTo());
 
         StringBuffer params=new StringBuffer();
         params.append("{\"model\":\""+model.getId()+"\"");
         params.append(",\"messages\":[");
-        params.append("{\"role\": \"system\", \"content\": \"将翻译结果以如下格式的JSON输出：{\"translation\":\"The translation result.\"}");
-        params.append(",{\"role\": \"" + message.getWho() + "\", \"content\": \"" + JUtilJSON.convertChars(message.getContent()) + "\"}");
+        params.append("{\"role\": \"system\", \"content\": \"").append(command).append(", Output the translations in JSON format as follows:{\\\"translations\\\":[\\\"The translation result of the first texts.\\\",\\\"The translation result of the secend text.\\\",\\\"......\\\",\\\"The translation result of the Nth text.\\\"]}\"}");
+
+        for(int i=0; i<messageList.size(); i++){
+            params.append(",");
+            Message message = messageList.get(i);
+            params.append(message.toRequestBody4OpenAi());
+        }
+
         params.append("]");
 
         params.append("}");
@@ -327,33 +334,44 @@ public class DeepSeekProvider extends Provider {
         JSONObject responseJson = JUtilJSON.parse(responseText);
 
         JSONArray choices=JUtilJSON.array(responseJson, "choices");
-        if(choices==null || choices.length()==0) return null;
+        if(choices==null || choices.length()==0){
+            return null;
+        }
 
         JSONObject choice=JUtilJSON.get(choices, 0);
         JSONObject respMessage=JUtilJSON.object(choice, "message");
-        if(respMessage==null) return null;
+        if(respMessage==null){
+            return null;
+        }
 
         //content
         /**
          * {
-         *   "candidates": [
-         *     "SpaceX's R&D iteration speed is extremely fast."
+         *   "translations": [
+         *     "SpaceX's R&D iteration speed is extremely fast.",
+         *     "I am very good at butterfly stroke.",
+         *     "This is a beautiful small mountain village."
          *   ]
          * }
          */
         String content = JUtilJSON.string(respMessage, "content");
         JSONObject contentJson = JUtilJSON.parse(content);
-        String translation = JUtilJSON.string(contentJson, "translation");
-        if(!JUtilString.isBlank(translation)) content = translation;
+        JSONArray translations = JUtilJSON.array(contentJson, "translations");
+        if(translations==null || translations.length() != messageList.size()){
+            log.log("翻译失败（没有结果或结果数与需翻译文本数不一样 -> \r\n"+choices, -1);
+            return null;
+        }
+
+        TransationResults results = new TransationResults(translations);
 
         Message response=new Message(null, conversation);
         response.setId(JUtilUUID.genUUID());
         response.setWho(Message.WHO_AI);
-        response.setContent(content);
+        response.setContent(results.toString());
         response.setTime(SysUtil.getNow());
 
         response.setInteractionId(JUtilJSON.string(responseJson, "id"));
-        response.setConvType(message.getConvType());
+        response.setConvType(messageList.get(0).getConvType());
         response.setProviderId(this.getProviderId());
         response.setModelId(model.getId());
 
@@ -364,7 +382,9 @@ public class DeepSeekProvider extends Provider {
         }
 
         //将对话回合的两条信息设置为成功（才会入库）
-        message.setSuccess(true);
+        for(Message message : messageList) {
+            message.setSuccess(true);
+        }
         response.setSuccess(true);
         conversation.saveMessage(response);
 

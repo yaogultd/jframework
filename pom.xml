@@ -60,7 +60,7 @@
         <dependency>
             <groupId>io.github.yaogultd</groupId>
             <artifactId>jframework-utils</artifactId>
-            <version>2026.03</version>
+            <version>2026.04</version>
         </dependency>
 
         <!-- undertow容器-->
