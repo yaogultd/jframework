@@ -135,6 +135,8 @@ public class GeminiProvider extends Provider{
                 StringBuffer formattedEvent = new StringBuffer();
                 formattedEvent.append("{");
 
+                String taskId = conf.get("taskId");
+
                 if("interaction.start".equals(eventType)){
                     JSONObject jsonObject = JUtilJSON.parse(data);
                     JSONObject interaction = JUtilJSON.object(jsonObject, "interaction");
@@ -143,7 +145,11 @@ public class GeminiProvider extends Provider{
                     conf.set("interactionId", interactionId);
 
                     formattedEvent.append("\"event_type\": \"thought.start\"");
-                    formattedEvent.append(",\"event_data\" :{\"text\": \"开始思考\"}");
+                    formattedEvent.append(",\"event_data\" :{\"text\": \"开始思考\"");
+                    if(!JUtilString.isBlank(taskId)) {
+                        formattedEvent.append(",\"taskId\": \""+taskId+"\"");
+                    }
+                    formattedEvent.append("}");
                 }else if("content.delta".equals(eventType)){
                     JSONObject delta = JUtilJSON.object(event, "delta");
                     if(delta != null){
@@ -151,14 +157,21 @@ public class GeminiProvider extends Provider{
                         if("thought_summary".equals(eventType)){
                             String text = JUtilJSON.string(JUtilJSON.object(delta, "content"), "text");
                             formattedEvent.append("\"event_type\": \"thought\"");
-                            formattedEvent.append(",\"event_data\" :{\"text\": \""+JUtilJSON.convertChars(text)+"\"}");
+                            formattedEvent.append(",\"event_data\" :{\"text\": \""+JUtilJSON.convertChars(text)+"\"");
+                            if(!JUtilString.isBlank(taskId)) {
+                                formattedEvent.append(",\"taskId\": \""+taskId+"\"");
+                            }
+                            formattedEvent.append("}");
                         }
                     }
                 }else if ("interaction.complete".equals(eventType)){
                     formattedEvent.append("\"event_type\": \"thought.complete\"");
-                    formattedEvent.append(",\"event_data\" :{\"text\": \"思考完成\"}");
+                    formattedEvent.append(",\"event_data\" :{\"text\": \"思考完成\"");
+                    if(!JUtilString.isBlank(taskId)) {
+                        formattedEvent.append(",\"taskId\": \""+taskId+"\"");
+                    }
+                    formattedEvent.append("}");
                 }
-
                 formattedEvent.append("}");
 
                 // 使用 loggingNotification 模拟实时发送数据片段
