@@ -12,7 +12,7 @@ import java.util.Map;
 
 
 public class McpRouter {
-    private static Logger log=Logger.create(McpGatewayClient.class);//日志输出
+    private static Logger log=Logger.create(McpRouter.class);//日志输出
 
     public McpRouter() {
 

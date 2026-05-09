@@ -1,4 +1,4 @@
-package j.core.web.mcp;
+package j.core.web.mcp.client;
 
 import j.util.JUtilBean;
 
