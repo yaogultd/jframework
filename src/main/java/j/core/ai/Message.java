@@ -236,4 +236,23 @@ public class Message implements Serializable, Cloneable {
         s.append("}");
         return s.toString();
     }
+
+    /**
+     *
+     * @param messageList 消息列表（每条消息的role都是一样的）
+     * @return
+     */
+    public String toRequestBody4Gemini(List<Message> messageList, String command){
+        StringBuffer s=new StringBuffer();
+        s.append("{\"role\": \""+(Message.WHO_AI.equals(this.who) ? Message.WHO_MODEL : this.who)+"\"");
+        s.append(",\"parts\": [");
+        s.append("{\"text\": \""+JUtilJSON.convertChars(command)+"\"}");
+        for(int i=0; i<messageList.size(); i++){
+            s.append(",");
+            s.append("{\"text\": \""+JUtilJSON.convertChars(messageList.get(i).getContent())+"\"}");
+        }
+        s.append("]");
+        s.append("}");
+        return s.toString();
+    }
 }

@@ -606,7 +606,7 @@ public class GeminiProvider extends Provider{
 
         StringBuffer params=new StringBuffer();
         params.append("{\"contents\": [");
-        params.append(messageList.get(0).toRequestBody4Gemini(messageList));
+        params.append(messageList.get(0).toRequestBody4Gemini(messageList, command));
         params.append("]");
 
         params.append(", \"generationConfig\": {");
