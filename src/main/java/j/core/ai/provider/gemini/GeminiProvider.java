@@ -130,7 +130,7 @@ public class GeminiProvider extends Provider{
                 //segments.add(data);
 
                 JSONObject event = JUtilJSON.parse(data);
-                String eventType = JUtilJSON.string(event, "interaction.start");
+                String eventType = JUtilJSON.string(event, "event_type");
 
                 StringBuffer formattedEvent = new StringBuffer();
                 formattedEvent.append("{");
