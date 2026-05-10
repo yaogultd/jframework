@@ -443,7 +443,7 @@ public class Nvwa implements Runnable, Consumer {
 			scanned=true;
 
 			//启动系统
-			System.out.println("Nvwa starter is "+starterName);
+			//System.out.println("Nvwa starter is "+starterName);
 			if(starterName!=null){
 				try{
 					NvwaStarter starter=(NvwaStarter)Class.forName(starterName).getDeclaredConstructor().newInstance();

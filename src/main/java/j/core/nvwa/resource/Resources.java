@@ -228,7 +228,7 @@ public class Resources {
         //故相关模块查找资源时，应优先获取绝对路径下的（jar包内资源为相对路径）
         for(int i=0; i<this.paths.size(); i++){
             File file=new File(this.paths.get(i));
-            System.out.println("scanning resources in "+file.getAbsolutePath()+" for "+JArray.toString(this.types, ","));
+            //System.out.println("scanning resources in "+file.getAbsolutePath()+" for "+JArray.toString(this.types, ","));
             scan(file);
         }
     }

@@ -144,7 +144,9 @@ public class JResponse{
 			Object o = data.getValue();
 			
 			s.append("\""+data.getKey()+"\":");
-			if(o instanceof String){
+			if(o==null){
+				s.append("null");
+			}else if((o instanceof String) || (o instanceof StringBuffer) || (o instanceof StringBuilder)){
 				if(JUtilJSON.isJson(o.toString()) != null) {//本身是json串
 					s.append(o);
 				}else {
