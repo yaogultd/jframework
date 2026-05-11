@@ -312,12 +312,12 @@ public class DeepSeekProvider extends Provider {
                 "{translateTo}",
                 conf.translateTo());
 
-        command += ", output the translation in JSON format as follows:{\"translation\": \"The translation result of the text\"}";
+        command += ", output the translation in JSON format as follows: {\"translation\": \"The translation result of the text\"}";
 
         StringBuffer params=new StringBuffer();
         params.append("{\"model\":\""+model.getId()+"\"");
         params.append(",\"messages\":[");
-        params.append("{\"role\": \"system\", \"content\": \"").append(command);
+        params.append("{\"role\": \"system\", \"content\": \"").append(JUtilJSON.convertChars(command)).append("\"");
 
         for(int i=0; i<messageList.size(); i++){
             params.append(",");

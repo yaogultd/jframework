@@ -449,6 +449,8 @@ public class GeminiProvider extends Provider{
         }
 
         if(!"completed".equals(interactionStatus)){
+            log.log("response result(not completed) -> \r\n"+responseText, -1);
+
             Message response=new Message(null, conversation.getId(), conversation.getBeingId());
             response.setId(JUtilUUID.genUUID());
             response.setWho(Message.WHO_SYSTEM);
@@ -604,7 +606,7 @@ public class GeminiProvider extends Provider{
                 "{translateTo}",
                 conf.translateTo());
 
-        command += ", output the translation in JSON format as follows:{\"translation\": \"The translation result of the text\"}";
+        command += ", output the translation in JSON format as follows: {\"translation\": \"The translation result of the text\"}";
 
         StringBuffer params=new StringBuffer();
         params.append("{\"contents\": [");
