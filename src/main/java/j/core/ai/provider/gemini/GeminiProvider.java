@@ -604,6 +604,8 @@ public class GeminiProvider extends Provider{
                 "{translateTo}",
                 conf.translateTo());
 
+        command += ", output the translation in JSON format as follows:{\"translation\": \"The translation result of the text\"}";
+
         StringBuffer params=new StringBuffer();
         params.append("{\"contents\": [");
         params.append(messageList.get(0).toRequestBody4Gemini(messageList, command));
@@ -615,7 +617,7 @@ public class GeminiProvider extends Provider{
         //Map<String, Object> structuredOutputSettings = conf.getStructuredOutputSettings();
         //if(structuredOutputSettings.containsKey("responseMimeType") && structuredOutputSettings.containsKey("responseJsonSchema")){
             params.append(", \"responseMimeType\": \"application/json\"");
-            params.append(", \"responseJsonSchema\": {\"type\":\"object\",\"properties\":{\"translations\":{\"type\":\"array\",\"description\":\"Translation results that correspond with each input text.\",\"items\":{\"type\":\"string\",\"description\":\"Translation result of one of the input texts.\"}}},\"required\":[\"translations\"]}");
+            params.append(", \"responseJsonSchema\": {\"type\":\"object\",\"properties\":{\"translation\":{\"type\":\"string\",\"description\":\"Translation result of the text.\"}},\"required\":[\"translation\"]}");
         //}
 
         params.append("}");
@@ -639,26 +641,18 @@ public class GeminiProvider extends Provider{
         if(parts==null || parts.length()==0) return null;
 
         //text
-        /**
-         * {
-         *   "translations": [
-         *     "SpaceX's R&D iteration speed is extremely fast.",
-         *     "I am very good at butterfly stroke.",
-         *     "This is a beautiful small mountain village."
-         *   ]
-         * }
-         */
         String text = JUtilJSON.string(parts.getJSONObject(0), "text");
         if(JUtilString.isBlank(text)) return null;
 
         JSONObject contentJson = JUtilJSON.parse(text);
-        JSONArray translations = JUtilJSON.array(contentJson, "translations");
-        if(translations==null || translations.length() != messageList.size()){
-            log.log("翻译失败（没有结果或结果数与需翻译文本数不一样 -> \r\n"+choices, -1);
+        String translation = JUtilJSON.string(contentJson, "translation");
+        if(JUtilString.isBlank(translation)){
+            log.log("翻译失败 -> \r\n"+content, -1);
             return null;
         }
 
-        TransationResults results = new TransationResults(translations);
+        TransationResults results = new TransationResults();
+        results.addResult(translation);
 
         Message response=new Message(null, conversation);
         response.setId(JUtilUUID.genUUID());

@@ -74,7 +74,7 @@ public class Conversation extends NvwaAncestor {
         words.put(LANGUAGE_EN+".expertIn", ", and expert in {expertIn}");
         words.put(LANGUAGE_EN+".speak", ", please speak English");
         words.put(LANGUAGE_EN+".subject", ", let's talk about the subject: {subject}");
-        words.put(LANGUAGE_EN+".translateTo", "Translate all the following messages into {translateTo}");
+        words.put(LANGUAGE_EN+".translateTo", "Translate the following text into {translateTo}");
 
         words.put(LANGUAGE_CH, "你是一个名字叫“{name}”的AI助理");
         words.put(LANGUAGE_CH+".traits", "，你的性格特点是“{traits}”");

@@ -312,10 +312,12 @@ public class DeepSeekProvider extends Provider {
                 "{translateTo}",
                 conf.translateTo());
 
+        command += ", output the translation in JSON format as follows:{\"translation\": \"The translation result of the text\"}";
+
         StringBuffer params=new StringBuffer();
         params.append("{\"model\":\""+model.getId()+"\"");
         params.append(",\"messages\":[");
-        params.append("{\"role\": \"system\", \"content\": \"").append(command).append(", Output the translations in JSON format as follows:{\\\"translations\\\":[\\\"The translation result of the first texts.\\\",\\\"The translation result of the secend text.\\\",\\\"......\\\",\\\"The translation result of the Nth text.\\\"]}\"}");
+        params.append("{\"role\": \"system\", \"content\": \"").append(command);
 
         for(int i=0; i<messageList.size(); i++){
             params.append(",");
@@ -345,24 +347,16 @@ public class DeepSeekProvider extends Provider {
         }
 
         //content
-        /**
-         * {
-         *   "translations": [
-         *     "SpaceX's R&D iteration speed is extremely fast.",
-         *     "I am very good at butterfly stroke.",
-         *     "This is a beautiful small mountain village."
-         *   ]
-         * }
-         */
         String content = JUtilJSON.string(respMessage, "content");
         JSONObject contentJson = JUtilJSON.parse(content);
-        JSONArray translations = JUtilJSON.array(contentJson, "translations");
-        if(translations==null || translations.length() != messageList.size()){
-            log.log("翻译失败（没有结果或结果数与需翻译文本数不一样 -> \r\n"+choices, -1);
+        String translation = JUtilJSON.string(contentJson, "translation");
+        if(JUtilString.isBlank(translation)){
+            log.log("翻译失败 -> \r\n"+content, -1);
             return null;
         }
 
-        TransationResults results = new TransationResults(translations);
+        TransationResults results = new TransationResults();
+        results.addResult(translation);
 
         Message response=new Message(null, conversation);
         response.setId(JUtilUUID.genUUID());

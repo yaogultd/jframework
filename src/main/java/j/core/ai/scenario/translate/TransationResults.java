@@ -21,6 +21,14 @@ public class TransationResults {
 
     /**
      *
+     * @param translation
+     */
+    public void addResult(String translation){
+        this.translations.add(translation);
+    }
+
+    /**
+     *
      * @param jsonArray
      */
     public TransationResults(JSONArray jsonArray){
@@ -56,13 +64,5 @@ public class TransationResults {
     @Override
     public String toString(){
         return JUtilBean.bean2Json(this);
-    }
-
-    public static void main(String[] args) throws Exception{
-        String s="[\"SpaceX's R&D iteration speed is extremely fast.\",\"I am very good at butterfly stroke.\",\"This is a beautiful small mountain village.\"]";
-        TransationResults results = new TransationResults();
-        results.fromJson(s);
-
-        System.out.println(results);
     }
 }
