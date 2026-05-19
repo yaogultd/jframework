@@ -644,9 +644,16 @@ public class GeminiProvider extends Provider{
 
         //text
         String text = JUtilJSON.string(parts.getJSONObject(0), "text");
-        if(JUtilString.isBlank(text)) return null;
+        if(JUtilString.isBlank(text)){
+            log.log("翻译失败 -> no content", -1);
+            return null;
+        }
 
-        JSONObject contentJson = JUtilJSON.parse(text);
+        text = text.trim();
+        if(!text.startsWith("{")) text = "{" + text;
+        if(!text.endsWith("}")) text += "}";
+
+        JSONObject contentJson = JUtilJSON.parse(text, true);
         String translation = JUtilJSON.string(contentJson, "translation");
         if(JUtilString.isBlank(translation)){
             log.log("翻译失败 -> \r\n"+content, -1);

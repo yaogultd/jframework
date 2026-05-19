@@ -284,7 +284,34 @@ public class OpenAIProvider extends Provider {
 
             //根据会话类型来确定请求API的url和使用哪个模型
             String url = "";
-            if(conversationType==Conversation.TYPE_TRANSLATE){
+            if(conversationType==Conversation.TYPE_DEEP_RESEARCH){
+                McpSyncServerExchange exchange = conf.getExchange();
+
+                // 使用 loggingNotification 模拟实时发送数据片段
+                if(exchange != null){
+                    String taskId = conf.get("taskId");
+
+                    StringBuffer formattedEvent = new StringBuffer();
+                    formattedEvent.append("{");
+
+                    formattedEvent.append("\"event_type\": \"thought.start\"");
+                    formattedEvent.append(",\"event_data\" :{\"text\": \"开始思考\"");
+                    if(!JUtilString.isBlank(taskId)) {
+                        formattedEvent.append(",\"taskId\": \""+taskId+"\"");
+                    }
+                    formattedEvent.append("}");
+                    formattedEvent.append("}");
+
+                    exchange.loggingNotification(new io.modelcontextprotocol.spec.McpSchema.LoggingMessageNotification(
+                            io.modelcontextprotocol.spec.McpSchema.LoggingLevel.INFO,
+                            "stream",
+                            formattedEvent.toString()
+                    ));
+                }
+
+                url=JUtilString.appendUrl(this.getParameter("provider"), "v1/chat/completions");
+                if(model==null || !model.canBeUsedFor(conversationType)) modelId=this.getParameter("model-gen-text");
+            }else if(conversationType==Conversation.TYPE_TRANSLATE){
                 url=JUtilString.appendUrl(this.getParameter("provider"), "v1/chat/completions");
                 if(model==null || !model.canBeUsedFor(conversationType)) modelId=this.getParameter("model-translate");
             }else if(conversationType==Conversation.TYPE_CHAT){
@@ -417,7 +444,7 @@ public class OpenAIProvider extends Provider {
         StringBuffer params=new StringBuffer();
         params.append("{\"model\":\""+model.getId()+"\"");
         params.append(",\"messages\":[");
-        params.append("{\"role\": \"system\", \"content\": \"").append(JUtilJSON.convertChars(command)).append("\"");
+        params.append("{\"role\": \"system\", \"content\": \"").append(JUtilJSON.convertChars(command)).append("\"}");
 
         for(int i=0; i<messageList.size(); i++){
             params.append(",");
@@ -448,7 +475,16 @@ public class OpenAIProvider extends Provider {
 
         //content
         String content = JUtilJSON.string(respMessage, "content");
-        JSONObject contentJson = JUtilJSON.parse(content);
+        if(JUtilString.isBlank(content)){
+            log.log("翻译失败 -> no content", -1);
+            return null;
+        }
+
+        content = content.trim();
+        if(!content.startsWith("{")) content = "{" + content;
+        if(!content.endsWith("}")) content += "}";
+
+        JSONObject contentJson = JUtilJSON.parse(content, true);
         String translation = JUtilJSON.string(contentJson, "translation");
         if(JUtilString.isBlank(translation)){
             log.log("翻译失败 -> \r\n"+content, -1);

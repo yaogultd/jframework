@@ -112,7 +112,11 @@ public abstract class Provider extends NvwaAncestor {
     protected String getRequest(String url) throws Exception{
         Request request = this.initGet(url);
         Response response = client.newCall(request).execute();
-        return response.isSuccessful() ? response.body().string() : "";
+        String s = response.isSuccessful() ? response.body().string() : "";
+        try{
+            response.close();
+        }catch (Exception e){}
+        return s;
     }
 
     /**
@@ -125,7 +129,11 @@ public abstract class Provider extends NvwaAncestor {
     protected String postRequest(String url, String json) throws Exception{
         Request request = this.initPost(url, json);
         Response response = client.newCall(request).execute();
-        return response.isSuccessful() ? response.body().string() : "";
+        String s = response.isSuccessful() ? response.body().string() : "";
+        try{
+            response.close();
+        }catch (Exception e){}
+        return s;
     }
 
     /**
@@ -390,6 +398,23 @@ public abstract class Provider extends NvwaAncestor {
             }
         }
 
+        //引用型Message
+        for(int i=0; i<messageList.size(); i++){
+            Message message = messageList.get(i);
+            if(Message.CONTENT_TYPE_REF == message.getContentType()){
+                Message refMessage = conversation.getMessage(message.getContent());
+                if(refMessage == null){
+                    messageList.remove(i);
+                    i--;
+                }
+
+                message.setContent(refMessage.getContent());
+                message.setWho(refMessage.getWho());
+                message.setTime(refMessage.getTime());
+                message.setContentType(refMessage.getContentType());
+            }
+        }
+
         if(inputs==null || inputs.isEmpty()){
             Message response=new Message(null, conversation.getId(), conversation.getBeingId());
             response.setId(JUtilUUID.genUUID());
@@ -400,12 +425,22 @@ public abstract class Provider extends NvwaAncestor {
             return response;
         }
 
+        //哪些输入messages的响应
+        List<String> responseForMessageIds = new ArrayList<>();
+        for(int i=0; i<messageList.size(); i++) {
+            Message message = messageList.get(i);
+            responseForMessageIds.add(message.getId());
+        }
+
         log.log("provider => " + provider.getProviderId(), -1);
         Message response = provider.say(conversation, conf, modelId, pluginId, inputs, thinking, onlineSearch);
         if(response != null){
             plugin = Plugins.getPlugin(pluginId);
             if(plugin != null) response = plugin.outputHandle(conversation, conf, provider, inputs, response);
         }
+
+        //哪些输入messages的响应
+        if(response != null) response.setResponseForMessageIds(responseForMessageIds);
 
         return response;
     }

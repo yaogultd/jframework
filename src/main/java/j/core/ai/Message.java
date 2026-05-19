@@ -10,6 +10,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,6 +36,7 @@ public class Message implements Serializable, Cloneable {
     public static final int CONTENT_TYPE_DOC_WORD=33;
     public static final int CONTENT_TYPE_DOC_EXCEL=34;
     public static final int CONTENT_TYPE_DOC_CSV=35;
+    public static final int CONTENT_TYPE_REF=99;//引用，指向另一条Message
 
     public static final String STORE_TYPE_PLAIN="000";
     public static final String STORE_TYPE_BASE64="001";
@@ -65,6 +67,7 @@ public class Message implements Serializable, Cloneable {
     protected boolean helloMessage=false;//是否初始会话信息
     protected boolean byeMessage=false;//是否结束会话信息
     protected boolean stored=false;//是否已入库
+    protected List<String> responseForMessageIds = new ArrayList<>();
 
     /**
      *

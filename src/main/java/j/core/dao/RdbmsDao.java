@@ -1815,7 +1815,8 @@ public class RdbmsDao implements DAO {
 					String colName=((Column)cols.get(i)).colName;
 					String fieldName=((Column)cols.get(i)).fieldName;
 
-					if(JUtilString.containIgnoreCase(conditionKeys,colName)||mirror.getDb().ignoreWhileUpdateViaBean(tableName, colName)){
+					if(JUtilString.containIgnoreCase(conditionKeys,colName)
+							||mirror.getDb().ignoreWhileUpdateViaBean(tableName, colName)){
 						continue;
 					}
 
@@ -1849,7 +1850,12 @@ public class RdbmsDao implements DAO {
 						paras[0]=Integer.valueOf(index);
 						paras[1]=value;
 					}
-					Methods.set(colType,factory.getColIsGzip(tableName,colName),pstmt,paras);
+					try{
+						Methods.set(colType,factory.getColIsGzip(tableName,colName),pstmt,paras);
+					}catch (Exception e){
+						log.log("Methods.set error => " + tableName + " => " + colName, Logger.LEVEL_ERROR);
+						log.log(e, Logger.LEVEL_ERROR);
+					}
 					index++;
 				}
 
