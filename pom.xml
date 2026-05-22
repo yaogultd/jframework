@@ -459,10 +459,12 @@
                     <include>**/*.dll</include>
                     <include>**/*.dat</include>
                     <include>**/*.xml</include>
+                    <include>**/*.json</include>
                     <include>*.so</include>
                     <include>*.dll</include>
                     <include>*.dat</include>
-                    <include>**/*.xml</include>
+                    <include>*.xml</include>
+                    <include>*.json</include>
                 </includes>
                 <excludes>
                     <exclude>static/</exclude>

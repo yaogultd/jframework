@@ -1,0 +1,6603 @@
+[
+  {
+    "bcp47Code": "aa",
+    "englishName": "Afar",
+    "chineseName": "阿法尔语",
+    "nativeName": "阿法尔语",
+    "primaryRegions": [
+      "DJ"
+    ]
+  },
+  {
+    "bcp47Code": "ab",
+    "englishName": "Abkhazian",
+    "chineseName": "阿布哈西亚语",
+    "nativeName": "Аԥсшәа",
+    "primaryRegions": [
+      "GE"
+    ]
+  },
+  {
+    "bcp47Code": "ace",
+    "englishName": "Acehnese",
+    "chineseName": "亚齐语",
+    "nativeName": "亚齐语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ach",
+    "englishName": "Acoli",
+    "chineseName": "阿乔利语",
+    "nativeName": "阿乔利语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ada",
+    "englishName": "Adangme",
+    "chineseName": "阿当梅语",
+    "nativeName": "阿当梅语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ady",
+    "englishName": "Adyghe",
+    "chineseName": "阿迪格语",
+    "nativeName": "阿迪格语",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "ae",
+    "englishName": "Avestan",
+    "chineseName": "阿维斯塔语",
+    "nativeName": "阿维斯塔语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "aeb",
+    "englishName": "Tunisian Arabic",
+    "chineseName": "Tunisian Arabic",
+    "nativeName": "Tunisian Arabic",
+    "primaryRegions": [
+      "TN"
+    ]
+  },
+  {
+    "bcp47Code": "af",
+    "englishName": "Afrikaans",
+    "chineseName": "南非荷兰语",
+    "nativeName": "Afrikaans",
+    "primaryRegions": [
+      "NA",
+      "ZA"
+    ]
+  },
+  {
+    "bcp47Code": "afh",
+    "englishName": "Afrihili",
+    "chineseName": "阿弗里希利语",
+    "nativeName": "阿弗里希利语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "agq",
+    "englishName": "Aghem",
+    "chineseName": "亚罕语",
+    "nativeName": "Aghem",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ain",
+    "englishName": "Ainu",
+    "chineseName": "阿伊努语",
+    "nativeName": "阿伊努语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ak",
+    "englishName": "Akan",
+    "chineseName": "阿肯语",
+    "nativeName": "Akan",
+    "primaryRegions": [
+      "GH"
+    ]
+  },
+  {
+    "bcp47Code": "akk",
+    "englishName": "Akkadian",
+    "chineseName": "阿卡德语",
+    "nativeName": "阿卡德语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "akz",
+    "englishName": "Alabama",
+    "chineseName": "Alabama",
+    "nativeName": "Alabama",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ale",
+    "englishName": "Aleut",
+    "chineseName": "阿留申语",
+    "nativeName": "阿留申语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "aln",
+    "englishName": "Gheg Albanian",
+    "chineseName": "Gheg Albanian",
+    "nativeName": "Gheg Albanian",
+    "primaryRegions": [
+      "XK"
+    ]
+  },
+  {
+    "bcp47Code": "alt",
+    "englishName": "Southern Altai",
+    "chineseName": "南阿尔泰语",
+    "nativeName": "南阿尔泰语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "am",
+    "englishName": "Amharic",
+    "chineseName": "阿姆哈拉语",
+    "nativeName": "አማርኛ",
+    "primaryRegions": [
+      "ET"
+    ]
+  },
+  {
+    "bcp47Code": "an",
+    "englishName": "Aragonese",
+    "chineseName": "阿拉贡语",
+    "nativeName": "aragonés",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ang",
+    "englishName": "Old English",
+    "chineseName": "古英语",
+    "nativeName": "古英语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ann",
+    "englishName": "Obolo",
+    "chineseName": "奥博洛语",
+    "nativeName": "Obolo",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "anp",
+    "englishName": "Angika",
+    "chineseName": "昂加语",
+    "nativeName": "昂加语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ar",
+    "englishName": "Arabic",
+    "chineseName": "阿拉伯语",
+    "nativeName": "العربية",
+    "primaryRegions": [
+      "AE",
+      "BH",
+      "DJ",
+      "DZ",
+      "EG",
+      "EH",
+      "ER",
+      "IL",
+      "IQ",
+      "JO",
+      "KM",
+      "KW",
+      "LB",
+      "LY",
+      "MA",
+      "MR",
+      "OM",
+      "PS",
+      "QA",
+      "SA",
+      "SD",
+      "SO",
+      "SS",
+      "SY",
+      "TD",
+      "TN",
+      "YE"
+    ]
+  },
+  {
+    "bcp47Code": "ar-001",
+    "englishName": "Arabic (world)",
+    "chineseName": "阿拉伯语(世界)",
+    "nativeName": "العربية",
+    "primaryRegions": [
+      "AE",
+      "BH",
+      "DJ",
+      "DZ",
+      "EG",
+      "EH",
+      "ER",
+      "IL",
+      "IQ",
+      "JO",
+      "KM",
+      "KW",
+      "LB",
+      "LY",
+      "MA",
+      "MR",
+      "OM",
+      "PS",
+      "QA",
+      "SA",
+      "SD",
+      "SO",
+      "SS",
+      "SY",
+      "TD",
+      "TN",
+      "YE"
+    ]
+  },
+  {
+    "bcp47Code": "arc",
+    "englishName": "Aramaic",
+    "chineseName": "阿拉米语",
+    "nativeName": "阿拉米语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "arn",
+    "englishName": "Mapuche",
+    "chineseName": "马普切语",
+    "nativeName": "Mapudungun",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "aro",
+    "englishName": "Araona",
+    "chineseName": "Araona",
+    "nativeName": "Araona",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "arp",
+    "englishName": "Arapaho",
+    "chineseName": "阿拉帕霍语",
+    "nativeName": "阿拉帕霍语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "arq",
+    "englishName": "Algerian Arabic",
+    "chineseName": "Algerian Arabic",
+    "nativeName": "Algerian Arabic",
+    "primaryRegions": [
+      "DZ"
+    ]
+  },
+  {
+    "bcp47Code": "ars",
+    "englishName": "Najdi Arabic",
+    "chineseName": "纳吉迪阿拉伯语",
+    "nativeName": "纳吉迪阿拉伯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "arw",
+    "englishName": "Arawak",
+    "chineseName": "阿拉瓦克语",
+    "nativeName": "阿拉瓦克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ary",
+    "englishName": "Moroccan Arabic",
+    "chineseName": "Moroccan Arabic",
+    "nativeName": "Moroccan Arabic",
+    "primaryRegions": [
+      "MA"
+    ]
+  },
+  {
+    "bcp47Code": "arz",
+    "englishName": "Egyptian Arabic",
+    "chineseName": "Egyptian Arabic",
+    "nativeName": "Egyptian Arabic",
+    "primaryRegions": [
+      "EG"
+    ]
+  },
+  {
+    "bcp47Code": "as",
+    "englishName": "Assamese",
+    "chineseName": "阿萨姆语",
+    "nativeName": "অসমীয়া",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "asa",
+    "englishName": "Asu",
+    "chineseName": "帕雷语",
+    "nativeName": "Kipare",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ase",
+    "englishName": "American Sign Language",
+    "chineseName": "American Sign Language",
+    "nativeName": "American Sign Language",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ast",
+    "englishName": "Asturian",
+    "chineseName": "阿斯图里亚斯语",
+    "nativeName": "asturianu",
+    "primaryRegions": [
+      "ES"
+    ]
+  },
+  {
+    "bcp47Code": "atj",
+    "englishName": "Atikamekw",
+    "chineseName": "阿提卡米克语",
+    "nativeName": "阿提卡米克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "av",
+    "englishName": "Avaric",
+    "chineseName": "阿瓦尔语",
+    "nativeName": "阿瓦尔语",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "avk",
+    "englishName": "Kotava",
+    "chineseName": "Kotava",
+    "nativeName": "Kotava",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "awa",
+    "englishName": "Awadhi",
+    "chineseName": "阿瓦德语",
+    "nativeName": "阿瓦德语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ay",
+    "englishName": "Aymara",
+    "chineseName": "艾马拉语",
+    "nativeName": "艾马拉语",
+    "primaryRegions": [
+      "BO"
+    ]
+  },
+  {
+    "bcp47Code": "az",
+    "englishName": "Azerbaijani",
+    "chineseName": "阿塞拜疆语",
+    "nativeName": "azərbaycan",
+    "primaryRegions": [
+      "AZ"
+    ]
+  },
+  {
+    "bcp47Code": "ba",
+    "englishName": "Bashkir",
+    "chineseName": "巴什基尔语",
+    "nativeName": "башҡорт",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "bal",
+    "englishName": "Baluchi",
+    "chineseName": "俾路支语",
+    "nativeName": "بلۆچی",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ban",
+    "englishName": "Balinese",
+    "chineseName": "巴厘语",
+    "nativeName": "巴厘语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bar",
+    "englishName": "Bavarian",
+    "chineseName": "Bavarian",
+    "nativeName": "Bavarian",
+    "primaryRegions": [
+      "AT",
+      "DE"
+    ]
+  },
+  {
+    "bcp47Code": "bas",
+    "englishName": "Basaa",
+    "chineseName": "巴萨语",
+    "nativeName": "Ɓàsàa",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bax",
+    "englishName": "Bamun",
+    "chineseName": "巴姆穆语",
+    "nativeName": "巴姆穆语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bbc",
+    "englishName": "Batak Toba",
+    "chineseName": "Batak Toba",
+    "nativeName": "Batak Toba",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bbj",
+    "englishName": "Ghomala",
+    "chineseName": "戈马拉语",
+    "nativeName": "戈马拉语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "be",
+    "englishName": "Belarusian",
+    "chineseName": "白俄罗斯语",
+    "nativeName": "беларуская",
+    "primaryRegions": [
+      "BY"
+    ]
+  },
+  {
+    "bcp47Code": "bej",
+    "englishName": "Beja",
+    "chineseName": "贝沙语",
+    "nativeName": "贝沙语",
+    "primaryRegions": [
+      "SD"
+    ]
+  },
+  {
+    "bcp47Code": "bem",
+    "englishName": "Bemba",
+    "chineseName": "本巴语",
+    "nativeName": "Ichibemba",
+    "primaryRegions": [
+      "ZM"
+    ]
+  },
+  {
+    "bcp47Code": "bew",
+    "englishName": "Betawi",
+    "chineseName": "Betawi",
+    "nativeName": "Betawi",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bez",
+    "englishName": "Bena",
+    "chineseName": "贝纳语",
+    "nativeName": "Hibena",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bfd",
+    "englishName": "Bafut",
+    "chineseName": "巴非特语",
+    "nativeName": "巴非特语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bfq",
+    "englishName": "Badaga",
+    "chineseName": "Badaga",
+    "nativeName": "Badaga",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bg",
+    "englishName": "Bulgarian",
+    "chineseName": "保加利亚语",
+    "nativeName": "български",
+    "primaryRegions": [
+      "BG",
+      "MD"
+    ]
+  },
+  {
+    "bcp47Code": "bgc",
+    "englishName": "Haryanvi",
+    "chineseName": "哈里亚纳语",
+    "nativeName": "हरियाणवी",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bgn",
+    "englishName": "Western Balochi",
+    "chineseName": "西俾路支语",
+    "nativeName": "بلوچی (رخشانی)",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bho",
+    "englishName": "Bhojpuri",
+    "chineseName": "博杰普尔语",
+    "nativeName": "भोजपुरी",
+    "primaryRegions": [
+      "MU",
+      "NP"
+    ]
+  },
+  {
+    "bcp47Code": "bi",
+    "englishName": "Bislama",
+    "chineseName": "比斯拉马语",
+    "nativeName": "比斯拉马语",
+    "primaryRegions": [
+      "VU"
+    ]
+  },
+  {
+    "bcp47Code": "bik",
+    "englishName": "Bikol",
+    "chineseName": "比科尔语",
+    "nativeName": "比科尔语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bin",
+    "englishName": "Bini",
+    "chineseName": "比尼语",
+    "nativeName": "比尼语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bjn",
+    "englishName": "Banjar",
+    "chineseName": "Banjar",
+    "nativeName": "Banjar",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bkm",
+    "englishName": "Kom",
+    "chineseName": "科姆语",
+    "nativeName": "科姆语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bla",
+    "englishName": "Siksiká",
+    "chineseName": "西克西卡语",
+    "nativeName": "西克西卡语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "blo",
+    "englishName": "Anii",
+    "chineseName": "阿尼语",
+    "nativeName": "anii kagɩja",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "blt",
+    "englishName": "Tai Dam",
+    "chineseName": "Tai Dam",
+    "nativeName": "ꪼꪕꪒꪾ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bm",
+    "englishName": "Bambara",
+    "chineseName": "班巴拉语",
+    "nativeName": "bamanakan",
+    "primaryRegions": [
+      "ML"
+    ]
+  },
+  {
+    "bcp47Code": "bn",
+    "englishName": "Bangla",
+    "chineseName": "孟加拉语",
+    "nativeName": "বাংলা",
+    "primaryRegions": [
+      "BD",
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "bo",
+    "englishName": "Tibetan",
+    "chineseName": "藏语",
+    "nativeName": "བོད་སྐད་",
+    "primaryRegions": [
+      "CN"
+    ]
+  },
+  {
+    "bcp47Code": "bpy",
+    "englishName": "Bishnupriya",
+    "chineseName": "Bishnupriya",
+    "nativeName": "Bishnupriya",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bqi",
+    "englishName": "Bakhtiari",
+    "chineseName": "Bakhtiari",
+    "nativeName": "Bakhtiari",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "br",
+    "englishName": "Breton",
+    "chineseName": "布列塔尼语",
+    "nativeName": "brezhoneg",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bra",
+    "englishName": "Braj",
+    "chineseName": "布拉杰语",
+    "nativeName": "布拉杰语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "brh",
+    "englishName": "Brahui",
+    "chineseName": "Brahui",
+    "nativeName": "Brahui",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "brx",
+    "englishName": "Bodo",
+    "chineseName": "博多语",
+    "nativeName": "बर’",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bs",
+    "englishName": "Bosnian",
+    "chineseName": "波斯尼亚语",
+    "nativeName": "bosanski",
+    "primaryRegions": [
+      "BA"
+    ]
+  },
+  {
+    "bcp47Code": "bss",
+    "englishName": "Akoose",
+    "chineseName": "阿库色语",
+    "nativeName": "Akoose",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bua",
+    "englishName": "Buriat",
+    "chineseName": "布里亚特语",
+    "nativeName": "буряад",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "bug",
+    "englishName": "Buginese",
+    "chineseName": "布吉语",
+    "nativeName": "布吉语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "bum",
+    "englishName": "Bulu",
+    "chineseName": "布鲁语",
+    "nativeName": "布鲁语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "byn",
+    "englishName": "Blin",
+    "chineseName": "比林语",
+    "nativeName": "比林语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "byv",
+    "englishName": "Medumba",
+    "chineseName": "梅敦巴语",
+    "nativeName": "梅敦巴语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ca",
+    "englishName": "Catalan",
+    "chineseName": "加泰罗尼亚语",
+    "nativeName": "català",
+    "primaryRegions": [
+      "AD",
+      "ES"
+    ]
+  },
+  {
+    "bcp47Code": "cad",
+    "englishName": "Caddo",
+    "chineseName": "卡多语",
+    "nativeName": "卡多语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "car",
+    "englishName": "Carib",
+    "chineseName": "加勒比语",
+    "nativeName": "加勒比语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "cay",
+    "englishName": "Cayuga",
+    "chineseName": "卡尤加语",
+    "nativeName": "卡尤加语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "cch",
+    "englishName": "Atsam",
+    "chineseName": "阿灿语",
+    "nativeName": "Atsam",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ccp",
+    "englishName": "Chakma",
+    "chineseName": "查克玛语",
+    "nativeName": "𑄌𑄋𑄴𑄟𑄳𑄦",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ce",
+    "englishName": "Chechen",
+    "chineseName": "车臣语",
+    "nativeName": "нохчийн",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "ceb",
+    "englishName": "Cebuano",
+    "chineseName": "宿务语",
+    "nativeName": "Cebuano",
+    "primaryRegions": [
+      "PH"
+    ]
+  },
+  {
+    "bcp47Code": "cgg",
+    "englishName": "Chiga",
+    "chineseName": "奇加语",
+    "nativeName": "Rukiga",
+    "primaryRegions": [
+      "UG"
+    ]
+  },
+  {
+    "bcp47Code": "ch",
+    "englishName": "Chamorro",
+    "chineseName": "查莫罗语",
+    "nativeName": "查莫罗语",
+    "primaryRegions": [
+      "GU",
+      "MP"
+    ]
+  },
+  {
+    "bcp47Code": "chb",
+    "englishName": "Chibcha",
+    "chineseName": "奇布查语",
+    "nativeName": "奇布查语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "chg",
+    "englishName": "Chagatai",
+    "chineseName": "察合台语",
+    "nativeName": "察合台语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "chk",
+    "englishName": "Chuukese",
+    "chineseName": "楚克语",
+    "nativeName": "楚克语",
+    "primaryRegions": [
+      "FM"
+    ]
+  },
+  {
+    "bcp47Code": "chm",
+    "englishName": "Mari",
+    "chineseName": "马里语",
+    "nativeName": "马里语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "chn",
+    "englishName": "Chinook Jargon",
+    "chineseName": "奇努克混合语",
+    "nativeName": "奇努克混合语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "cho",
+    "englishName": "Choctaw",
+    "chineseName": "乔克托语",
+    "nativeName": "Chahta",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "chp",
+    "englishName": "Chipewyan",
+    "chineseName": "奇佩维安语",
+    "nativeName": "奇佩维安语",
+    "primaryRegions": [
+      "CA"
+    ]
+  },
+  {
+    "bcp47Code": "chr",
+    "englishName": "Cherokee",
+    "chineseName": "切罗基语",
+    "nativeName": "ᏣᎳᎩ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "chy",
+    "englishName": "Cheyenne",
+    "chineseName": "夏延语",
+    "nativeName": "夏延语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "cic",
+    "englishName": "Chickasaw",
+    "chineseName": "Chickasaw",
+    "nativeName": "Chikashshanompaʼ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ckb",
+    "englishName": "Central Kurdish",
+    "chineseName": "中库尔德语",
+    "nativeName": "کوردیی ناوەندی",
+    "primaryRegions": [
+      "IQ"
+    ]
+  },
+  {
+    "bcp47Code": "ckb-menu-core",
+    "englishName": "Kurdish",
+    "chineseName": "Kurdish",
+    "nativeName": "کوردیی ناوەندی",
+    "primaryRegions": [
+      "IQ"
+    ]
+  },
+  {
+    "bcp47Code": "ckb-menu-extension",
+    "englishName": "Central",
+    "chineseName": "Central",
+    "nativeName": "کوردیی ناوەندی",
+    "primaryRegions": [
+      "IQ"
+    ]
+  },
+  {
+    "bcp47Code": "clc",
+    "englishName": "Chilcotin",
+    "chineseName": "奇尔科廷语",
+    "nativeName": "奇尔科廷语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "co",
+    "englishName": "Corsican",
+    "chineseName": "科西嘉语",
+    "nativeName": "corsu",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "cop",
+    "englishName": "Coptic",
+    "chineseName": "科普特语",
+    "nativeName": "科普特语",
+    "primaryRegions": [
+      "EG"
+    ]
+  },
+  {
+    "bcp47Code": "cps",
+    "englishName": "Capiznon",
+    "chineseName": "Capiznon",
+    "nativeName": "Capiznon",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "cr",
+    "englishName": "Cree",
+    "chineseName": "克里语",
+    "nativeName": "克里语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "crg",
+    "englishName": "Michif",
+    "chineseName": "米其芙语",
+    "nativeName": "米其芙语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "crh",
+    "englishName": "Crimean Tatar",
+    "chineseName": "克里米亚鞑靼语",
+    "nativeName": "克里米亚鞑靼语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "crj",
+    "englishName": "Southern East Cree",
+    "chineseName": "东南部克里语",
+    "nativeName": "东南部克里语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "crk",
+    "englishName": "Plains Cree",
+    "chineseName": "平原克里语",
+    "nativeName": "平原克里语",
+    "primaryRegions": [
+      "CA"
+    ]
+  },
+  {
+    "bcp47Code": "crl",
+    "englishName": "Northern East Cree",
+    "chineseName": "东北部克里语",
+    "nativeName": "东北部克里语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "crm",
+    "englishName": "Moose Cree",
+    "chineseName": "穆斯克里语",
+    "nativeName": "穆斯克里语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "crr",
+    "englishName": "Carolina Algonquian",
+    "chineseName": "卡罗莱纳州阿尔冈昆语",
+    "nativeName": "卡罗莱纳州阿尔冈昆语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "crs",
+    "englishName": "Seselwa Creole French",
+    "chineseName": "塞舌尔克里奥尔语",
+    "nativeName": "塞舌尔克里奥尔语",
+    "primaryRegions": [
+      "SC"
+    ]
+  },
+  {
+    "bcp47Code": "cs",
+    "englishName": "Czech",
+    "chineseName": "捷克语",
+    "nativeName": "čeština",
+    "primaryRegions": [
+      "CZ",
+      "SK"
+    ]
+  },
+  {
+    "bcp47Code": "csb",
+    "englishName": "Kashubian",
+    "chineseName": "卡舒比语",
+    "nativeName": "卡舒比语",
+    "primaryRegions": [
+      "PL"
+    ]
+  },
+  {
+    "bcp47Code": "csw",
+    "englishName": "Swampy Cree",
+    "chineseName": "沼泽克里语",
+    "nativeName": "ᓀᐦᐃᓇᐍᐏᐣ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "cu",
+    "englishName": "Church Slavic",
+    "chineseName": "教会斯拉夫语",
+    "nativeName": "教会斯拉夫语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "cv",
+    "englishName": "Chuvash",
+    "chineseName": "楚瓦什语",
+    "nativeName": "чӑваш чӗлхи",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "cy",
+    "englishName": "Welsh",
+    "chineseName": "威尔士语",
+    "nativeName": "Cymraeg",
+    "primaryRegions": [
+      "GB"
+    ]
+  },
+  {
+    "bcp47Code": "da",
+    "englishName": "Danish",
+    "chineseName": "丹麦语",
+    "nativeName": "dansk",
+    "primaryRegions": [
+      "DK",
+      "GL"
+    ]
+  },
+  {
+    "bcp47Code": "dak",
+    "englishName": "Dakota",
+    "chineseName": "达科他语",
+    "nativeName": "达科他语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "dar",
+    "englishName": "Dargwa",
+    "chineseName": "达尔格瓦语",
+    "nativeName": "达尔格瓦语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "dav",
+    "englishName": "Taita",
+    "chineseName": "台塔语",
+    "nativeName": "Kitaita",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "de",
+    "englishName": "German",
+    "chineseName": "德语",
+    "nativeName": "Deutsch",
+    "primaryRegions": [
+      "AT",
+      "BE",
+      "BG",
+      "CH",
+      "CZ",
+      "DE",
+      "DK",
+      "FI",
+      "GB",
+      "HU",
+      "KZ",
+      "LI",
+      "LT",
+      "LU",
+      "NL",
+      "PL",
+      "SI",
+      "SK"
+    ]
+  },
+  {
+    "bcp47Code": "de-AT",
+    "englishName": "German (Austria)",
+    "chineseName": "德语(奥地利)",
+    "nativeName": "Österreichisches Deutsch",
+    "primaryRegions": [
+      "AT",
+      "BE",
+      "BG",
+      "CH",
+      "CZ",
+      "DE",
+      "DK",
+      "FI",
+      "GB",
+      "HU",
+      "KZ",
+      "LI",
+      "LT",
+      "LU",
+      "NL",
+      "PL",
+      "SI",
+      "SK"
+    ]
+  },
+  {
+    "bcp47Code": "de-CH",
+    "englishName": "German (Switzerland)",
+    "chineseName": "德语(瑞士)",
+    "nativeName": "Schweizer Hochdeutsch",
+    "primaryRegions": [
+      "AT",
+      "BE",
+      "BG",
+      "CH",
+      "CZ",
+      "DE",
+      "DK",
+      "FI",
+      "GB",
+      "HU",
+      "KZ",
+      "LI",
+      "LT",
+      "LU",
+      "NL",
+      "PL",
+      "SI",
+      "SK"
+    ]
+  },
+  {
+    "bcp47Code": "del",
+    "englishName": "Delaware",
+    "chineseName": "特拉华语",
+    "nativeName": "特拉华语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "den",
+    "englishName": "Slave",
+    "chineseName": "史拉维语",
+    "nativeName": "史拉维语",
+    "primaryRegions": [
+      "CA"
+    ]
+  },
+  {
+    "bcp47Code": "dgr",
+    "englishName": "Dogrib",
+    "chineseName": "多格里布语",
+    "nativeName": "多格里布语",
+    "primaryRegions": [
+      "CA"
+    ]
+  },
+  {
+    "bcp47Code": "din",
+    "englishName": "Dinka",
+    "chineseName": "丁卡语",
+    "nativeName": "丁卡语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "dje",
+    "englishName": "Zarma",
+    "chineseName": "哲尔马语",
+    "nativeName": "Zarmaciine",
+    "primaryRegions": [
+      "NE"
+    ]
+  },
+  {
+    "bcp47Code": "doi",
+    "englishName": "Dogri",
+    "chineseName": "多格拉语",
+    "nativeName": "डोगरी",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "dsb",
+    "englishName": "Lower Sorbian",
+    "chineseName": "下索布语",
+    "nativeName": "dolnoserbšćina",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "dtp",
+    "englishName": "Central Dusun",
+    "chineseName": "Central Dusun",
+    "nativeName": "Central Dusun",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "dua",
+    "englishName": "Duala",
+    "chineseName": "杜阿拉语",
+    "nativeName": "duálá",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "dum",
+    "englishName": "Middle Dutch",
+    "chineseName": "中古荷兰语",
+    "nativeName": "中古荷兰语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "dv",
+    "englishName": "Divehi",
+    "chineseName": "迪维希语",
+    "nativeName": "迪维希语",
+    "primaryRegions": [
+      "MV"
+    ]
+  },
+  {
+    "bcp47Code": "dyo",
+    "englishName": "Jola-Fonyi",
+    "chineseName": "朱拉语",
+    "nativeName": "joola",
+    "primaryRegions": [
+      "SN"
+    ]
+  },
+  {
+    "bcp47Code": "dyu",
+    "englishName": "Dyula",
+    "chineseName": "迪尤拉语",
+    "nativeName": "迪尤拉语",
+    "primaryRegions": [
+      "BF"
+    ]
+  },
+  {
+    "bcp47Code": "dz",
+    "englishName": "Dzongkha",
+    "chineseName": "宗卡语",
+    "nativeName": "རྫོང་ཁ",
+    "primaryRegions": [
+      "BT"
+    ]
+  },
+  {
+    "bcp47Code": "dzg",
+    "englishName": "Dazaga",
+    "chineseName": "达扎葛语",
+    "nativeName": "达扎葛语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ebu",
+    "englishName": "Embu",
+    "chineseName": "恩布语",
+    "nativeName": "Kĩembu",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ee",
+    "englishName": "Ewe",
+    "chineseName": "埃维语",
+    "nativeName": "eʋegbe",
+    "primaryRegions": [
+      "GH",
+      "TG"
+    ]
+  },
+  {
+    "bcp47Code": "efi",
+    "englishName": "Efik",
+    "chineseName": "埃菲克语",
+    "nativeName": "埃菲克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "egl",
+    "englishName": "Emilian",
+    "chineseName": "Emilian",
+    "nativeName": "Emilian",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "egy",
+    "englishName": "Ancient Egyptian",
+    "chineseName": "古埃及语",
+    "nativeName": "古埃及语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "eka",
+    "englishName": "Ekajuk",
+    "chineseName": "艾卡朱克语",
+    "nativeName": "艾卡朱克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "el",
+    "englishName": "Greek",
+    "chineseName": "希腊语",
+    "nativeName": "Ελληνικά",
+    "primaryRegions": [
+      "CY",
+      "GR"
+    ]
+  },
+  {
+    "bcp47Code": "elx",
+    "englishName": "Elamite",
+    "chineseName": "埃兰语",
+    "nativeName": "埃兰语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "en",
+    "englishName": "English",
+    "chineseName": "英语",
+    "nativeName": "English",
+    "primaryRegions": [
+      "AC",
+      "AE",
+      "AG",
+      "AI",
+      "AR",
+      "AS",
+      "AT",
+      "AU",
+      "BA",
+      "BB",
+      "BD",
+      "BE",
+      "BG",
+      "BI",
+      "BM",
+      "BR",
+      "BS",
+      "BT",
+      "BW",
+      "BZ",
+      "CA",
+      "CC",
+      "CH",
+      "CK",
+      "CL",
+      "CM",
+      "CQ",
+      "CX",
+      "CY",
+      "CZ",
+      "DE",
+      "DG",
+      "DK",
+      "DM",
+      "DZ",
+      "EE",
+      "EG",
+      "ER",
+      "ES",
+      "ET",
+      "FI",
+      "FJ",
+      "FK",
+      "FM",
+      "FR",
+      "GB",
+      "GD",
+      "GG",
+      "GH",
+      "GI",
+      "GM",
+      "GR",
+      "GS",
+      "GU",
+      "GY",
+      "HK",
+      "HR",
+      "HU",
+      "IE",
+      "IL",
+      "IM",
+      "IN",
+      "IO",
+      "IQ",
+      "IT",
+      "JE",
+      "JM",
+      "JO",
+      "KE",
+      "KI",
+      "KN",
+      "KY",
+      "KZ",
+      "LB",
+      "LC",
+      "LK",
+      "LR",
+      "LS",
+      "LT",
+      "LU",
+      "LV",
+      "MA",
+      "MG",
+      "MH",
+      "MO",
+      "MP",
+      "MS",
+      "MT",
+      "MU",
+      "MV",
+      "MW",
+      "MX",
+      "MY",
+      "NA",
+      "NF",
+      "NG",
+      "NL",
+      "NR",
+      "NU",
+      "NZ",
+      "PA",
+      "PG",
+      "PH",
+      "PK",
+      "PL",
+      "PN",
+      "PR",
+      "PT",
+      "PW",
+      "RO",
+      "RW",
+      "SB",
+      "SC",
+      "SD",
+      "SE",
+      "SG",
+      "SH",
+      "SI",
+      "SK",
+      "SL",
+      "SS",
+      "SX",
+      "SZ",
+      "TA",
+      "TC",
+      "TH",
+      "TK",
+      "TO",
+      "TR",
+      "TT",
+      "TV",
+      "TZ",
+      "UG",
+      "UM",
+      "US",
+      "VC",
+      "VG",
+      "VI",
+      "VU",
+      "WS",
+      "YE",
+      "ZA",
+      "ZM",
+      "ZW"
+    ]
+  },
+  {
+    "bcp47Code": "en-AU",
+    "englishName": "English (Australia)",
+    "chineseName": "英语(澳大利亚)",
+    "nativeName": "English (Australia)",
+    "primaryRegions": [
+      "AC",
+      "AE",
+      "AG",
+      "AI",
+      "AR",
+      "AS",
+      "AT",
+      "AU",
+      "BA",
+      "BB",
+      "BD",
+      "BE",
+      "BG",
+      "BI",
+      "BM",
+      "BR",
+      "BS",
+      "BT",
+      "BW",
+      "BZ",
+      "CA",
+      "CC",
+      "CH",
+      "CK",
+      "CL",
+      "CM",
+      "CQ",
+      "CX",
+      "CY",
+      "CZ",
+      "DE",
+      "DG",
+      "DK",
+      "DM",
+      "DZ",
+      "EE",
+      "EG",
+      "ER",
+      "ES",
+      "ET",
+      "FI",
+      "FJ",
+      "FK",
+      "FM",
+      "FR",
+      "GB",
+      "GD",
+      "GG",
+      "GH",
+      "GI",
+      "GM",
+      "GR",
+      "GS",
+      "GU",
+      "GY",
+      "HK",
+      "HR",
+      "HU",
+      "IE",
+      "IL",
+      "IM",
+      "IN",
+      "IO",
+      "IQ",
+      "IT",
+      "JE",
+      "JM",
+      "JO",
+      "KE",
+      "KI",
+      "KN",
+      "KY",
+      "KZ",
+      "LB",
+      "LC",
+      "LK",
+      "LR",
+      "LS",
+      "LT",
+      "LU",
+      "LV",
+      "MA",
+      "MG",
+      "MH",
+      "MO",
+      "MP",
+      "MS",
+      "MT",
+      "MU",
+      "MV",
+      "MW",
+      "MX",
+      "MY",
+      "NA",
+      "NF",
+      "NG",
+      "NL",
+      "NR",
+      "NU",
+      "NZ",
+      "PA",
+      "PG",
+      "PH",
+      "PK",
+      "PL",
+      "PN",
+      "PR",
+      "PT",
+      "PW",
+      "RO",
+      "RW",
+      "SB",
+      "SC",
+      "SD",
+      "SE",
+      "SG",
+      "SH",
+      "SI",
+      "SK",
+      "SL",
+      "SS",
+      "SX",
+      "SZ",
+      "TA",
+      "TC",
+      "TH",
+      "TK",
+      "TO",
+      "TR",
+      "TT",
+      "TV",
+      "TZ",
+      "UG",
+      "UM",
+      "US",
+      "VC",
+      "VG",
+      "VI",
+      "VU",
+      "WS",
+      "YE",
+      "ZA",
+      "ZM",
+      "ZW"
+    ]
+  },
+  {
+    "bcp47Code": "en-CA",
+    "englishName": "English (Canada)",
+    "chineseName": "英语(加拿大)",
+    "nativeName": "English (Canada)",
+    "primaryRegions": [
+      "AC",
+      "AE",
+      "AG",
+      "AI",
+      "AR",
+      "AS",
+      "AT",
+      "AU",
+      "BA",
+      "BB",
+      "BD",
+      "BE",
+      "BG",
+      "BI",
+      "BM",
+      "BR",
+      "BS",
+      "BT",
+      "BW",
+      "BZ",
+      "CA",
+      "CC",
+      "CH",
+      "CK",
+      "CL",
+      "CM",
+      "CQ",
+      "CX",
+      "CY",
+      "CZ",
+      "DE",
+      "DG",
+      "DK",
+      "DM",
+      "DZ",
+      "EE",
+      "EG",
+      "ER",
+      "ES",
+      "ET",
+      "FI",
+      "FJ",
+      "FK",
+      "FM",
+      "FR",
+      "GB",
+      "GD",
+      "GG",
+      "GH",
+      "GI",
+      "GM",
+      "GR",
+      "GS",
+      "GU",
+      "GY",
+      "HK",
+      "HR",
+      "HU",
+      "IE",
+      "IL",
+      "IM",
+      "IN",
+      "IO",
+      "IQ",
+      "IT",
+      "JE",
+      "JM",
+      "JO",
+      "KE",
+      "KI",
+      "KN",
+      "KY",
+      "KZ",
+      "LB",
+      "LC",
+      "LK",
+      "LR",
+      "LS",
+      "LT",
+      "LU",
+      "LV",
+      "MA",
+      "MG",
+      "MH",
+      "MO",
+      "MP",
+      "MS",
+      "MT",
+      "MU",
+      "MV",
+      "MW",
+      "MX",
+      "MY",
+      "NA",
+      "NF",
+      "NG",
+      "NL",
+      "NR",
+      "NU",
+      "NZ",
+      "PA",
+      "PG",
+      "PH",
+      "PK",
+      "PL",
+      "PN",
+      "PR",
+      "PT",
+      "PW",
+      "RO",
+      "RW",
+      "SB",
+      "SC",
+      "SD",
+      "SE",
+      "SG",
+      "SH",
+      "SI",
+      "SK",
+      "SL",
+      "SS",
+      "SX",
+      "SZ",
+      "TA",
+      "TC",
+      "TH",
+      "TK",
+      "TO",
+      "TR",
+      "TT",
+      "TV",
+      "TZ",
+      "UG",
+      "UM",
+      "US",
+      "VC",
+      "VG",
+      "VI",
+      "VU",
+      "WS",
+      "YE",
+      "ZA",
+      "ZM",
+      "ZW"
+    ]
+  },
+  {
+    "bcp47Code": "en-GB",
+    "englishName": "English (United Kingdom)",
+    "chineseName": "英语(英国)",
+    "nativeName": "English (United Kingdom)",
+    "primaryRegions": [
+      "AC",
+      "AE",
+      "AG",
+      "AI",
+      "AR",
+      "AS",
+      "AT",
+      "AU",
+      "BA",
+      "BB",
+      "BD",
+      "BE",
+      "BG",
+      "BI",
+      "BM",
+      "BR",
+      "BS",
+      "BT",
+      "BW",
+      "BZ",
+      "CA",
+      "CC",
+      "CH",
+      "CK",
+      "CL",
+      "CM",
+      "CQ",
+      "CX",
+      "CY",
+      "CZ",
+      "DE",
+      "DG",
+      "DK",
+      "DM",
+      "DZ",
+      "EE",
+      "EG",
+      "ER",
+      "ES",
+      "ET",
+      "FI",
+      "FJ",
+      "FK",
+      "FM",
+      "FR",
+      "GB",
+      "GD",
+      "GG",
+      "GH",
+      "GI",
+      "GM",
+      "GR",
+      "GS",
+      "GU",
+      "GY",
+      "HK",
+      "HR",
+      "HU",
+      "IE",
+      "IL",
+      "IM",
+      "IN",
+      "IO",
+      "IQ",
+      "IT",
+      "JE",
+      "JM",
+      "JO",
+      "KE",
+      "KI",
+      "KN",
+      "KY",
+      "KZ",
+      "LB",
+      "LC",
+      "LK",
+      "LR",
+      "LS",
+      "LT",
+      "LU",
+      "LV",
+      "MA",
+      "MG",
+      "MH",
+      "MO",
+      "MP",
+      "MS",
+      "MT",
+      "MU",
+      "MV",
+      "MW",
+      "MX",
+      "MY",
+      "NA",
+      "NF",
+      "NG",
+      "NL",
+      "NR",
+      "NU",
+      "NZ",
+      "PA",
+      "PG",
+      "PH",
+      "PK",
+      "PL",
+      "PN",
+      "PR",
+      "PT",
+      "PW",
+      "RO",
+      "RW",
+      "SB",
+      "SC",
+      "SD",
+      "SE",
+      "SG",
+      "SH",
+      "SI",
+      "SK",
+      "SL",
+      "SS",
+      "SX",
+      "SZ",
+      "TA",
+      "TC",
+      "TH",
+      "TK",
+      "TO",
+      "TR",
+      "TT",
+      "TV",
+      "TZ",
+      "UG",
+      "UM",
+      "US",
+      "VC",
+      "VG",
+      "VI",
+      "VU",
+      "WS",
+      "YE",
+      "ZA",
+      "ZM",
+      "ZW"
+    ]
+  },
+  {
+    "bcp47Code": "en-US",
+    "englishName": "English (United States)",
+    "chineseName": "英语(美国)",
+    "nativeName": "English (United States)",
+    "primaryRegions": [
+      "AC",
+      "AE",
+      "AG",
+      "AI",
+      "AR",
+      "AS",
+      "AT",
+      "AU",
+      "BA",
+      "BB",
+      "BD",
+      "BE",
+      "BG",
+      "BI",
+      "BM",
+      "BR",
+      "BS",
+      "BT",
+      "BW",
+      "BZ",
+      "CA",
+      "CC",
+      "CH",
+      "CK",
+      "CL",
+      "CM",
+      "CQ",
+      "CX",
+      "CY",
+      "CZ",
+      "DE",
+      "DG",
+      "DK",
+      "DM",
+      "DZ",
+      "EE",
+      "EG",
+      "ER",
+      "ES",
+      "ET",
+      "FI",
+      "FJ",
+      "FK",
+      "FM",
+      "FR",
+      "GB",
+      "GD",
+      "GG",
+      "GH",
+      "GI",
+      "GM",
+      "GR",
+      "GS",
+      "GU",
+      "GY",
+      "HK",
+      "HR",
+      "HU",
+      "IE",
+      "IL",
+      "IM",
+      "IN",
+      "IO",
+      "IQ",
+      "IT",
+      "JE",
+      "JM",
+      "JO",
+      "KE",
+      "KI",
+      "KN",
+      "KY",
+      "KZ",
+      "LB",
+      "LC",
+      "LK",
+      "LR",
+      "LS",
+      "LT",
+      "LU",
+      "LV",
+      "MA",
+      "MG",
+      "MH",
+      "MO",
+      "MP",
+      "MS",
+      "MT",
+      "MU",
+      "MV",
+      "MW",
+      "MX",
+      "MY",
+      "NA",
+      "NF",
+      "NG",
+      "NL",
+      "NR",
+      "NU",
+      "NZ",
+      "PA",
+      "PG",
+      "PH",
+      "PK",
+      "PL",
+      "PN",
+      "PR",
+      "PT",
+      "PW",
+      "RO",
+      "RW",
+      "SB",
+      "SC",
+      "SD",
+      "SE",
+      "SG",
+      "SH",
+      "SI",
+      "SK",
+      "SL",
+      "SS",
+      "SX",
+      "SZ",
+      "TA",
+      "TC",
+      "TH",
+      "TK",
+      "TO",
+      "TR",
+      "TT",
+      "TV",
+      "TZ",
+      "UG",
+      "UM",
+      "US",
+      "VC",
+      "VG",
+      "VI",
+      "VU",
+      "WS",
+      "YE",
+      "ZA",
+      "ZM",
+      "ZW"
+    ]
+  },
+  {
+    "bcp47Code": "enm",
+    "englishName": "Middle English",
+    "chineseName": "中古英语",
+    "nativeName": "中古英语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "eo",
+    "englishName": "Esperanto",
+    "chineseName": "世界语",
+    "nativeName": "Esperanto",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "es",
+    "englishName": "Spanish",
+    "chineseName": "西班牙语",
+    "nativeName": "español",
+    "primaryRegions": [
+      "AD",
+      "AR",
+      "BO",
+      "BZ",
+      "CL",
+      "CO",
+      "CR",
+      "CU",
+      "DE",
+      "DO",
+      "EA",
+      "EC",
+      "ES",
+      "FR",
+      "GB",
+      "GI",
+      "GQ",
+      "GT",
+      "HN",
+      "IC",
+      "MX",
+      "NI",
+      "PA",
+      "PE",
+      "PH",
+      "PR",
+      "PT",
+      "PY",
+      "RO",
+      "SV",
+      "SX",
+      "US",
+      "UY",
+      "VE"
+    ]
+  },
+  {
+    "bcp47Code": "es-419",
+    "englishName": "Spanish (Latin America)",
+    "chineseName": "西班牙语(拉丁美洲)",
+    "nativeName": "español latinoamericano",
+    "primaryRegions": [
+      "AD",
+      "AR",
+      "BO",
+      "BZ",
+      "CL",
+      "CO",
+      "CR",
+      "CU",
+      "DE",
+      "DO",
+      "EA",
+      "EC",
+      "ES",
+      "FR",
+      "GB",
+      "GI",
+      "GQ",
+      "GT",
+      "HN",
+      "IC",
+      "MX",
+      "NI",
+      "PA",
+      "PE",
+      "PH",
+      "PR",
+      "PT",
+      "PY",
+      "RO",
+      "SV",
+      "SX",
+      "US",
+      "UY",
+      "VE"
+    ]
+  },
+  {
+    "bcp47Code": "es-ES",
+    "englishName": "Spanish (Spain)",
+    "chineseName": "西班牙语(西班牙)",
+    "nativeName": "español",
+    "primaryRegions": [
+      "AD",
+      "AR",
+      "BO",
+      "BZ",
+      "CL",
+      "CO",
+      "CR",
+      "CU",
+      "DE",
+      "DO",
+      "EA",
+      "EC",
+      "ES",
+      "FR",
+      "GB",
+      "GI",
+      "GQ",
+      "GT",
+      "HN",
+      "IC",
+      "MX",
+      "NI",
+      "PA",
+      "PE",
+      "PH",
+      "PR",
+      "PT",
+      "PY",
+      "RO",
+      "SV",
+      "SX",
+      "US",
+      "UY",
+      "VE"
+    ]
+  },
+  {
+    "bcp47Code": "es-MX",
+    "englishName": "Spanish (Mexico)",
+    "chineseName": "西班牙语(墨西哥)",
+    "nativeName": "español de México",
+    "primaryRegions": [
+      "AD",
+      "AR",
+      "BO",
+      "BZ",
+      "CL",
+      "CO",
+      "CR",
+      "CU",
+      "DE",
+      "DO",
+      "EA",
+      "EC",
+      "ES",
+      "FR",
+      "GB",
+      "GI",
+      "GQ",
+      "GT",
+      "HN",
+      "IC",
+      "MX",
+      "NI",
+      "PA",
+      "PE",
+      "PH",
+      "PR",
+      "PT",
+      "PY",
+      "RO",
+      "SV",
+      "SX",
+      "US",
+      "UY",
+      "VE"
+    ]
+  },
+  {
+    "bcp47Code": "esu",
+    "englishName": "Central Yupik",
+    "chineseName": "Central Yupik",
+    "nativeName": "Central Yupik",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "et",
+    "englishName": "Estonian",
+    "chineseName": "爱沙尼亚语",
+    "nativeName": "eesti",
+    "primaryRegions": [
+      "EE"
+    ]
+  },
+  {
+    "bcp47Code": "eu",
+    "englishName": "Basque",
+    "chineseName": "巴斯克语",
+    "nativeName": "euskara",
+    "primaryRegions": [
+      "ES"
+    ]
+  },
+  {
+    "bcp47Code": "ewo",
+    "englishName": "Ewondo",
+    "chineseName": "埃翁多语",
+    "nativeName": "ewondo",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ext",
+    "englishName": "Extremaduran",
+    "chineseName": "Extremaduran",
+    "nativeName": "Extremaduran",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "fa",
+    "englishName": "Persian",
+    "chineseName": "波斯语",
+    "nativeName": "فارسی",
+    "primaryRegions": [
+      "AF",
+      "IR",
+      "QA"
+    ]
+  },
+  {
+    "bcp47Code": "fa-AF",
+    "englishName": "Persian (Afghanistan)",
+    "chineseName": "波斯语(阿富汗)",
+    "nativeName": "دری",
+    "primaryRegions": [
+      "AF",
+      "IR",
+      "QA"
+    ]
+  },
+  {
+    "bcp47Code": "fan",
+    "englishName": "Fang",
+    "chineseName": "芳格语",
+    "nativeName": "芳格语",
+    "primaryRegions": [
+      "GQ"
+    ]
+  },
+  {
+    "bcp47Code": "fat",
+    "englishName": "Fanti",
+    "chineseName": "芳蒂语",
+    "nativeName": "芳蒂语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ff",
+    "englishName": "Fula",
+    "chineseName": "富拉语",
+    "nativeName": "Pulaar",
+    "primaryRegions": [
+      "GN",
+      "MR",
+      "SN"
+    ]
+  },
+  {
+    "bcp47Code": "fi",
+    "englishName": "Finnish",
+    "chineseName": "芬兰语",
+    "nativeName": "suomi",
+    "primaryRegions": [
+      "EE",
+      "FI",
+      "SE"
+    ]
+  },
+  {
+    "bcp47Code": "fil",
+    "englishName": "Filipino",
+    "chineseName": "菲律宾语",
+    "nativeName": "Filipino",
+    "primaryRegions": [
+      "PH"
+    ]
+  },
+  {
+    "bcp47Code": "fit",
+    "englishName": "Tornedalen Finnish",
+    "chineseName": "Tornedalen Finnish",
+    "nativeName": "Tornedalen Finnish",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "fj",
+    "englishName": "Fijian",
+    "chineseName": "斐济语",
+    "nativeName": "斐济语",
+    "primaryRegions": [
+      "FJ"
+    ]
+  },
+  {
+    "bcp47Code": "fo",
+    "englishName": "Faroese",
+    "chineseName": "法罗语",
+    "nativeName": "føroyskt",
+    "primaryRegions": [
+      "FO"
+    ]
+  },
+  {
+    "bcp47Code": "fon",
+    "englishName": "Fon",
+    "chineseName": "丰语",
+    "nativeName": "丰语",
+    "primaryRegions": [
+      "BJ"
+    ]
+  },
+  {
+    "bcp47Code": "fr",
+    "englishName": "French",
+    "chineseName": "法语",
+    "nativeName": "français",
+    "primaryRegions": [
+      "AD",
+      "AT",
+      "BE",
+      "BF",
+      "BI",
+      "BJ",
+      "BL",
+      "CA",
+      "CD",
+      "CF",
+      "CG",
+      "CH",
+      "CI",
+      "CM",
+      "CY",
+      "DE",
+      "DJ",
+      "DZ",
+      "FR",
+      "GA",
+      "GB",
+      "GF",
+      "GN",
+      "GP",
+      "GQ",
+      "GR",
+      "GW",
+      "HT",
+      "IE",
+      "IT",
+      "KM",
+      "LB",
+      "LU",
+      "MA",
+      "MC",
+      "MF",
+      "MG",
+      "ML",
+      "MQ",
+      "MR",
+      "MT",
+      "MU",
+      "NC",
+      "NE",
+      "NL",
+      "PF",
+      "PM",
+      "PT",
+      "RE",
+      "RO",
+      "RW",
+      "SC",
+      "SN",
+      "ST",
+      "SY",
+      "TD",
+      "TF",
+      "TG",
+      "TN",
+      "VU",
+      "WF",
+      "YT"
+    ]
+  },
+  {
+    "bcp47Code": "fr-CA",
+    "englishName": "French (Canada)",
+    "chineseName": "法语(加拿大)",
+    "nativeName": "français canadien",
+    "primaryRegions": [
+      "AD",
+      "AT",
+      "BE",
+      "BF",
+      "BI",
+      "BJ",
+      "BL",
+      "CA",
+      "CD",
+      "CF",
+      "CG",
+      "CH",
+      "CI",
+      "CM",
+      "CY",
+      "DE",
+      "DJ",
+      "DZ",
+      "FR",
+      "GA",
+      "GB",
+      "GF",
+      "GN",
+      "GP",
+      "GQ",
+      "GR",
+      "GW",
+      "HT",
+      "IE",
+      "IT",
+      "KM",
+      "LB",
+      "LU",
+      "MA",
+      "MC",
+      "MF",
+      "MG",
+      "ML",
+      "MQ",
+      "MR",
+      "MT",
+      "MU",
+      "NC",
+      "NE",
+      "NL",
+      "PF",
+      "PM",
+      "PT",
+      "RE",
+      "RO",
+      "RW",
+      "SC",
+      "SN",
+      "ST",
+      "SY",
+      "TD",
+      "TF",
+      "TG",
+      "TN",
+      "VU",
+      "WF",
+      "YT"
+    ]
+  },
+  {
+    "bcp47Code": "fr-CH",
+    "englishName": "French (Switzerland)",
+    "chineseName": "法语(瑞士)",
+    "nativeName": "français suisse",
+    "primaryRegions": [
+      "AD",
+      "AT",
+      "BE",
+      "BF",
+      "BI",
+      "BJ",
+      "BL",
+      "CA",
+      "CD",
+      "CF",
+      "CG",
+      "CH",
+      "CI",
+      "CM",
+      "CY",
+      "DE",
+      "DJ",
+      "DZ",
+      "FR",
+      "GA",
+      "GB",
+      "GF",
+      "GN",
+      "GP",
+      "GQ",
+      "GR",
+      "GW",
+      "HT",
+      "IE",
+      "IT",
+      "KM",
+      "LB",
+      "LU",
+      "MA",
+      "MC",
+      "MF",
+      "MG",
+      "ML",
+      "MQ",
+      "MR",
+      "MT",
+      "MU",
+      "NC",
+      "NE",
+      "NL",
+      "PF",
+      "PM",
+      "PT",
+      "RE",
+      "RO",
+      "RW",
+      "SC",
+      "SN",
+      "ST",
+      "SY",
+      "TD",
+      "TF",
+      "TG",
+      "TN",
+      "VU",
+      "WF",
+      "YT"
+    ]
+  },
+  {
+    "bcp47Code": "frc",
+    "englishName": "Cajun French",
+    "chineseName": "卡真法语",
+    "nativeName": "卡真法语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "frm",
+    "englishName": "Middle French",
+    "chineseName": "中古法语",
+    "nativeName": "中古法语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "fro",
+    "englishName": "Old French",
+    "chineseName": "古法语",
+    "nativeName": "古法语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "frp",
+    "englishName": "Arpitan",
+    "chineseName": "Arpitan",
+    "nativeName": "Arpitan",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "frr",
+    "englishName": "Northern Frisian",
+    "chineseName": "北弗里西亚语",
+    "nativeName": "Nordfriisk",
+    "primaryRegions": [
+      "DE"
+    ]
+  },
+  {
+    "bcp47Code": "frs",
+    "englishName": "Eastern Frisian",
+    "chineseName": "东弗里西亚语",
+    "nativeName": "东弗里西亚语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "fur",
+    "englishName": "Friulian",
+    "chineseName": "弗留利语",
+    "nativeName": "furlan",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "fy",
+    "englishName": "Western Frisian",
+    "chineseName": "西弗里西亚语",
+    "nativeName": "Frysk",
+    "primaryRegions": [
+      "NL"
+    ]
+  },
+  {
+    "bcp47Code": "ga",
+    "englishName": "Irish",
+    "chineseName": "爱尔兰语",
+    "nativeName": "Gaeilge",
+    "primaryRegions": [
+      "GB",
+      "IE"
+    ]
+  },
+  {
+    "bcp47Code": "gaa",
+    "englishName": "Ga",
+    "chineseName": "加族语",
+    "nativeName": "Gã",
+    "primaryRegions": [
+      "GH"
+    ]
+  },
+  {
+    "bcp47Code": "gag",
+    "englishName": "Gagauz",
+    "chineseName": "加告兹语",
+    "nativeName": "加告兹语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gan",
+    "englishName": "Gan Chinese",
+    "chineseName": "赣语",
+    "nativeName": "赣语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gay",
+    "englishName": "Gayo",
+    "chineseName": "迦约语",
+    "nativeName": "迦约语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gba",
+    "englishName": "Gbaya",
+    "chineseName": "格巴亚语",
+    "nativeName": "格巴亚语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gbz",
+    "englishName": "Zoroastrian Dari",
+    "chineseName": "Zoroastrian Dari",
+    "nativeName": "Zoroastrian Dari",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gd",
+    "englishName": "Scottish Gaelic",
+    "chineseName": "苏格兰盖尔语",
+    "nativeName": "Gàidhlig",
+    "primaryRegions": [
+      "GB"
+    ]
+  },
+  {
+    "bcp47Code": "gez",
+    "englishName": "Geez",
+    "chineseName": "吉兹语",
+    "nativeName": "吉兹语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gil",
+    "englishName": "Gilbertese",
+    "chineseName": "吉尔伯特语",
+    "nativeName": "吉尔伯特语",
+    "primaryRegions": [
+      "KI"
+    ]
+  },
+  {
+    "bcp47Code": "gl",
+    "englishName": "Galician",
+    "chineseName": "加利西亚语",
+    "nativeName": "galego",
+    "primaryRegions": [
+      "ES"
+    ]
+  },
+  {
+    "bcp47Code": "glk",
+    "englishName": "Gilaki",
+    "chineseName": "Gilaki",
+    "nativeName": "Gilaki",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gmh",
+    "englishName": "Middle High German",
+    "chineseName": "中古高地德语",
+    "nativeName": "中古高地德语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gn",
+    "englishName": "Guarani",
+    "chineseName": "瓜拉尼语",
+    "nativeName": "avañe’ẽ",
+    "primaryRegions": [
+      "PY"
+    ]
+  },
+  {
+    "bcp47Code": "goh",
+    "englishName": "Old High German",
+    "chineseName": "古高地德语",
+    "nativeName": "古高地德语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gon",
+    "englishName": "Gondi",
+    "chineseName": "冈德语",
+    "nativeName": "冈德语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gor",
+    "englishName": "Gorontalo",
+    "chineseName": "哥伦打洛语",
+    "nativeName": "哥伦打洛语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "got",
+    "englishName": "Gothic",
+    "chineseName": "哥特语",
+    "nativeName": "哥特语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "grb",
+    "englishName": "Grebo",
+    "chineseName": "格列博语",
+    "nativeName": "格列博语",
+    "primaryRegions": [
+      "LR"
+    ]
+  },
+  {
+    "bcp47Code": "grc",
+    "englishName": "Ancient Greek",
+    "chineseName": "古希腊语",
+    "nativeName": "古希腊语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gsw",
+    "englishName": "Swiss German",
+    "chineseName": "瑞士德语",
+    "nativeName": "Schwiizertüütsch",
+    "primaryRegions": [
+      "CH",
+      "LI"
+    ]
+  },
+  {
+    "bcp47Code": "gu",
+    "englishName": "Gujarati",
+    "chineseName": "古吉拉特语",
+    "nativeName": "ગુજરાતી",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "guc",
+    "englishName": "Wayuu",
+    "chineseName": "Wayuu",
+    "nativeName": "Wayuu",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gur",
+    "englishName": "Frafra",
+    "chineseName": "Frafra",
+    "nativeName": "Frafra",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "guz",
+    "englishName": "Gusii",
+    "chineseName": "古西语",
+    "nativeName": "Ekegusii",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "gv",
+    "englishName": "Manx",
+    "chineseName": "马恩语",
+    "nativeName": "Gaelg",
+    "primaryRegions": [
+      "IM"
+    ]
+  },
+  {
+    "bcp47Code": "gwi",
+    "englishName": "Gwichʼin",
+    "chineseName": "哥威迅语",
+    "nativeName": "哥威迅语",
+    "primaryRegions": [
+      "CA"
+    ]
+  },
+  {
+    "bcp47Code": "ha",
+    "englishName": "Hausa",
+    "chineseName": "豪萨语",
+    "nativeName": "Hausa",
+    "primaryRegions": [
+      "NE",
+      "NG"
+    ]
+  },
+  {
+    "bcp47Code": "hai",
+    "englishName": "Haida",
+    "chineseName": "海达语",
+    "nativeName": "海达语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "hak",
+    "englishName": "Hakka Chinese",
+    "chineseName": "客家语",
+    "nativeName": "客家语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "haw",
+    "englishName": "Hawaiian",
+    "chineseName": "夏威夷语",
+    "nativeName": "ʻŌlelo Hawaiʻi",
+    "primaryRegions": [
+      "US"
+    ]
+  },
+  {
+    "bcp47Code": "hax",
+    "englishName": "Southern Haida",
+    "chineseName": "南海达语",
+    "nativeName": "南海达语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "he",
+    "englishName": "Hebrew",
+    "chineseName": "希伯来语",
+    "nativeName": "עברית",
+    "primaryRegions": [
+      "IL"
+    ]
+  },
+  {
+    "bcp47Code": "hi",
+    "englishName": "Hindi",
+    "chineseName": "印地语",
+    "nativeName": "हिन्दी",
+    "primaryRegions": [
+      "FJ",
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "hi-Latn",
+    "englishName": "Hindi (Latin)",
+    "chineseName": "印地语（拉丁字母）",
+    "nativeName": "Hindi (Latin)",
+    "primaryRegions": [
+      "FJ",
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "hif",
+    "englishName": "Fiji Hindi",
+    "chineseName": "Fiji Hindi",
+    "nativeName": "Fiji Hindi",
+    "primaryRegions": [
+      "FJ"
+    ]
+  },
+  {
+    "bcp47Code": "hil",
+    "englishName": "Hiligaynon",
+    "chineseName": "希利盖农语",
+    "nativeName": "希利盖农语",
+    "primaryRegions": [
+      "PH"
+    ]
+  },
+  {
+    "bcp47Code": "hit",
+    "englishName": "Hittite",
+    "chineseName": "赫梯语",
+    "nativeName": "赫梯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "hmn",
+    "englishName": "Hmong",
+    "chineseName": "苗语",
+    "nativeName": "苗语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "hnj",
+    "englishName": "Hmong Njua",
+    "chineseName": "Hmong Njua",
+    "nativeName": "𞄀𞄄𞄰𞄩𞄍𞄜𞄰",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ho",
+    "englishName": "Hiri Motu",
+    "chineseName": "希里莫图语",
+    "nativeName": "希里莫图语",
+    "primaryRegions": [
+      "PG"
+    ]
+  },
+  {
+    "bcp47Code": "hr",
+    "englishName": "Croatian",
+    "chineseName": "克罗地亚语",
+    "nativeName": "hrvatski",
+    "primaryRegions": [
+      "AT",
+      "BA",
+      "HR",
+      "RS",
+      "SI"
+    ]
+  },
+  {
+    "bcp47Code": "hsb",
+    "englishName": "Upper Sorbian",
+    "chineseName": "上索布语",
+    "nativeName": "hornjoserbšćina",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "hsn",
+    "englishName": "Xiang Chinese",
+    "chineseName": "湘语",
+    "nativeName": "湘语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ht",
+    "englishName": "Haitian Creole",
+    "chineseName": "海地克里奥尔语",
+    "nativeName": "Kreyòl Ayisyen",
+    "primaryRegions": [
+      "HT"
+    ]
+  },
+  {
+    "bcp47Code": "hu",
+    "englishName": "Hungarian",
+    "chineseName": "匈牙利语",
+    "nativeName": "magyar",
+    "primaryRegions": [
+      "AT",
+      "HU",
+      "RO",
+      "RS",
+      "SK"
+    ]
+  },
+  {
+    "bcp47Code": "hup",
+    "englishName": "Hupa",
+    "chineseName": "胡帕语",
+    "nativeName": "胡帕语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "hur",
+    "englishName": "Halkomelem",
+    "chineseName": "哈尔魁梅林语",
+    "nativeName": "哈尔魁梅林语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "hy",
+    "englishName": "Armenian",
+    "chineseName": "亚美尼亚语",
+    "nativeName": "հայերեն",
+    "primaryRegions": [
+      "AM",
+      "GE",
+      "LB"
+    ]
+  },
+  {
+    "bcp47Code": "hz",
+    "englishName": "Herero",
+    "chineseName": "赫雷罗语",
+    "nativeName": "赫雷罗语",
+    "primaryRegions": [
+      "NA"
+    ]
+  },
+  {
+    "bcp47Code": "ia",
+    "englishName": "Interlingua",
+    "chineseName": "国际语",
+    "nativeName": "interlingua",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "iba",
+    "englishName": "Iban",
+    "chineseName": "伊班语",
+    "nativeName": "伊班语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ibb",
+    "englishName": "Ibibio",
+    "chineseName": "伊比比奥语",
+    "nativeName": "伊比比奥语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "id",
+    "englishName": "Indonesian",
+    "chineseName": "印度尼西亚语",
+    "nativeName": "Indonesia",
+    "primaryRegions": [
+      "ID"
+    ]
+  },
+  {
+    "bcp47Code": "ie",
+    "englishName": "Interlingue",
+    "chineseName": "国际文字（E）",
+    "nativeName": "Interlingue",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ig",
+    "englishName": "Igbo",
+    "chineseName": "伊博语",
+    "nativeName": "Igbo",
+    "primaryRegions": [
+      "NG"
+    ]
+  },
+  {
+    "bcp47Code": "ii",
+    "englishName": "Sichuan Yi",
+    "chineseName": "凉山彝语",
+    "nativeName": "ꆈꌠꉙ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ik",
+    "englishName": "Inupiaq",
+    "chineseName": "伊努皮克语",
+    "nativeName": "伊努皮克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ikt",
+    "englishName": "Western Canadian Inuktitut",
+    "chineseName": "西加拿大因纽特语",
+    "nativeName": "西加拿大因纽特语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ilo",
+    "englishName": "Iloko",
+    "chineseName": "伊洛卡诺语",
+    "nativeName": "伊洛卡诺语",
+    "primaryRegions": [
+      "PH"
+    ]
+  },
+  {
+    "bcp47Code": "inh",
+    "englishName": "Ingush",
+    "chineseName": "印古什语",
+    "nativeName": "印古什语",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "io",
+    "englishName": "Ido",
+    "chineseName": "伊多语",
+    "nativeName": "Ido",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "is",
+    "englishName": "Icelandic",
+    "chineseName": "冰岛语",
+    "nativeName": "íslenska",
+    "primaryRegions": [
+      "IS"
+    ]
+  },
+  {
+    "bcp47Code": "it",
+    "englishName": "Italian",
+    "chineseName": "意大利语",
+    "nativeName": "italiano",
+    "primaryRegions": [
+      "AT",
+      "CH",
+      "DE",
+      "HR",
+      "IT",
+      "MT",
+      "SM",
+      "VA"
+    ]
+  },
+  {
+    "bcp47Code": "iu",
+    "englishName": "Inuktitut",
+    "chineseName": "因纽特语",
+    "nativeName": "因纽特语",
+    "primaryRegions": [
+      "CA"
+    ]
+  },
+  {
+    "bcp47Code": "izh",
+    "englishName": "Ingrian",
+    "chineseName": "Ingrian",
+    "nativeName": "Ingrian",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ja",
+    "englishName": "Japanese",
+    "chineseName": "日语",
+    "nativeName": "日本語",
+    "primaryRegions": [
+      "JP"
+    ]
+  },
+  {
+    "bcp47Code": "jam",
+    "englishName": "Jamaican Creole English",
+    "chineseName": "Jamaican Creole English",
+    "nativeName": "Jamaican Creole English",
+    "primaryRegions": [
+      "JM"
+    ]
+  },
+  {
+    "bcp47Code": "jbo",
+    "englishName": "Lojban",
+    "chineseName": "逻辑语",
+    "nativeName": "la .lojban.",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "jgo",
+    "englishName": "Ngomba",
+    "chineseName": "恩艮巴语",
+    "nativeName": "Ndaꞌa",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "jmc",
+    "englishName": "Machame",
+    "chineseName": "马切姆语",
+    "nativeName": "Kimachame",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "jpr",
+    "englishName": "Judeo-Persian",
+    "chineseName": "犹太波斯语",
+    "nativeName": "犹太波斯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "jrb",
+    "englishName": "Judeo-Arabic",
+    "chineseName": "犹太阿拉伯语",
+    "nativeName": "犹太阿拉伯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "jut",
+    "englishName": "Jutish",
+    "chineseName": "Jutish",
+    "nativeName": "Jutish",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "jv",
+    "englishName": "Javanese",
+    "chineseName": "爪哇语",
+    "nativeName": "Jawa",
+    "primaryRegions": [
+      "ID"
+    ]
+  },
+  {
+    "bcp47Code": "ka",
+    "englishName": "Georgian",
+    "chineseName": "格鲁吉亚语",
+    "nativeName": "ქართული",
+    "primaryRegions": [
+      "GE"
+    ]
+  },
+  {
+    "bcp47Code": "kaa",
+    "englishName": "Kara-Kalpak",
+    "chineseName": "卡拉卡尔帕克语",
+    "nativeName": "қарақалпақша",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kab",
+    "englishName": "Kabyle",
+    "chineseName": "卡拜尔语",
+    "nativeName": "Taqbaylit",
+    "primaryRegions": [
+      "DZ"
+    ]
+  },
+  {
+    "bcp47Code": "kac",
+    "englishName": "Kachin",
+    "chineseName": "克钦语",
+    "nativeName": "克钦语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kaj",
+    "englishName": "Jju",
+    "chineseName": "卡捷语",
+    "nativeName": "Kaje",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kam",
+    "englishName": "Kamba",
+    "chineseName": "卡姆巴语",
+    "nativeName": "Kikamba",
+    "primaryRegions": [
+      "KE"
+    ]
+  },
+  {
+    "bcp47Code": "kaw",
+    "englishName": "Kawi",
+    "chineseName": "卡威语",
+    "nativeName": "卡威语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kbd",
+    "englishName": "Kabardian",
+    "chineseName": "卡巴尔德语",
+    "nativeName": "卡巴尔德语",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "kbl",
+    "englishName": "Kanembu",
+    "chineseName": "加涅姆布语",
+    "nativeName": "加涅姆布语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kcg",
+    "englishName": "Tyap",
+    "chineseName": "卡塔布语",
+    "nativeName": "Katab",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kde",
+    "englishName": "Makonde",
+    "chineseName": "马孔德语",
+    "nativeName": "Chimakonde",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kea",
+    "englishName": "Kabuverdianu",
+    "chineseName": "卡布佛得鲁语",
+    "nativeName": "kabuverdianu",
+    "primaryRegions": [
+      "CV"
+    ]
+  },
+  {
+    "bcp47Code": "kek",
+    "englishName": "Qʼeqchiʼ",
+    "chineseName": "Qʼeqchiʼ",
+    "nativeName": "Qʼeqchiʼ",
+    "primaryRegions": [
+      "BZ",
+      "GT"
+    ]
+  },
+  {
+    "bcp47Code": "ken",
+    "englishName": "Kenyang",
+    "chineseName": "Kenyang",
+    "nativeName": "Kɛnyaŋ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kfo",
+    "englishName": "Koro",
+    "chineseName": "克罗语",
+    "nativeName": "克罗语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kg",
+    "englishName": "Kongo",
+    "chineseName": "刚果语",
+    "nativeName": "刚果语",
+    "primaryRegions": [
+      "CD"
+    ]
+  },
+  {
+    "bcp47Code": "kgp",
+    "englishName": "Kaingang",
+    "chineseName": "坎刚语",
+    "nativeName": "kanhgág",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kha",
+    "englishName": "Khasi",
+    "chineseName": "卡西语",
+    "nativeName": "卡西语",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "kho",
+    "englishName": "Khotanese",
+    "chineseName": "和田语",
+    "nativeName": "和田语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "khq",
+    "englishName": "Koyra Chiini",
+    "chineseName": "西桑海语",
+    "nativeName": "Koyra ciini",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "khw",
+    "englishName": "Khowar",
+    "chineseName": "Khowar",
+    "nativeName": "Khowar",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ki",
+    "englishName": "Kikuyu",
+    "chineseName": "吉库尤语",
+    "nativeName": "Gikuyu",
+    "primaryRegions": [
+      "KE"
+    ]
+  },
+  {
+    "bcp47Code": "kiu",
+    "englishName": "Kirmanjki",
+    "chineseName": "Kirmanjki",
+    "nativeName": "Kirmanjki",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kj",
+    "englishName": "Kuanyama",
+    "chineseName": "宽亚玛语",
+    "nativeName": "宽亚玛语",
+    "primaryRegions": [
+      "NA"
+    ]
+  },
+  {
+    "bcp47Code": "kk",
+    "englishName": "Kazakh",
+    "chineseName": "哈萨克语",
+    "nativeName": "қазақ тілі",
+    "primaryRegions": [
+      "KZ"
+    ]
+  },
+  {
+    "bcp47Code": "kkj",
+    "englishName": "Kako",
+    "chineseName": "卡库语",
+    "nativeName": "kakɔ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kl",
+    "englishName": "Kalaallisut",
+    "chineseName": "格陵兰语",
+    "nativeName": "kalaallisut",
+    "primaryRegions": [
+      "DK",
+      "GL"
+    ]
+  },
+  {
+    "bcp47Code": "kln",
+    "englishName": "Kalenjin",
+    "chineseName": "卡伦金语",
+    "nativeName": "Kalenjin",
+    "primaryRegions": [
+      "KE"
+    ]
+  },
+  {
+    "bcp47Code": "km",
+    "englishName": "Khmer",
+    "chineseName": "高棉语",
+    "nativeName": "ខ្មែរ",
+    "primaryRegions": [
+      "KH"
+    ]
+  },
+  {
+    "bcp47Code": "kmb",
+    "englishName": "Kimbundu",
+    "chineseName": "金邦杜语",
+    "nativeName": "金邦杜语",
+    "primaryRegions": [
+      "AO"
+    ]
+  },
+  {
+    "bcp47Code": "kn",
+    "englishName": "Kannada",
+    "chineseName": "卡纳达语",
+    "nativeName": "ಕನ್ನಡ",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "ko",
+    "englishName": "Korean",
+    "chineseName": "韩语",
+    "nativeName": "한국어",
+    "primaryRegions": [
+      "CN",
+      "KP",
+      "KR"
+    ]
+  },
+  {
+    "bcp47Code": "koi",
+    "englishName": "Komi-Permyak",
+    "chineseName": "科米-彼尔米亚克语",
+    "nativeName": "科米-彼尔米亚克语",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "kok",
+    "englishName": "Konkani",
+    "chineseName": "孔卡尼语",
+    "nativeName": "कोंकणी",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "kos",
+    "englishName": "Kosraean",
+    "chineseName": "科斯拉伊语",
+    "nativeName": "科斯拉伊语",
+    "primaryRegions": [
+      "FM"
+    ]
+  },
+  {
+    "bcp47Code": "kpe",
+    "englishName": "Kpelle",
+    "chineseName": "克佩列语",
+    "nativeName": "Kpɛlɛɛ",
+    "primaryRegions": [
+      "LR"
+    ]
+  },
+  {
+    "bcp47Code": "kr",
+    "englishName": "Kanuri",
+    "chineseName": "卡努里语",
+    "nativeName": "卡努里语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "krc",
+    "englishName": "Karachay-Balkar",
+    "chineseName": "卡拉恰伊巴尔卡尔语",
+    "nativeName": "卡拉恰伊巴尔卡尔语",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "kri",
+    "englishName": "Krio",
+    "chineseName": "Krio",
+    "nativeName": "Krio",
+    "primaryRegions": [
+      "SL"
+    ]
+  },
+  {
+    "bcp47Code": "krj",
+    "englishName": "Kinaray-a",
+    "chineseName": "Kinaray-a",
+    "nativeName": "Kinaray-a",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "krl",
+    "englishName": "Karelian",
+    "chineseName": "卡累利阿语",
+    "nativeName": "卡累利阿语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kru",
+    "englishName": "Kurukh",
+    "chineseName": "库鲁克语",
+    "nativeName": "库鲁克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ks",
+    "englishName": "Kashmiri",
+    "chineseName": "克什米尔语",
+    "nativeName": "کٲشُر",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "ksb",
+    "englishName": "Shambala",
+    "chineseName": "香巴拉语",
+    "nativeName": "Kishambaa",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ksf",
+    "englishName": "Bafia",
+    "chineseName": "巴菲亚语",
+    "nativeName": "rikpa",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ksh",
+    "englishName": "Colognian",
+    "chineseName": "科隆语",
+    "nativeName": "Kölsch",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ku",
+    "englishName": "Kurdish",
+    "chineseName": "库尔德语",
+    "nativeName": "kurdî (kurmancî)",
+    "primaryRegions": [
+      "SY",
+      "TR"
+    ]
+  },
+  {
+    "bcp47Code": "ku-menu-core",
+    "englishName": "Kurdish",
+    "chineseName": "库尔德语",
+    "nativeName": "kurdî (kurmancî)",
+    "primaryRegions": [
+      "SY",
+      "TR"
+    ]
+  },
+  {
+    "bcp47Code": "ku-menu-extension",
+    "englishName": "Kurmanji",
+    "chineseName": "北库尔德语",
+    "nativeName": "kurdî (kurmancî)",
+    "primaryRegions": [
+      "SY",
+      "TR"
+    ]
+  },
+  {
+    "bcp47Code": "kum",
+    "englishName": "Kumyk",
+    "chineseName": "库梅克语",
+    "nativeName": "库梅克语",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "kut",
+    "englishName": "Kutenai",
+    "chineseName": "库特奈语",
+    "nativeName": "库特奈语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kv",
+    "englishName": "Komi",
+    "chineseName": "科米语",
+    "nativeName": "科米语",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "kw",
+    "englishName": "Cornish",
+    "chineseName": "康沃尔语",
+    "nativeName": "kernewek",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kwk",
+    "englishName": "Kwakʼwala",
+    "chineseName": "夸夸瓦拉语",
+    "nativeName": "夸夸瓦拉语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "kxv",
+    "englishName": "Kuvi",
+    "chineseName": "库维语",
+    "nativeName": "kuvi",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ky",
+    "englishName": "Kyrgyz",
+    "chineseName": "吉尔吉斯语",
+    "nativeName": "кыргызча",
+    "primaryRegions": [
+      "KG"
+    ]
+  },
+  {
+    "bcp47Code": "la",
+    "englishName": "Latin",
+    "chineseName": "拉丁语",
+    "nativeName": "拉丁语",
+    "primaryRegions": [
+      "VA"
+    ]
+  },
+  {
+    "bcp47Code": "lad",
+    "englishName": "Ladino",
+    "chineseName": "拉迪诺语",
+    "nativeName": "拉迪诺语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lag",
+    "englishName": "Langi",
+    "chineseName": "朗吉语",
+    "nativeName": "Kɨlaangi",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lah",
+    "englishName": "Western Panjabi",
+    "chineseName": "西旁遮普语",
+    "nativeName": "西旁遮普语",
+    "primaryRegions": [
+      "PK"
+    ]
+  },
+  {
+    "bcp47Code": "lam",
+    "englishName": "Lamba",
+    "chineseName": "兰巴语",
+    "nativeName": "兰巴语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lb",
+    "englishName": "Luxembourgish",
+    "chineseName": "卢森堡语",
+    "nativeName": "Lëtzebuergesch",
+    "primaryRegions": [
+      "LU"
+    ]
+  },
+  {
+    "bcp47Code": "lez",
+    "englishName": "Lezghian",
+    "chineseName": "列兹金语",
+    "nativeName": "列兹金语",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "lfn",
+    "englishName": "Lingua Franca Nova",
+    "chineseName": "Lingua Franca Nova",
+    "nativeName": "Lingua Franca Nova",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lg",
+    "englishName": "Ganda",
+    "chineseName": "卢干达语",
+    "nativeName": "Luganda",
+    "primaryRegions": [
+      "UG"
+    ]
+  },
+  {
+    "bcp47Code": "li",
+    "englishName": "Limburgish",
+    "chineseName": "林堡语",
+    "nativeName": "林堡语",
+    "primaryRegions": [
+      "NL"
+    ]
+  },
+  {
+    "bcp47Code": "lij",
+    "englishName": "Ligurian",
+    "chineseName": "利古里亚语",
+    "nativeName": "ligure",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lil",
+    "englishName": "Lillooet",
+    "chineseName": "利洛埃特语",
+    "nativeName": "利洛埃特语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "liv",
+    "englishName": "Livonian",
+    "chineseName": "Livonian",
+    "nativeName": "Livonian",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lkt",
+    "englishName": "Lakota",
+    "chineseName": "拉科塔语",
+    "nativeName": "Lakȟólʼiyapi",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lmo",
+    "englishName": "Lombard",
+    "chineseName": "伦巴第语",
+    "nativeName": "Lombard",
+    "primaryRegions": [
+      "IT"
+    ]
+  },
+  {
+    "bcp47Code": "ln",
+    "englishName": "Lingala",
+    "chineseName": "林加拉语",
+    "nativeName": "lingála",
+    "primaryRegions": [
+      "CD"
+    ]
+  },
+  {
+    "bcp47Code": "lo",
+    "englishName": "Lao",
+    "chineseName": "老挝语",
+    "nativeName": "ລາວ",
+    "primaryRegions": [
+      "LA"
+    ]
+  },
+  {
+    "bcp47Code": "lol",
+    "englishName": "Mongo",
+    "chineseName": "蒙戈语",
+    "nativeName": "蒙戈语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lou",
+    "englishName": "Louisiana Creole",
+    "chineseName": "路易斯安那克里奥尔语",
+    "nativeName": "路易斯安那克里奥尔语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "loz",
+    "englishName": "Lozi",
+    "chineseName": "洛齐语",
+    "nativeName": "洛齐语",
+    "primaryRegions": [
+      "ZM"
+    ]
+  },
+  {
+    "bcp47Code": "lrc",
+    "englishName": "Northern Luri",
+    "chineseName": "北卢尔语",
+    "nativeName": "لۊری شومالی",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lsm",
+    "englishName": "Saamia",
+    "chineseName": "萨米亚语",
+    "nativeName": "萨米亚语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lt",
+    "englishName": "Lithuanian",
+    "chineseName": "立陶宛语",
+    "nativeName": "lietuvių",
+    "primaryRegions": [
+      "LT",
+      "PL"
+    ]
+  },
+  {
+    "bcp47Code": "ltg",
+    "englishName": "Latgalian",
+    "chineseName": "Latgalian",
+    "nativeName": "Latgalian",
+    "primaryRegions": [
+      "LV"
+    ]
+  },
+  {
+    "bcp47Code": "lu",
+    "englishName": "Luba-Katanga",
+    "chineseName": "鲁巴加丹加语",
+    "nativeName": "Tshiluba",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lua",
+    "englishName": "Luba-Lulua",
+    "chineseName": "卢巴-卢拉语",
+    "nativeName": "卢巴-卢拉语",
+    "primaryRegions": [
+      "CD"
+    ]
+  },
+  {
+    "bcp47Code": "lui",
+    "englishName": "Luiseno",
+    "chineseName": "卢伊塞诺语",
+    "nativeName": "卢伊塞诺语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lun",
+    "englishName": "Lunda",
+    "chineseName": "隆达语",
+    "nativeName": "隆达语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "luo",
+    "englishName": "Luo",
+    "chineseName": "卢奥语",
+    "nativeName": "Dholuo",
+    "primaryRegions": [
+      "KE"
+    ]
+  },
+  {
+    "bcp47Code": "lus",
+    "englishName": "Mizo",
+    "chineseName": "米佐语",
+    "nativeName": "米佐语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "luy",
+    "englishName": "Luyia",
+    "chineseName": "卢雅语",
+    "nativeName": "Luluhia",
+    "primaryRegions": [
+      "KE"
+    ]
+  },
+  {
+    "bcp47Code": "lv",
+    "englishName": "Latvian",
+    "chineseName": "拉脱维亚语",
+    "nativeName": "latviešu",
+    "primaryRegions": [
+      "LV"
+    ]
+  },
+  {
+    "bcp47Code": "lzh",
+    "englishName": "Literary Chinese",
+    "chineseName": "Literary Chinese",
+    "nativeName": "Literary Chinese",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "lzz",
+    "englishName": "Laz",
+    "chineseName": "Laz",
+    "nativeName": "Laz",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mad",
+    "englishName": "Madurese",
+    "chineseName": "马都拉语",
+    "nativeName": "马都拉语",
+    "primaryRegions": [
+      "ID"
+    ]
+  },
+  {
+    "bcp47Code": "maf",
+    "englishName": "Mafa",
+    "chineseName": "马法语",
+    "nativeName": "马法语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mag",
+    "englishName": "Magahi",
+    "chineseName": "摩揭陀语",
+    "nativeName": "摩揭陀语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mai",
+    "englishName": "Maithili",
+    "chineseName": "迈蒂利语",
+    "nativeName": "मैथिली",
+    "primaryRegions": [
+      "IN",
+      "NP"
+    ]
+  },
+  {
+    "bcp47Code": "mak",
+    "englishName": "Makasar",
+    "chineseName": "望加锡语",
+    "nativeName": "望加锡语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "man",
+    "englishName": "Mandingo",
+    "chineseName": "曼丁哥语",
+    "nativeName": "曼丁哥语",
+    "primaryRegions": [
+      "GM",
+      "GN"
+    ]
+  },
+  {
+    "bcp47Code": "mas",
+    "englishName": "Masai",
+    "chineseName": "马赛语",
+    "nativeName": "Maa",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mde",
+    "englishName": "Maba",
+    "chineseName": "马坝语",
+    "nativeName": "马坝语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mdf",
+    "englishName": "Moksha",
+    "chineseName": "莫克沙语",
+    "nativeName": "мокшень кяль",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "mdr",
+    "englishName": "Mandar",
+    "chineseName": "曼达尔语",
+    "nativeName": "曼达尔语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "men",
+    "englishName": "Mende",
+    "chineseName": "门德语",
+    "nativeName": "门德语",
+    "primaryRegions": [
+      "SL"
+    ]
+  },
+  {
+    "bcp47Code": "mer",
+    "englishName": "Meru",
+    "chineseName": "梅鲁语",
+    "nativeName": "Kĩmĩrũ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mfe",
+    "englishName": "Morisyen",
+    "chineseName": "毛里求斯克里奥尔语",
+    "nativeName": "kreol morisien",
+    "primaryRegions": [
+      "MU"
+    ]
+  },
+  {
+    "bcp47Code": "mg",
+    "englishName": "Malagasy",
+    "chineseName": "马拉加斯语",
+    "nativeName": "Malagasy",
+    "primaryRegions": [
+      "MG"
+    ]
+  },
+  {
+    "bcp47Code": "mga",
+    "englishName": "Middle Irish",
+    "chineseName": "中古爱尔兰语",
+    "nativeName": "中古爱尔兰语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mgh",
+    "englishName": "Makhuwa-Meetto",
+    "chineseName": "马库阿-梅托语",
+    "nativeName": "Makua",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mgo",
+    "englishName": "Metaʼ",
+    "chineseName": "梅塔语",
+    "nativeName": "metaʼ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mh",
+    "englishName": "Marshallese",
+    "chineseName": "马绍尔语",
+    "nativeName": "马绍尔语",
+    "primaryRegions": [
+      "MH"
+    ]
+  },
+  {
+    "bcp47Code": "mi",
+    "englishName": "Māori",
+    "chineseName": "毛利语",
+    "nativeName": "Māori",
+    "primaryRegions": [
+      "NZ"
+    ]
+  },
+  {
+    "bcp47Code": "mic",
+    "englishName": "Mi'kmaw",
+    "chineseName": "密克马克语",
+    "nativeName": "Lʼnuiʼsuti",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "min",
+    "englishName": "Minangkabau",
+    "chineseName": "米南佳保语",
+    "nativeName": "米南佳保语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mk",
+    "englishName": "Macedonian",
+    "chineseName": "马其顿语",
+    "nativeName": "македонски",
+    "primaryRegions": [
+      "MK"
+    ]
+  },
+  {
+    "bcp47Code": "ml",
+    "englishName": "Malayalam",
+    "chineseName": "马拉雅拉姆语",
+    "nativeName": "മലയാളം",
+    "primaryRegions": [
+      "AE",
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "mn",
+    "englishName": "Mongolian",
+    "chineseName": "蒙古语",
+    "nativeName": "монгол",
+    "primaryRegions": [
+      "MN"
+    ]
+  },
+  {
+    "bcp47Code": "mnc",
+    "englishName": "Manchu",
+    "chineseName": "满语",
+    "nativeName": "满语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mni",
+    "englishName": "Manipuri",
+    "chineseName": "曼尼普尔语",
+    "nativeName": "মৈতৈলোন্",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "moe",
+    "englishName": "Innu-aimun",
+    "chineseName": "因努埃蒙语",
+    "nativeName": "因努埃蒙语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "moh",
+    "englishName": "Mohawk",
+    "chineseName": "摩霍克语",
+    "nativeName": "Kanienʼkéha",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mos",
+    "englishName": "Mossi",
+    "chineseName": "莫西语",
+    "nativeName": "莫西语",
+    "primaryRegions": [
+      "BF"
+    ]
+  },
+  {
+    "bcp47Code": "mr",
+    "englishName": "Marathi",
+    "chineseName": "马拉地语",
+    "nativeName": "मराठी",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "mrj",
+    "englishName": "Western Mari",
+    "chineseName": "Western Mari",
+    "nativeName": "Western Mari",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ms",
+    "englishName": "Malay",
+    "chineseName": "马来语",
+    "nativeName": "Melayu",
+    "primaryRegions": [
+      "BN",
+      "MY",
+      "SG"
+    ]
+  },
+  {
+    "bcp47Code": "mt",
+    "englishName": "Maltese",
+    "chineseName": "马耳他语",
+    "nativeName": "Malti",
+    "primaryRegions": [
+      "MT"
+    ]
+  },
+  {
+    "bcp47Code": "mua",
+    "englishName": "Mundang",
+    "chineseName": "蒙当语",
+    "nativeName": "MUNDAŊ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mul",
+    "englishName": "Multiple languages",
+    "chineseName": "多语种",
+    "nativeName": "多语种",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mus",
+    "englishName": "Muscogee",
+    "chineseName": "克里克语",
+    "nativeName": "Mvskoke",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mwl",
+    "englishName": "Mirandese",
+    "chineseName": "米兰德斯语",
+    "nativeName": "米兰德斯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mwr",
+    "englishName": "Marwari",
+    "chineseName": "马尔瓦里语",
+    "nativeName": "马尔瓦里语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "mwv",
+    "englishName": "Mentawai",
+    "chineseName": "Mentawai",
+    "nativeName": "Mentawai",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "my",
+    "englishName": "Burmese",
+    "chineseName": "缅甸语",
+    "nativeName": "မြန်မာ",
+    "primaryRegions": [
+      "MM"
+    ]
+  },
+  {
+    "bcp47Code": "mye",
+    "englishName": "Myene",
+    "chineseName": "姆耶内语",
+    "nativeName": "姆耶内语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "myv",
+    "englishName": "Erzya",
+    "chineseName": "厄尔兹亚语",
+    "nativeName": "эрзянь кель",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "mzn",
+    "englishName": "Mazanderani",
+    "chineseName": "马赞德兰语",
+    "nativeName": "مازرونی",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "na",
+    "englishName": "Nauru",
+    "chineseName": "瑙鲁语",
+    "nativeName": "瑙鲁语",
+    "primaryRegions": [
+      "NR"
+    ]
+  },
+  {
+    "bcp47Code": "nan",
+    "englishName": "Min Nan Chinese",
+    "chineseName": "闽南语",
+    "nativeName": "闽南语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "nap",
+    "englishName": "Neapolitan",
+    "chineseName": "那不勒斯语",
+    "nativeName": "那不勒斯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "naq",
+    "englishName": "Nama",
+    "chineseName": "纳马语",
+    "nativeName": "Khoekhoegowab",
+    "primaryRegions": [
+      "NA"
+    ]
+  },
+  {
+    "bcp47Code": "nb",
+    "englishName": "Norwegian Bokmål",
+    "chineseName": "书面挪威语",
+    "nativeName": "norsk bokmål",
+    "primaryRegions": [
+      "NO",
+      "SJ"
+    ]
+  },
+  {
+    "bcp47Code": "nd",
+    "englishName": "North Ndebele",
+    "chineseName": "北恩德贝勒语",
+    "nativeName": "isiNdebele",
+    "primaryRegions": [
+      "ZW"
+    ]
+  },
+  {
+    "bcp47Code": "nds",
+    "englishName": "Low German",
+    "chineseName": "低地德语",
+    "nativeName": "Neddersass’sch",
+    "primaryRegions": [
+      "DE",
+      "NL"
+    ]
+  },
+  {
+    "bcp47Code": "nds-NL",
+    "englishName": "Low German (Netherlands)",
+    "chineseName": "低地德语(荷兰)",
+    "nativeName": "Neddersass’sch",
+    "primaryRegions": [
+      "DE",
+      "NL"
+    ]
+  },
+  {
+    "bcp47Code": "ne",
+    "englishName": "Nepali",
+    "chineseName": "尼泊尔语",
+    "nativeName": "नेपाली",
+    "primaryRegions": [
+      "BT",
+      "IN",
+      "NP"
+    ]
+  },
+  {
+    "bcp47Code": "new",
+    "englishName": "Newari",
+    "chineseName": "尼瓦尔语",
+    "nativeName": "尼瓦尔语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ng",
+    "englishName": "Ndonga",
+    "chineseName": "恩东加语",
+    "nativeName": "恩东加语",
+    "primaryRegions": [
+      "NA"
+    ]
+  },
+  {
+    "bcp47Code": "nia",
+    "englishName": "Nias",
+    "chineseName": "尼亚斯语",
+    "nativeName": "尼亚斯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "niu",
+    "englishName": "Niuean",
+    "chineseName": "纽埃语",
+    "nativeName": "纽埃语",
+    "primaryRegions": [
+      "NU"
+    ]
+  },
+  {
+    "bcp47Code": "njo",
+    "englishName": "Ao Naga",
+    "chineseName": "Ao Naga",
+    "nativeName": "Ao Naga",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "nl",
+    "englishName": "Dutch",
+    "chineseName": "荷兰语",
+    "nativeName": "Nederlands",
+    "primaryRegions": [
+      "AW",
+      "BE",
+      "BQ",
+      "CW",
+      "DE",
+      "NL",
+      "SR",
+      "SX"
+    ]
+  },
+  {
+    "bcp47Code": "nl-BE",
+    "englishName": "Dutch (Belgium)",
+    "chineseName": "荷兰语(比利时)",
+    "nativeName": "Vlaams",
+    "primaryRegions": [
+      "AW",
+      "BE",
+      "BQ",
+      "CW",
+      "DE",
+      "NL",
+      "SR",
+      "SX"
+    ]
+  },
+  {
+    "bcp47Code": "nmg",
+    "englishName": "Kwasio",
+    "chineseName": "夸西奥语",
+    "nativeName": "夸西奥语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "nn",
+    "englishName": "Norwegian Nynorsk",
+    "chineseName": "挪威尼诺斯克语",
+    "nativeName": "norsk nynorsk",
+    "primaryRegions": [
+      "NO"
+    ]
+  },
+  {
+    "bcp47Code": "nnh",
+    "englishName": "Ngiemboon",
+    "chineseName": "恩甘澎语",
+    "nativeName": "Shwóŋò ngiembɔɔn",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "no",
+    "englishName": "Norwegian",
+    "chineseName": "挪威语",
+    "nativeName": "norsk",
+    "primaryRegions": [
+      "BV",
+      "NO"
+    ]
+  },
+  {
+    "bcp47Code": "nog",
+    "englishName": "Nogai",
+    "chineseName": "诺盖语",
+    "nativeName": "诺盖语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "non",
+    "englishName": "Old Norse",
+    "chineseName": "古诺尔斯语",
+    "nativeName": "古诺尔斯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "nov",
+    "englishName": "Novial",
+    "chineseName": "Novial",
+    "nativeName": "Novial",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "nqo",
+    "englishName": "N’Ko",
+    "chineseName": "西非书面文字",
+    "nativeName": "ߒߞߏ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "nr",
+    "englishName": "South Ndebele",
+    "chineseName": "南恩德贝勒语",
+    "nativeName": "南恩德贝勒语",
+    "primaryRegions": [
+      "ZA"
+    ]
+  },
+  {
+    "bcp47Code": "nso",
+    "englishName": "Northern Sotho",
+    "chineseName": "北索托语",
+    "nativeName": "Sesotho sa Leboa",
+    "primaryRegions": [
+      "ZA"
+    ]
+  },
+  {
+    "bcp47Code": "nus",
+    "englishName": "Nuer",
+    "chineseName": "努埃尔语",
+    "nativeName": "Thok Nath",
+    "primaryRegions": [
+      "SS"
+    ]
+  },
+  {
+    "bcp47Code": "nv",
+    "englishName": "Navajo",
+    "chineseName": "纳瓦霍语",
+    "nativeName": "Diné Bizaad",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "nwc",
+    "englishName": "Classical Newari",
+    "chineseName": "古典尼瓦尔语",
+    "nativeName": "古典尼瓦尔语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ny",
+    "englishName": "Nyanja",
+    "chineseName": "齐切瓦语",
+    "nativeName": "Nyanja",
+    "primaryRegions": [
+      "MW",
+      "ZM"
+    ]
+  },
+  {
+    "bcp47Code": "nym",
+    "englishName": "Nyamwezi",
+    "chineseName": "尼扬韦齐语",
+    "nativeName": "尼扬韦齐语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "nyn",
+    "englishName": "Nyankole",
+    "chineseName": "尼昂科勒语",
+    "nativeName": "Runyankore",
+    "primaryRegions": [
+      "UG"
+    ]
+  },
+  {
+    "bcp47Code": "nyo",
+    "englishName": "Nyoro",
+    "chineseName": "尼奥罗语",
+    "nativeName": "尼奥罗语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "nzi",
+    "englishName": "Nzima",
+    "chineseName": "恩济马语",
+    "nativeName": "恩济马语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "oc",
+    "englishName": "Occitan",
+    "chineseName": "奥克语",
+    "nativeName": "occitan",
+    "primaryRegions": [
+      "ES"
+    ]
+  },
+  {
+    "bcp47Code": "oj",
+    "englishName": "Ojibwa",
+    "chineseName": "奥吉布瓦语",
+    "nativeName": "奥吉布瓦语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ojb",
+    "englishName": "Northwestern Ojibwa",
+    "chineseName": "西北部奥吉布瓦语",
+    "nativeName": "西北部奥吉布瓦语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ojc",
+    "englishName": "Central Ojibwa",
+    "chineseName": "中奥吉布瓦语",
+    "nativeName": "中奥吉布瓦语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ojs",
+    "englishName": "Oji-Cree",
+    "chineseName": "欧吉克里语",
+    "nativeName": "欧吉克里语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ojw",
+    "englishName": "Western Ojibwa",
+    "chineseName": "西奥吉布瓦语",
+    "nativeName": "西奥吉布瓦语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "oka",
+    "englishName": "Okanagan",
+    "chineseName": "欧肯那根语",
+    "nativeName": "n̓səl̓xcin̓",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "om",
+    "englishName": "Oromo",
+    "chineseName": "奥罗莫语",
+    "nativeName": "Oromoo",
+    "primaryRegions": [
+      "ET"
+    ]
+  },
+  {
+    "bcp47Code": "or",
+    "englishName": "Odia",
+    "chineseName": "奥里亚语",
+    "nativeName": "ଓଡ଼ିଆ",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "os",
+    "englishName": "Ossetic",
+    "chineseName": "奥塞梯语",
+    "nativeName": "ирон",
+    "primaryRegions": [
+      "GE"
+    ]
+  },
+  {
+    "bcp47Code": "osa",
+    "englishName": "Osage",
+    "chineseName": "欧塞奇语",
+    "nativeName": "𐓏𐓘𐓻𐓘𐓻𐓟",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ota",
+    "englishName": "Ottoman Turkish",
+    "chineseName": "奥斯曼土耳其语",
+    "nativeName": "奥斯曼土耳其语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pa",
+    "englishName": "Punjabi",
+    "chineseName": "旁遮普语",
+    "nativeName": "ਪੰਜਾਬੀ",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "pag",
+    "englishName": "Pangasinan",
+    "chineseName": "邦阿西南语",
+    "nativeName": "邦阿西南语",
+    "primaryRegions": [
+      "PH"
+    ]
+  },
+  {
+    "bcp47Code": "pal",
+    "englishName": "Pahlavi",
+    "chineseName": "巴拉维语",
+    "nativeName": "巴拉维语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pam",
+    "englishName": "Pampanga",
+    "chineseName": "邦板牙语",
+    "nativeName": "邦板牙语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pap",
+    "englishName": "Papiamento",
+    "chineseName": "帕皮阿门托语",
+    "nativeName": "Papiamentu",
+    "primaryRegions": [
+      "AW",
+      "BQ",
+      "CW"
+    ]
+  },
+  {
+    "bcp47Code": "pau",
+    "englishName": "Palauan",
+    "chineseName": "帕劳语",
+    "nativeName": "帕劳语",
+    "primaryRegions": [
+      "PW"
+    ]
+  },
+  {
+    "bcp47Code": "pcd",
+    "englishName": "Picard",
+    "chineseName": "Picard",
+    "nativeName": "Picard",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pcm",
+    "englishName": "Nigerian Pidgin",
+    "chineseName": "尼日利亚皮钦语",
+    "nativeName": "Naijíriá Píjin",
+    "primaryRegions": [
+      "NG"
+    ]
+  },
+  {
+    "bcp47Code": "pdc",
+    "englishName": "Pennsylvania German",
+    "chineseName": "Pennsylvania German",
+    "nativeName": "Pennsylvania German",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pdt",
+    "englishName": "Plautdietsch",
+    "chineseName": "Plautdietsch",
+    "nativeName": "Plautdietsch",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "peo",
+    "englishName": "Old Persian",
+    "chineseName": "古波斯语",
+    "nativeName": "古波斯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pfl",
+    "englishName": "Palatine German",
+    "chineseName": "Palatine German",
+    "nativeName": "Palatine German",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "phn",
+    "englishName": "Phoenician",
+    "chineseName": "腓尼基语",
+    "nativeName": "腓尼基语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pi",
+    "englishName": "Pali",
+    "chineseName": "巴利语",
+    "nativeName": "巴利语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pis",
+    "englishName": "Pijin",
+    "chineseName": "皮京语",
+    "nativeName": "Pijin",
+    "primaryRegions": [
+      "SB"
+    ]
+  },
+  {
+    "bcp47Code": "pl",
+    "englishName": "Polish",
+    "chineseName": "波兰语",
+    "nativeName": "polski",
+    "primaryRegions": [
+      "PL"
+    ]
+  },
+  {
+    "bcp47Code": "pms",
+    "englishName": "Piedmontese",
+    "chineseName": "Piedmontese",
+    "nativeName": "piemontèis",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pnt",
+    "englishName": "Pontic",
+    "chineseName": "Pontic",
+    "nativeName": "Pontic",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pon",
+    "englishName": "Pohnpeian",
+    "chineseName": "波纳佩语",
+    "nativeName": "波纳佩语",
+    "primaryRegions": [
+      "FM"
+    ]
+  },
+  {
+    "bcp47Code": "pqm",
+    "englishName": "Maliseet-Passamaquoddy",
+    "chineseName": "马利塞-帕萨马科迪语",
+    "nativeName": "马利塞-帕萨马科迪语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "prg",
+    "englishName": "Prussian",
+    "chineseName": "普鲁士语",
+    "nativeName": "prūsiskan",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "pro",
+    "englishName": "Old Provençal",
+    "chineseName": "古普罗文斯语",
+    "nativeName": "古普罗文斯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ps",
+    "englishName": "Pashto",
+    "chineseName": "普什图语",
+    "nativeName": "پښتو",
+    "primaryRegions": [
+      "AF",
+      "PK"
+    ]
+  },
+  {
+    "bcp47Code": "pt",
+    "englishName": "Portuguese",
+    "chineseName": "葡萄牙语",
+    "nativeName": "português",
+    "primaryRegions": [
+      "AO",
+      "BR",
+      "CV",
+      "GQ",
+      "GW",
+      "LU",
+      "MO",
+      "MZ",
+      "PT",
+      "ST",
+      "TL"
+    ]
+  },
+  {
+    "bcp47Code": "pt-BR",
+    "englishName": "Portuguese (Brazil)",
+    "chineseName": "葡萄牙语(巴西)",
+    "nativeName": "português",
+    "primaryRegions": [
+      "AO",
+      "BR",
+      "CV",
+      "GQ",
+      "GW",
+      "LU",
+      "MO",
+      "MZ",
+      "PT",
+      "ST",
+      "TL"
+    ]
+  },
+  {
+    "bcp47Code": "pt-PT",
+    "englishName": "Portuguese (Portugal)",
+    "chineseName": "葡萄牙语(葡萄牙)",
+    "nativeName": "português europeu",
+    "primaryRegions": [
+      "AO",
+      "BR",
+      "CV",
+      "GQ",
+      "GW",
+      "LU",
+      "MO",
+      "MZ",
+      "PT",
+      "ST",
+      "TL"
+    ]
+  },
+  {
+    "bcp47Code": "qu",
+    "englishName": "Quechua",
+    "chineseName": "克丘亚语",
+    "nativeName": "Runasimi",
+    "primaryRegions": [
+      "BO",
+      "EC",
+      "PE"
+    ]
+  },
+  {
+    "bcp47Code": "quc",
+    "englishName": "Kʼicheʼ",
+    "chineseName": "基切语",
+    "nativeName": "Kʼicheʼ",
+    "primaryRegions": [
+      "GT"
+    ]
+  },
+  {
+    "bcp47Code": "qug",
+    "englishName": "Chimborazo Highland Quichua",
+    "chineseName": "Chimborazo Highland Quichua",
+    "nativeName": "Chimborazo Highland Quichua",
+    "primaryRegions": [
+      "EC"
+    ]
+  },
+  {
+    "bcp47Code": "raj",
+    "englishName": "Rajasthani",
+    "chineseName": "拉贾斯坦语",
+    "nativeName": "राजस्थानी",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rap",
+    "englishName": "Rapanui",
+    "chineseName": "拉帕努伊语",
+    "nativeName": "拉帕努伊语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rar",
+    "englishName": "Rarotongan",
+    "chineseName": "拉罗汤加语",
+    "nativeName": "拉罗汤加语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rgn",
+    "englishName": "Romagnol",
+    "chineseName": "Romagnol",
+    "nativeName": "Romagnol",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rhg",
+    "englishName": "Rohingya",
+    "chineseName": "罗兴亚语",
+    "nativeName": "𐴌𐴗𐴥𐴝𐴙𐴚𐴒𐴙𐴝",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rif",
+    "englishName": "Riffian",
+    "chineseName": "里夫语",
+    "nativeName": "Tarifit",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rm",
+    "englishName": "Romansh",
+    "chineseName": "罗曼什语",
+    "nativeName": "rumantsch",
+    "primaryRegions": [
+      "CH"
+    ]
+  },
+  {
+    "bcp47Code": "rn",
+    "englishName": "Rundi",
+    "chineseName": "隆迪语",
+    "nativeName": "Ikirundi",
+    "primaryRegions": [
+      "BI"
+    ]
+  },
+  {
+    "bcp47Code": "ro",
+    "englishName": "Romanian",
+    "chineseName": "罗马尼亚语",
+    "nativeName": "română",
+    "primaryRegions": [
+      "MD",
+      "RO",
+      "RS"
+    ]
+  },
+  {
+    "bcp47Code": "ro-MD",
+    "englishName": "Romanian (Moldova)",
+    "chineseName": "罗马尼亚语(摩尔多瓦)",
+    "nativeName": "română",
+    "primaryRegions": [
+      "MD",
+      "RO",
+      "RS"
+    ]
+  },
+  {
+    "bcp47Code": "rof",
+    "englishName": "Rombo",
+    "chineseName": "兰博语",
+    "nativeName": "Kihorombo",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rom",
+    "englishName": "Romany",
+    "chineseName": "吉普赛语",
+    "nativeName": "吉普赛语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rtm",
+    "englishName": "Rotuman",
+    "chineseName": "Rotuman",
+    "nativeName": "Rotuman",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ru",
+    "englishName": "Russian",
+    "chineseName": "俄语",
+    "nativeName": "русский",
+    "primaryRegions": [
+      "AM",
+      "BG",
+      "BY",
+      "DE",
+      "EE",
+      "GE",
+      "IL",
+      "KG",
+      "KZ",
+      "LT",
+      "LV",
+      "PL",
+      "RU",
+      "SJ",
+      "TJ",
+      "TM",
+      "UA",
+      "UZ"
+    ]
+  },
+  {
+    "bcp47Code": "rue",
+    "englishName": "Rusyn",
+    "chineseName": "Rusyn",
+    "nativeName": "Rusyn",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rug",
+    "englishName": "Roviana",
+    "chineseName": "Roviana",
+    "nativeName": "Roviana",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rup",
+    "englishName": "Aromanian",
+    "chineseName": "阿罗马尼亚语",
+    "nativeName": "阿罗马尼亚语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "rw",
+    "englishName": "Kinyarwanda",
+    "chineseName": "卢旺达语",
+    "nativeName": "Ikinyarwanda",
+    "primaryRegions": [
+      "RW"
+    ]
+  },
+  {
+    "bcp47Code": "rwk",
+    "englishName": "Rwa",
+    "chineseName": "罗瓦语",
+    "nativeName": "Kiruwa",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sa",
+    "englishName": "Sanskrit",
+    "chineseName": "梵语",
+    "nativeName": "संस्कृत भाषा",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "sad",
+    "englishName": "Sandawe",
+    "chineseName": "桑达韦语",
+    "nativeName": "桑达韦语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sah",
+    "englishName": "Yakut",
+    "chineseName": "萨哈语",
+    "nativeName": "саха тыла",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "sam",
+    "englishName": "Samaritan Aramaic",
+    "chineseName": "萨马利亚阿拉姆语",
+    "nativeName": "萨马利亚阿拉姆语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "saq",
+    "englishName": "Samburu",
+    "chineseName": "桑布鲁语",
+    "nativeName": "Kisampur",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sas",
+    "englishName": "Sasak",
+    "chineseName": "萨萨克语",
+    "nativeName": "萨萨克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sat",
+    "englishName": "Santali",
+    "chineseName": "桑塔利语",
+    "nativeName": "ᱥᱟᱱᱛᱟᱲᱤ",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "saz",
+    "englishName": "Sourashtra",
+    "chineseName": "Sourashtra",
+    "nativeName": "Sourashtra",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sba",
+    "englishName": "Ngambay",
+    "chineseName": "甘拜语",
+    "nativeName": "甘拜语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sbp",
+    "englishName": "Sangu",
+    "chineseName": "桑古语",
+    "nativeName": "Ishisangu",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sc",
+    "englishName": "Sardinian",
+    "chineseName": "萨丁语",
+    "nativeName": "sardu",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "scn",
+    "englishName": "Sicilian",
+    "chineseName": "西西里语",
+    "nativeName": "sicilianu",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sco",
+    "englishName": "Scots",
+    "chineseName": "苏格兰语",
+    "nativeName": "苏格兰语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sd",
+    "englishName": "Sindhi",
+    "chineseName": "信德语",
+    "nativeName": "سنڌي",
+    "primaryRegions": [
+      "IN",
+      "PK"
+    ]
+  },
+  {
+    "bcp47Code": "sdc",
+    "englishName": "Sassarese Sardinian",
+    "chineseName": "Sassarese Sardinian",
+    "nativeName": "Sassarese Sardinian",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sdh",
+    "englishName": "Southern Kurdish",
+    "chineseName": "南库尔德语",
+    "nativeName": "کوردی خوارگ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sdh-menu-core",
+    "englishName": "Kurdish",
+    "chineseName": "Kurdish",
+    "nativeName": "کوردی خوارگ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sdh-menu-extension",
+    "englishName": "Southern",
+    "chineseName": "Southern",
+    "nativeName": "کوردی خوارگ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "se",
+    "englishName": "Northern Sami",
+    "chineseName": "北方萨米语",
+    "nativeName": "davvisámegiella",
+    "primaryRegions": [
+      "NO"
+    ]
+  },
+  {
+    "bcp47Code": "see",
+    "englishName": "Seneca",
+    "chineseName": "塞内卡语",
+    "nativeName": "塞内卡语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "seh",
+    "englishName": "Sena",
+    "chineseName": "塞纳语",
+    "nativeName": "sena",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sei",
+    "englishName": "Seri",
+    "chineseName": "Seri",
+    "nativeName": "Seri",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sel",
+    "englishName": "Selkup",
+    "chineseName": "塞尔库普语",
+    "nativeName": "塞尔库普语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ses",
+    "englishName": "Koyraboro Senni",
+    "chineseName": "东桑海语",
+    "nativeName": "Koyraboro senni",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sg",
+    "englishName": "Sango",
+    "chineseName": "桑戈语",
+    "nativeName": "Sängö",
+    "primaryRegions": [
+      "CF"
+    ]
+  },
+  {
+    "bcp47Code": "sga",
+    "englishName": "Old Irish",
+    "chineseName": "古爱尔兰语",
+    "nativeName": "古爱尔兰语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sgs",
+    "englishName": "Samogitian",
+    "chineseName": "Samogitian",
+    "nativeName": "Samogitian",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sh",
+    "englishName": "Serbo-Croatian",
+    "chineseName": "塞尔维亚-克罗地亚语",
+    "nativeName": "塞尔维亚-克罗地亚语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "shi",
+    "englishName": "Tachelhit",
+    "chineseName": "希尔哈语",
+    "nativeName": "ⵜⴰⵛⵍⵃⵉⵜ",
+    "primaryRegions": [
+      "MA"
+    ]
+  },
+  {
+    "bcp47Code": "shn",
+    "englishName": "Shan",
+    "chineseName": "掸语",
+    "nativeName": "တႆး",
+    "primaryRegions": [
+      "MM"
+    ]
+  },
+  {
+    "bcp47Code": "shu",
+    "englishName": "Chadian Arabic",
+    "chineseName": "乍得阿拉伯语",
+    "nativeName": "乍得阿拉伯语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "si",
+    "englishName": "Sinhala",
+    "chineseName": "僧伽罗语",
+    "nativeName": "සිංහල",
+    "primaryRegions": [
+      "LK"
+    ]
+  },
+  {
+    "bcp47Code": "sid",
+    "englishName": "Sidamo",
+    "chineseName": "悉达摩语",
+    "nativeName": "悉达摩语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sk",
+    "englishName": "Slovak",
+    "chineseName": "斯洛伐克语",
+    "nativeName": "slovenčina",
+    "primaryRegions": [
+      "CZ",
+      "RS",
+      "SK"
+    ]
+  },
+  {
+    "bcp47Code": "sl",
+    "englishName": "Slovenian",
+    "chineseName": "斯洛文尼亚语",
+    "nativeName": "slovenščina",
+    "primaryRegions": [
+      "AT",
+      "SI"
+    ]
+  },
+  {
+    "bcp47Code": "slh",
+    "englishName": "Southern Lushootseed",
+    "chineseName": "南卢舒特种子语",
+    "nativeName": "南卢舒特种子语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sli",
+    "englishName": "Lower Silesian",
+    "chineseName": "Lower Silesian",
+    "nativeName": "Lower Silesian",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sly",
+    "englishName": "Selayar",
+    "chineseName": "Selayar",
+    "nativeName": "Selayar",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sm",
+    "englishName": "Samoan",
+    "chineseName": "萨摩亚语",
+    "nativeName": "萨摩亚语",
+    "primaryRegions": [
+      "AS",
+      "TK",
+      "WS"
+    ]
+  },
+  {
+    "bcp47Code": "sma",
+    "englishName": "Southern Sami",
+    "chineseName": "南萨米语",
+    "nativeName": "Åarjelsaemien gïele",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "smj",
+    "englishName": "Lule Sami",
+    "chineseName": "吕勒萨米语",
+    "nativeName": "julevsámegiella",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "smn",
+    "englishName": "Inari Sami",
+    "chineseName": "伊纳里萨米语",
+    "nativeName": "anarâškielâ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sms",
+    "englishName": "Skolt Sami",
+    "chineseName": "斯科特萨米语",
+    "nativeName": "sääʹmǩiõll",
+    "primaryRegions": [
+      "FI"
+    ]
+  },
+  {
+    "bcp47Code": "sn",
+    "englishName": "Shona",
+    "chineseName": "绍纳语",
+    "nativeName": "chiShona",
+    "primaryRegions": [
+      "ZW"
+    ]
+  },
+  {
+    "bcp47Code": "snk",
+    "englishName": "Soninke",
+    "chineseName": "索宁克语",
+    "nativeName": "索宁克语",
+    "primaryRegions": [
+      "ML"
+    ]
+  },
+  {
+    "bcp47Code": "so",
+    "englishName": "Somali",
+    "chineseName": "索马里语",
+    "nativeName": "Soomaali",
+    "primaryRegions": [
+      "DJ",
+      "ET",
+      "SO"
+    ]
+  },
+  {
+    "bcp47Code": "sog",
+    "englishName": "Sogdien",
+    "chineseName": "粟特语",
+    "nativeName": "粟特语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sq",
+    "englishName": "Albanian",
+    "chineseName": "阿尔巴尼亚语",
+    "nativeName": "shqip",
+    "primaryRegions": [
+      "AL",
+      "ME",
+      "MK",
+      "RS",
+      "XK"
+    ]
+  },
+  {
+    "bcp47Code": "sr",
+    "englishName": "Serbian",
+    "chineseName": "塞尔维亚语",
+    "nativeName": "српски",
+    "primaryRegions": [
+      "BA",
+      "RS",
+      "XK"
+    ]
+  },
+  {
+    "bcp47Code": "sr-ME",
+    "englishName": "Serbian (Montenegro)",
+    "chineseName": "塞尔维亚语(黑山)",
+    "nativeName": "српски",
+    "primaryRegions": [
+      "BA",
+      "RS",
+      "XK"
+    ]
+  },
+  {
+    "bcp47Code": "srn",
+    "englishName": "Sranan Tongo",
+    "chineseName": "苏里南汤加语",
+    "nativeName": "苏里南汤加语",
+    "primaryRegions": [
+      "SR"
+    ]
+  },
+  {
+    "bcp47Code": "srr",
+    "englishName": "Serer",
+    "chineseName": "塞雷尔语",
+    "nativeName": "塞雷尔语",
+    "primaryRegions": [
+      "SN"
+    ]
+  },
+  {
+    "bcp47Code": "ss",
+    "englishName": "Swati",
+    "chineseName": "斯瓦蒂语",
+    "nativeName": "siSwati",
+    "primaryRegions": [
+      "SZ",
+      "ZA"
+    ]
+  },
+  {
+    "bcp47Code": "ssy",
+    "englishName": "Saho",
+    "chineseName": "萨霍语",
+    "nativeName": "Saho",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "st",
+    "englishName": "Southern Sotho",
+    "chineseName": "南索托语",
+    "nativeName": "Sesotho",
+    "primaryRegions": [
+      "LS",
+      "ZA"
+    ]
+  },
+  {
+    "bcp47Code": "stq",
+    "englishName": "Saterland Frisian",
+    "chineseName": "Saterland Frisian",
+    "nativeName": "Saterland Frisian",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "str",
+    "englishName": "Straits Salish",
+    "chineseName": "海峡萨利希语",
+    "nativeName": "海峡萨利希语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "su",
+    "englishName": "Sundanese",
+    "chineseName": "巽他语",
+    "nativeName": "Basa Sunda",
+    "primaryRegions": [
+      "ID"
+    ]
+  },
+  {
+    "bcp47Code": "suk",
+    "englishName": "Sukuma",
+    "chineseName": "苏库马语",
+    "nativeName": "苏库马语",
+    "primaryRegions": [
+      "TZ"
+    ]
+  },
+  {
+    "bcp47Code": "sus",
+    "englishName": "Susu",
+    "chineseName": "苏苏语",
+    "nativeName": "苏苏语",
+    "primaryRegions": [
+      "GN"
+    ]
+  },
+  {
+    "bcp47Code": "sux",
+    "englishName": "Sumerian",
+    "chineseName": "苏美尔语",
+    "nativeName": "苏美尔语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "sv",
+    "englishName": "Swedish",
+    "chineseName": "瑞典语",
+    "nativeName": "svenska",
+    "primaryRegions": [
+      "AX",
+      "DK",
+      "FI",
+      "SE"
+    ]
+  },
+  {
+    "bcp47Code": "sw",
+    "englishName": "Swahili",
+    "chineseName": "斯瓦希里语",
+    "nativeName": "Kiswahili",
+    "primaryRegions": [
+      "CD",
+      "KE",
+      "TZ",
+      "UG"
+    ]
+  },
+  {
+    "bcp47Code": "sw-CD",
+    "englishName": "Swahili (Congo - Kinshasa)",
+    "chineseName": "斯瓦希里语(刚果（金）)",
+    "nativeName": "Kiswahili",
+    "primaryRegions": [
+      "CD",
+      "KE",
+      "TZ",
+      "UG"
+    ]
+  },
+  {
+    "bcp47Code": "swb",
+    "englishName": "Comorian",
+    "chineseName": "科摩罗语",
+    "nativeName": "科摩罗语",
+    "primaryRegions": [
+      "YT"
+    ]
+  },
+  {
+    "bcp47Code": "syc",
+    "englishName": "Classical Syriac",
+    "chineseName": "古典叙利亚语",
+    "nativeName": "古典叙利亚语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "syr",
+    "englishName": "Syriac",
+    "chineseName": "叙利亚语",
+    "nativeName": "ܣܘܪܝܝܐ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "szl",
+    "englishName": "Silesian",
+    "chineseName": "西里西亚语",
+    "nativeName": "ślōnski",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ta",
+    "englishName": "Tamil",
+    "chineseName": "泰米尔语",
+    "nativeName": "தமிழ்",
+    "primaryRegions": [
+      "IN",
+      "LK",
+      "RE",
+      "SG"
+    ]
+  },
+  {
+    "bcp47Code": "tce",
+    "englishName": "Southern Tutchone",
+    "chineseName": "南塔穹语",
+    "nativeName": "南塔穹语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tcy",
+    "englishName": "Tulu",
+    "chineseName": "Tulu",
+    "nativeName": "Tulu",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "te",
+    "englishName": "Telugu",
+    "chineseName": "泰卢固语",
+    "nativeName": "తెలుగు",
+    "primaryRegions": [
+      "IN"
+    ]
+  },
+  {
+    "bcp47Code": "tem",
+    "englishName": "Timne",
+    "chineseName": "泰姆奈语",
+    "nativeName": "泰姆奈语",
+    "primaryRegions": [
+      "SL"
+    ]
+  },
+  {
+    "bcp47Code": "teo",
+    "englishName": "Teso",
+    "chineseName": "特索语",
+    "nativeName": "Kiteso",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ter",
+    "englishName": "Tereno",
+    "chineseName": "特伦诺语",
+    "nativeName": "特伦诺语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tet",
+    "englishName": "Tetum",
+    "chineseName": "德顿语",
+    "nativeName": "德顿语",
+    "primaryRegions": [
+      "TL"
+    ]
+  },
+  {
+    "bcp47Code": "tg",
+    "englishName": "Tajik",
+    "chineseName": "塔吉克语",
+    "nativeName": "тоҷикӣ",
+    "primaryRegions": [
+      "TJ"
+    ]
+  },
+  {
+    "bcp47Code": "tgx",
+    "englishName": "Tagish",
+    "chineseName": "塔吉什语",
+    "nativeName": "塔吉什语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "th",
+    "englishName": "Thai",
+    "chineseName": "泰语",
+    "nativeName": "ไทย",
+    "primaryRegions": [
+      "TH"
+    ]
+  },
+  {
+    "bcp47Code": "tht",
+    "englishName": "Tahltan",
+    "chineseName": "塔尔坦语",
+    "nativeName": "塔尔坦语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ti",
+    "englishName": "Tigrinya",
+    "chineseName": "提格利尼亚语",
+    "nativeName": "ትግርኛ",
+    "primaryRegions": [
+      "ER",
+      "ET"
+    ]
+  },
+  {
+    "bcp47Code": "tig",
+    "englishName": "Tigre",
+    "chineseName": "提格雷语",
+    "nativeName": "提格雷语",
+    "primaryRegions": [
+      "ER"
+    ]
+  },
+  {
+    "bcp47Code": "tiv",
+    "englishName": "Tiv",
+    "chineseName": "蒂夫语",
+    "nativeName": "蒂夫语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tk",
+    "englishName": "Turkmen",
+    "chineseName": "土库曼语",
+    "nativeName": "türkmen dili",
+    "primaryRegions": [
+      "AF",
+      "TM"
+    ]
+  },
+  {
+    "bcp47Code": "tkl",
+    "englishName": "Tokelauan",
+    "chineseName": "托克劳语",
+    "nativeName": "托克劳语",
+    "primaryRegions": [
+      "TK"
+    ]
+  },
+  {
+    "bcp47Code": "tkr",
+    "englishName": "Tsakhur",
+    "chineseName": "Tsakhur",
+    "nativeName": "Tsakhur",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tl",
+    "englishName": "Tagalog",
+    "chineseName": "他加禄语",
+    "nativeName": "他加禄语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tlh",
+    "englishName": "Klingon",
+    "chineseName": "克林贡语",
+    "nativeName": "克林贡语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tli",
+    "englishName": "Tlingit",
+    "chineseName": "特林吉特语",
+    "nativeName": "特林吉特语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tly",
+    "englishName": "Talysh",
+    "chineseName": "Talysh",
+    "nativeName": "Talysh",
+    "primaryRegions": [
+      "AZ"
+    ]
+  },
+  {
+    "bcp47Code": "tmh",
+    "englishName": "Tamashek",
+    "chineseName": "塔马奇克语",
+    "nativeName": "塔马奇克语",
+    "primaryRegions": [
+      "NE"
+    ]
+  },
+  {
+    "bcp47Code": "tn",
+    "englishName": "Tswana",
+    "chineseName": "茨瓦纳语",
+    "nativeName": "Setswana",
+    "primaryRegions": [
+      "BW",
+      "ZA"
+    ]
+  },
+  {
+    "bcp47Code": "to",
+    "englishName": "Tongan",
+    "chineseName": "汤加语",
+    "nativeName": "lea fakatonga",
+    "primaryRegions": [
+      "TO"
+    ]
+  },
+  {
+    "bcp47Code": "tog",
+    "englishName": "Nyasa Tonga",
+    "chineseName": "尼亚萨汤加语",
+    "nativeName": "尼亚萨汤加语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tok",
+    "englishName": "Toki Pona",
+    "chineseName": "道本语",
+    "nativeName": "toki pona",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tpi",
+    "englishName": "Tok Pisin",
+    "chineseName": "托克皮辛语",
+    "nativeName": "Tok Pisin",
+    "primaryRegions": [
+      "PG"
+    ]
+  },
+  {
+    "bcp47Code": "tr",
+    "englishName": "Turkish",
+    "chineseName": "土耳其语",
+    "nativeName": "Türkçe",
+    "primaryRegions": [
+      "BG",
+      "CY",
+      "TR"
+    ]
+  },
+  {
+    "bcp47Code": "tru",
+    "englishName": "Turoyo",
+    "chineseName": "Turoyo",
+    "nativeName": "Turoyo",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "trv",
+    "englishName": "Taroko",
+    "chineseName": "赛德克语",
+    "nativeName": "patas Taroko",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "trw",
+    "englishName": "Torwali",
+    "chineseName": "托尔瓦利语",
+    "nativeName": "توروالی",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ts",
+    "englishName": "Tsonga",
+    "chineseName": "聪加语",
+    "nativeName": "聪加语",
+    "primaryRegions": [
+      "MZ",
+      "ZA"
+    ]
+  },
+  {
+    "bcp47Code": "tsd",
+    "englishName": "Tsakonian",
+    "chineseName": "Tsakonian",
+    "nativeName": "Tsakonian",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tsi",
+    "englishName": "Tsimshian",
+    "chineseName": "钦西安语",
+    "nativeName": "钦西安语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tt",
+    "englishName": "Tatar",
+    "chineseName": "鞑靼语",
+    "nativeName": "татар",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "ttm",
+    "englishName": "Northern Tutchone",
+    "chineseName": "北塔穹语",
+    "nativeName": "北塔穹语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ttt",
+    "englishName": "Muslim Tat",
+    "chineseName": "Muslim Tat",
+    "nativeName": "Muslim Tat",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "tum",
+    "englishName": "Tumbuka",
+    "chineseName": "通布卡语",
+    "nativeName": "通布卡语",
+    "primaryRegions": [
+      "MW"
+    ]
+  },
+  {
+    "bcp47Code": "tvl",
+    "englishName": "Tuvalu",
+    "chineseName": "图瓦卢语",
+    "nativeName": "图瓦卢语",
+    "primaryRegions": [
+      "TV"
+    ]
+  },
+  {
+    "bcp47Code": "tw",
+    "englishName": "Twi",
+    "chineseName": "契维语",
+    "nativeName": "契维语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "twq",
+    "englishName": "Tasawaq",
+    "chineseName": "北桑海语",
+    "nativeName": "Tasawaq senni",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ty",
+    "englishName": "Tahitian",
+    "chineseName": "塔希提语",
+    "nativeName": "塔希提语",
+    "primaryRegions": [
+      "PF"
+    ]
+  },
+  {
+    "bcp47Code": "tyv",
+    "englishName": "Tuvinian",
+    "chineseName": "图瓦语",
+    "nativeName": "Тыва",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "tzm",
+    "englishName": "Central Atlas Tamazight",
+    "chineseName": "塔马齐格特语",
+    "nativeName": "Tamaziɣt n laṭlaṣ",
+    "primaryRegions": [
+      "MA"
+    ]
+  },
+  {
+    "bcp47Code": "udm",
+    "englishName": "Udmurt",
+    "chineseName": "乌德穆尔特语",
+    "nativeName": "乌德穆尔特语",
+    "primaryRegions": [
+      "RU"
+    ]
+  },
+  {
+    "bcp47Code": "ug",
+    "englishName": "Uyghur",
+    "chineseName": "维吾尔语",
+    "nativeName": "ئۇيغۇرچە",
+    "primaryRegions": [
+      "CN"
+    ]
+  },
+  {
+    "bcp47Code": "uga",
+    "englishName": "Ugaritic",
+    "chineseName": "乌加里特语",
+    "nativeName": "乌加里特语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "uk",
+    "englishName": "Ukrainian",
+    "chineseName": "乌克兰语",
+    "nativeName": "українська",
+    "primaryRegions": [
+      "MD",
+      "RS",
+      "UA"
+    ]
+  },
+  {
+    "bcp47Code": "umb",
+    "englishName": "Umbundu",
+    "chineseName": "翁本杜语",
+    "nativeName": "翁本杜语",
+    "primaryRegions": [
+      "AO"
+    ]
+  },
+  {
+    "bcp47Code": "und",
+    "englishName": "Unknown language",
+    "chineseName": "未知语言",
+    "nativeName": "未知语言",
+    "primaryRegions": [
+      "AQ",
+      "CP",
+      "HM"
+    ]
+  },
+  {
+    "bcp47Code": "ur",
+    "englishName": "Urdu",
+    "chineseName": "乌尔都语",
+    "nativeName": "اردو",
+    "primaryRegions": [
+      "IN",
+      "MU",
+      "PK"
+    ]
+  },
+  {
+    "bcp47Code": "uz",
+    "englishName": "Uzbek",
+    "chineseName": "乌兹别克语",
+    "nativeName": "o‘zbek",
+    "primaryRegions": [
+      "TM",
+      "UZ"
+    ]
+  },
+  {
+    "bcp47Code": "vai",
+    "englishName": "Vai",
+    "chineseName": "瓦伊语",
+    "nativeName": "ꕙꔤ",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ve",
+    "englishName": "Venda",
+    "chineseName": "文达语",
+    "nativeName": "文达语",
+    "primaryRegions": [
+      "ZA"
+    ]
+  },
+  {
+    "bcp47Code": "vec",
+    "englishName": "Venetian",
+    "chineseName": "威尼斯语",
+    "nativeName": "veneto",
+    "primaryRegions": [
+      "BR",
+      "HR",
+      "IT",
+      "SI"
+    ]
+  },
+  {
+    "bcp47Code": "vep",
+    "englishName": "Veps",
+    "chineseName": "维普森语",
+    "nativeName": "维普森语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "vi",
+    "englishName": "Vietnamese",
+    "chineseName": "越南语",
+    "nativeName": "Tiếng Việt",
+    "primaryRegions": [
+      "VN"
+    ]
+  },
+  {
+    "bcp47Code": "vls",
+    "englishName": "West Flemish",
+    "chineseName": "West Flemish",
+    "nativeName": "West Flemish",
+    "primaryRegions": [
+      "BE"
+    ]
+  },
+  {
+    "bcp47Code": "vmf",
+    "englishName": "Main-Franconian",
+    "chineseName": "Main-Franconian",
+    "nativeName": "Main-Franconian",
+    "primaryRegions": [
+      "DE"
+    ]
+  },
+  {
+    "bcp47Code": "vmw",
+    "englishName": "Makhuwa",
+    "chineseName": "马库阿语",
+    "nativeName": "emakhuwa",
+    "primaryRegions": [
+      "MZ"
+    ]
+  },
+  {
+    "bcp47Code": "vo",
+    "englishName": "Volapük",
+    "chineseName": "沃拉普克语",
+    "nativeName": "沃拉普克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "vot",
+    "englishName": "Votic",
+    "chineseName": "沃提克语",
+    "nativeName": "沃提克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "vro",
+    "englishName": "Võro",
+    "chineseName": "Võro",
+    "nativeName": "Võro",
+    "primaryRegions": [
+      "EE"
+    ]
+  },
+  {
+    "bcp47Code": "vun",
+    "englishName": "Vunjo",
+    "chineseName": "温旧语",
+    "nativeName": "Kyivunjo",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "wa",
+    "englishName": "Walloon",
+    "chineseName": "瓦隆语",
+    "nativeName": "walon",
+    "primaryRegions": [
+      "BE"
+    ]
+  },
+  {
+    "bcp47Code": "wae",
+    "englishName": "Walser",
+    "chineseName": "瓦尔瑟语",
+    "nativeName": "Walser",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "wal",
+    "englishName": "Wolaytta",
+    "chineseName": "瓦拉莫语",
+    "nativeName": "瓦拉莫语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "war",
+    "englishName": "Waray",
+    "chineseName": "瓦瑞语",
+    "nativeName": "瓦瑞语",
+    "primaryRegions": [
+      "PH"
+    ]
+  },
+  {
+    "bcp47Code": "was",
+    "englishName": "Washo",
+    "chineseName": "瓦绍语",
+    "nativeName": "瓦绍语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "wbp",
+    "englishName": "Warlpiri",
+    "chineseName": "瓦尔皮瑞语",
+    "nativeName": "Warlpiri",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "wo",
+    "englishName": "Wolof",
+    "chineseName": "沃洛夫语",
+    "nativeName": "Wolof",
+    "primaryRegions": [
+      "SN"
+    ]
+  },
+  {
+    "bcp47Code": "wuu",
+    "englishName": "Wu Chinese",
+    "chineseName": "吴语",
+    "nativeName": "吴语",
+    "primaryRegions": [
+      "CN"
+    ]
+  },
+  {
+    "bcp47Code": "xal",
+    "englishName": "Kalmyk",
+    "chineseName": "卡尔梅克语",
+    "nativeName": "卡尔梅克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "xh",
+    "englishName": "Xhosa",
+    "chineseName": "科萨语",
+    "nativeName": "IsiXhosa",
+    "primaryRegions": [
+      "ZA"
+    ]
+  },
+  {
+    "bcp47Code": "xmf",
+    "englishName": "Mingrelian",
+    "chineseName": "Mingrelian",
+    "nativeName": "Mingrelian",
+    "primaryRegions": [
+      "GE"
+    ]
+  },
+  {
+    "bcp47Code": "xnr",
+    "englishName": "Kangri",
+    "chineseName": "康格里语",
+    "nativeName": "कांगड़ी",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "xog",
+    "englishName": "Soga",
+    "chineseName": "索加语",
+    "nativeName": "Olusoga",
+    "primaryRegions": [
+      "UG"
+    ]
+  },
+  {
+    "bcp47Code": "yao",
+    "englishName": "Yao",
+    "chineseName": "尧语",
+    "nativeName": "尧语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "yap",
+    "englishName": "Yapese",
+    "chineseName": "雅浦语",
+    "nativeName": "雅浦语",
+    "primaryRegions": [
+      "FM"
+    ]
+  },
+  {
+    "bcp47Code": "yav",
+    "englishName": "Yangben",
+    "chineseName": "洋卞语",
+    "nativeName": "nuasue",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "ybb",
+    "englishName": "Yemba",
+    "chineseName": "耶姆巴语",
+    "nativeName": "耶姆巴语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "yi",
+    "englishName": "Yiddish",
+    "chineseName": "意第绪语",
+    "nativeName": "ייִדיש",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "yo",
+    "englishName": "Yoruba",
+    "chineseName": "约鲁巴语",
+    "nativeName": "Èdè Yorùbá",
+    "primaryRegions": [
+      "BJ",
+      "NG"
+    ]
+  },
+  {
+    "bcp47Code": "yrl",
+    "englishName": "Nheengatu",
+    "chineseName": "恩加图语",
+    "nativeName": "nheẽgatu",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "yue",
+    "englishName": "Cantonese",
+    "chineseName": "粤语",
+    "nativeName": "粵語",
+    "primaryRegions": [
+      "CN",
+      "HK",
+      "MO"
+    ]
+  },
+  {
+    "bcp47Code": "za",
+    "englishName": "Zhuang",
+    "chineseName": "壮语",
+    "nativeName": "Vahcuengh",
+    "primaryRegions": [
+      "CN"
+    ]
+  },
+  {
+    "bcp47Code": "zap",
+    "englishName": "Zapotec",
+    "chineseName": "萨波蒂克语",
+    "nativeName": "萨波蒂克语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "zbl",
+    "englishName": "Blissymbols",
+    "chineseName": "布里斯符号",
+    "nativeName": "布里斯符号",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "zea",
+    "englishName": "Zeelandic",
+    "chineseName": "Zeelandic",
+    "nativeName": "Zeelandic",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "zen",
+    "englishName": "Zenaga",
+    "chineseName": "泽纳加语",
+    "nativeName": "泽纳加语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "zgh",
+    "englishName": "Standard Moroccan Tamazight",
+    "chineseName": "标准摩洛哥塔马塞特语",
+    "nativeName": "ⵜⴰⵎⴰⵣⵉⵖⵜ",
+    "primaryRegions": [
+      "MA"
+    ]
+  },
+  {
+    "bcp47Code": "zh",
+    "englishName": "Chinese",
+    "chineseName": "中文",
+    "nativeName": "中文",
+    "primaryRegions": [
+      "CN",
+      "MY",
+      "SG"
+    ]
+  },
+  {
+    "bcp47Code": "zh-Hans",
+    "englishName": "Chinese (Simplified)",
+    "chineseName": "中文(简体)",
+    "nativeName": "中文(简体)",
+    "primaryRegions": [
+      "CN",
+      "MY",
+      "SG"
+    ]
+  },
+  {
+    "bcp47Code": "zh-Hant",
+    "englishName": "Chinese (Traditional)",
+    "chineseName": "中文(繁体)",
+    "nativeName": "中文(繁体)",
+    "primaryRegions": [
+      "CN",
+      "MY",
+      "SG"
+    ]
+  },
+  {
+    "bcp47Code": "zu",
+    "englishName": "Zulu",
+    "chineseName": "祖鲁语",
+    "nativeName": "isiZulu",
+    "primaryRegions": [
+      "LS",
+      "SZ",
+      "ZA"
+    ]
+  },
+  {
+    "bcp47Code": "zun",
+    "englishName": "Zuni",
+    "chineseName": "祖尼语",
+    "nativeName": "祖尼语",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "zxx",
+    "englishName": "No linguistic content",
+    "chineseName": "无语言内容",
+    "nativeName": "无语言内容",
+    "primaryRegions": []
+  },
+  {
+    "bcp47Code": "zza",
+    "englishName": "Zaza",
+    "chineseName": "扎扎语",
+    "nativeName": "扎扎语",
+    "primaryRegions": []
+  }
+]

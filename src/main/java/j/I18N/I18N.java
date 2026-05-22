@@ -18,12 +18,12 @@ import j.core.web.handler.JResponse;
 import j.core.web.handler.JSession;
 import j.log.Logger;
 import j.util.*;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.*;
@@ -164,20 +164,6 @@ public class I18N extends JHandler implements Initializer{
 		Element languagesE=rootForConfig.element("languages");
 		I18N.defaultLanguage=languagesE.attributeValue("default");
 		log.log("I18N.defaultLanguage:"+defaultLanguage,-1);
-
-		List languages=languagesE.elements("language");
-		for(int i=0;languages!=null&&i<languages.size();i++){
-			Element languageElement=(Element)languages.get(i);
-			Language language=new Language();
-			language.setCode(languageElement.attributeValue("code"));
-			language.setName(languageElement.attributeValue("name"));
-			String countries=languageElement.attributeValue("countries");
-			if(countries!=null&&!"".equals(countries)){
-				language.setCountries(countries.split(","));
-			}
-			I18N.languages.put(language.getCode(),language);
-			log.log("I18N.language:"+language.getCode()+","+language.getName(),-1);
-		}
 
 		Element modules=rootForConfig.element("modules");
 		List strs=modules.elements("module");
