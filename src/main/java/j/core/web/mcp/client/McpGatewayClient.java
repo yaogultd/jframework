@@ -7,7 +7,6 @@ import io.modelcontextprotocol.json.McpJsonDefaults;
 import io.modelcontextprotocol.spec.McpSchema;
 import j.core.web.Constants;
 import j.core.web.mcp.McpRouter;
-import j.core.web.mcp.RequestParam;
 import j.util.JUtilString;
 import lombok.Getter;
 import org.slf4j.Logger;

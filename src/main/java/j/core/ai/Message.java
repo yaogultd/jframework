@@ -75,7 +75,6 @@ public class Message implements Serializable, Cloneable {
     public Message(){
         this.id = JUtilUUID.genUUID();
         this.time = SysUtil.getNow();
-        this.contentType = Message.CONTENT_TYPE_TEXT_PLAIN;
     }
 
     /**
@@ -88,7 +87,6 @@ public class Message implements Serializable, Cloneable {
         this.conversationId=conversation.getId();
         this.beingId=conversation.getBeingId();
         this.time = SysUtil.getNow();
-        this.contentType = Message.CONTENT_TYPE_TEXT_PLAIN;
     }
 
     /**
@@ -102,7 +100,6 @@ public class Message implements Serializable, Cloneable {
         this.conversationId=conversationId;
         this.beingId=beingId;
         this.time = SysUtil.getNow();
-        this.contentType = Message.CONTENT_TYPE_TEXT_PLAIN;
     }
 
     /**

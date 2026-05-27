@@ -1,5 +1,6 @@
-package j.core.web.mcp;
+package j.core.web.mcp.client;
 
+import j.core.web.mcp.McpJson;
 import lombok.Getter;
 import lombok.Setter;
 import tools.jackson.core.type.TypeReference;
@@ -10,21 +11,6 @@ import java.util.List;
 @Getter
 @Setter
 public class RequestParam {
-    public final static String TASK_ID="taskId";
-    public final static String STREAM="stream";
-    public final static String CONVERSATION_ID="conversationId";
-    public final static String PROVIDER_ID="providerId";
-    public final static String MODEL_ID="modelId";
-    public final static String PLUGIN_ID="pluginId";
-    public final static String STEP_TAG="stepTag";
-    public final static String PROMPT="prompt";
-    public final static String PROMPT_END_TEXT="promptEndText";
-    public final static String OUTPUT_FORMAT_DESCRIPTION="outFormatDesc";
-    public final static String FILE_PREFIX="file_";
-
-    //翻译成什么语言
-    public final static String TRANSLATE_TO="translateTo";
-
     private String name;
     private String type;
     private Object value;
